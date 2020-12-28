@@ -1,0 +1,14 @@
+{
+	BNFTP : {
+		"PacketId" : 0x00,
+		"Description" : "",
+		"Structure" : { 
+			0 : { "WORD" : "Unknown" },
+			1 : { "DWORD" : "Filesize" },
+			2 : { "DWORD" : "BannerID" },
+			3 : { "DWORD" : "BannerExtension" },
+			4 : { "FILETIME" : "Filetime" },
+			5 : { "std::string" : "Filename" },
+		}
+	},
+}
