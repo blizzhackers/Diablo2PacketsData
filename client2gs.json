@@ -735,12 +735,12 @@
 		"Description" : "",
 		"Structure" : { 
 			0 : { "BYTE" : "PacketId" },
-			1 : { "BYTE" : "GameName[16]" },
+			1 : { "char" : "GameName[16]" },
 			2 : { "BYTE" : "GameType" },
 			3 : { "BYTE" : "CharClass" },
 			4 : { "BYTE" : "Template" },
 			5 : { "BYTE" : "SelectedDiff" },
-			6 : { "BYTE" : "CharName[16]" },
+			6 : { "char" : "CharName[16]" },
 			7 : { "WORD" : "Unknown4" },
 			8 : { "DWORD" : "ArenaFlags" },
 			9 : { "BYTE" : "Unknown6" },
@@ -760,7 +760,7 @@
 			5 : { "DWORD" : "VersionConstant" },
 			6 : { "DWORD" : "Constant" },
 			7 : { "BYTE" : "LanguageCode" },
-			8 : { "BYTE" : "CharName[16]" },
+			8 : { "char" : "CharName[16]" },
 		}
 	},
 	"D2GS_LEAVEGAME" : {

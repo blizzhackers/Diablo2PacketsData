@@ -578,7 +578,7 @@
 			0 : { "BYTE" : "PacketId" },
 			1 : { "DWORD" : "UnitGid" },
 			2 : { "BYTE" : "UnitType" },
-			3 : { "BYTE" : "UnitName[16]" },
+			3 : { "char" : "UnitName[16]" },
 			4 : { "WORD" : "UnitX" },
 			5 : { "WORD" : "UnitY" },
 		}
@@ -592,8 +592,8 @@
 			2 : { "BYTE" : "Color" },
 			3 : { "DWORD" : "Arg" },
 			4 : { "BYTE" : "ArgTypes" },
-			5 : { "BYTE" : "Name1[16]" },
-			6 : { "BYTE" : "Name2[16]" },
+			5 : { "char" : "Name1[16]" },
+			6 : { "char" : "Name2[16]" },
 		}
 	},
 	"D2GS_PLAYER_JOIN" : {
@@ -604,7 +604,7 @@
 			1 : { "WORD" : "PacketLength" },
 			2 : { "DWORD" : "PlayerGid" },
 			3 : { "BYTE" : "CharType" },
-			4 : { "BYTE" : "CharName[16]" },
+			4 : { "char" : "CharName[16]" },
 			5 : { "WORD" : "CharLevel" },
 			6 : { "WORD" : "PartyId" },
 			7 : { "BYTE" : "Zero[8]" },
@@ -850,7 +850,7 @@
 		"Description" : "",
 		"Structure" : { 
 			0 : { "BYTE" : "PacketId" },
-			1 : { "BYTE" : "CharName[16]" },
+			1 : { "char" : "CharName[16]" },
 			2 : { "DWORD" : "UnitGid" },
 		}
 	},
@@ -945,7 +945,7 @@
 		"Structure" : { 
 			0 : { "BYTE" : "PacketId" },
 			1 : { "DWORD" : "OwnerGid" },
-			2 : { "BYTE" : "OwnerName[16]" },
+			2 : { "char" : "OwnerName[16]" },
 			3 : { "DWORD" : "PortalGid" },
 			4 : { "DWORD" : "DestinationID" },
 		}
@@ -1260,9 +1260,9 @@
 		"Description" : "",
 		"Structure" : { 
 			0 : { "BYTE" : "PacketId" },
-			1 : { "BYTE" : "Unk1[16]" },
-			2 : { "BYTE" : "Unk2[16]" },
-			3 : { "BYTE" : "Unk3[16]" },
+			1 : { "char" : "Unk1[16]" },
+			2 : { "char" : "Unk2[16]" },
+			3 : { "char" : "Unk3[16]" },
 			4 : { "WORD" : "nClientsCount" },
 			5 : { "WORD" : "nGameToken" },
 		}
