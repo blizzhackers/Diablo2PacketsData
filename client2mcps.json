@@ -3,155 +3,155 @@
 		"PacketId" : "0x01",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "DWORD" : "MCPCookie" },
-			3 : { "DWORD" : "MCPStatus" },
-			4 : { "BYTE" : "MCPChunk1[8]" },
-			5 : { "BYTE" : "MCPChunk2[48]" },
-			6 : { "std::string" : "BnetName" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "DWORD" : "MCPCookie" },
+			"3" : { "DWORD" : "MCPStatus" },
+			"4" : { "BYTE" : "MCPChunk1[8]" },
+			"5" : { "BYTE" : "MCPChunk2[48]" },
+			"6" : { "std::string" : "BnetName" }
 		}
 	},
 	"MCP_CHARCREATE" : {
 		"PacketId" : "0x02",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "DWORD" : "Class" },
-			3 : { "WORD" : "Flags" },
-			4 : { "std::string" : "CharName" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "DWORD" : "Class" },
+			"3" : { "WORD" : "Flags" },
+			"4" : { "std::string" : "CharName" }
 		}
 	},
 	"MCP_CREATEGAME" : {
 		"PacketId" : "0x03",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "WORD" : "RequestId" },
-			3 : { "DWORD" : "nGameFlags" },
-			4 : { "BYTE" : "Unknown1" },
-			5 : { "BYTE" : "Difference" },
-			6 : { "BYTE" : "MaxPlayers" },
-			7 : { "std::string" : "Name" },
-			8 : { "std::string" : "Password" },
-			9 : { "std::string" : "Description" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "WORD" : "RequestId" },
+			"3" : { "DWORD" : "nGameFlags" },
+			"4" : { "BYTE" : "Unknown1" },
+			"5" : { "BYTE" : "Difference" },
+			"6" : { "BYTE" : "MaxPlayers" },
+			"7" : { "std::string" : "Name" },
+			"8" : { "std::string" : "Password" },
+			"9" : { "std::string" : "Description" }
 		}
 	},
 	"MCP_JOINGAME" : {
 		"PacketId" : "0x04",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "WORD" : "RequestId" },
-			3 : { "std::string" : "GameName" },
-			4 : { "std::string" : "GamePass" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "WORD" : "RequestId" },
+			"3" : { "std::string" : "GameName" },
+			"4" : { "std::string" : "GamePass" }
 		}
 	},
 	"MCP_GAMELIST" : {
 		"PacketId" : "0x05",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "WORD" : "RequestId" },
-			3 : { "DWORD" : "HardcoreFlag" },
-			4 : { "std::string" : "SearchString" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "WORD" : "RequestId" },
+			"3" : { "DWORD" : "HardcoreFlag" },
+			"4" : { "std::string" : "SearchString" }
 		}
 	},
 	"MCP_GAMEINFO" : {
 		"PacketId" : "0x06",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "WORD" : "RequestId" },
-			3 : { "std::string" : "GameName" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "WORD" : "RequestId" },
+			"3" : { "std::string" : "GameName" }
 		}
 	},
 	"MCP_CHARLOGON" : {
 		"PacketId" : "0x07",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "std::string" : "CharName" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "std::string" : "CharName" }
 		}
 	},
 	"MCP_CHARDELETE" : {
 		"PacketId" : "0x0A",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "WORD" : "RequestId" },
-			3 : { "std::string" : "CharName" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "WORD" : "RequestId" },
+			"3" : { "std::string" : "CharName" }
 		}
 	},
 	"MCP_REQUESTLADDERDATA" : {
 		"PacketId" : "0x11",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "BYTE" : "LadderType" },
-			3 : { "WORD" : "StartPosition" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "BYTE" : "LadderType" },
+			"3" : { "WORD" : "StartPosition" }
 		}
 	},
 	"MCP_MOTD" : {
 		"PacketId" : "0x12",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }
 		}
 	},
 	"MCP_CANCELGAMECREATE" : {
 		"PacketId" : "0x13",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }
 		}
 	},
 	"MCP_CHARRANK" : {
 		"PacketId" : "0x16",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "DWORD" : "Hardcore" },
-			3 : { "DWORD" : "Expansion" },
-			4 : { "std::string" : "CharName" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "DWORD" : "Hardcore" },
+			"3" : { "DWORD" : "Expansion" },
+			"4" : { "std::string" : "CharName" }
 		}
 	},
 	"MCP_CHARLIST" : {
 		"PacketId" : "0x17",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "DWORD" : "Quantity" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "DWORD" : "Quantity" }
 		}
 	},
 	"MCP_CHARUPGRADE" : {
 		"PacketId" : "0x18",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "std::string" : "CharName" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "std::string" : "CharName" }
 		}
 	},
 	"MCP_CHARLIST2" : {
 		"PacketId" : "0x19",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "DWORD" : "RequestCount" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "DWORD" : "RequestCount" }
 		}
-	},
+	}
 }

@@ -3,138 +3,138 @@
 		"PacketId" : "0x00",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }
 		}
 	},
 	"MCP_STARTUP" : {
 		"PacketId" : "0x01",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "DWORD" : "Result" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "DWORD" : "Result" }
 		}
 	},
 	"MCP_CHARCREATE" : {
 		"PacketId" : "0x02",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "DWORD" : "Result" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "DWORD" : "Result" }
 		}
 	},
 	"MCP_CREATEGAME" : {
 		"PacketId" : "0x03",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "WORD" : "RequestId" },
-			3 : { "WORD" : "GameToken" },
-			4 : { "WORD" : "Unknown" },
-			5 : { "DWORD" : "Result" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "WORD" : "RequestId" },
+			"3" : { "WORD" : "GameToken" },
+			"4" : { "WORD" : "Unknown" },
+			"5" : { "DWORD" : "Result" }
 		}
 	},
 	"MCP_JOINGAME" : {
 		"PacketId" : "0x04",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "WORD" : "RequestId" },
-			3 : { "WORD" : "GameToken" },
-			4 : { "WORD" : "Unknown" },
-			5 : { "DWORD" : "GameIP" },
-			6 : { "DWORD" : "GameHash" },
-			7 : { "DWORD" : "Result" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "WORD" : "RequestId" },
+			"3" : { "WORD" : "GameToken" },
+			"4" : { "WORD" : "Unknown" },
+			"5" : { "DWORD" : "GameIP" },
+			"6" : { "DWORD" : "GameHash" },
+			"7" : { "DWORD" : "Result" }
 		}
 	},
 	"MCP_GAMELIST" : {
 		"PacketId" : "0x05",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "WORD" : "RequestId" },
-			3 : { "DWORD" : "Index" },
-			4 : { "BYTE" : "Players" },
-			5 : { "DWORD" : "Status" },
-			6 : { "std::string" : "GameName" },
-			7 : { "std::string" : "GameDesc" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "WORD" : "RequestId" },
+			"3" : { "DWORD" : "Index" },
+			"4" : { "BYTE" : "Players" },
+			"5" : { "DWORD" : "Status" },
+			"6" : { "std::string" : "GameName" },
+			"7" : { "std::string" : "GameDesc" }
 		}
 	},
 	"MCP_GAMEINFO" : {
 		"PacketId" : "0x06",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "WORD" : "RequestId" },
-			3 : { "DWORD" : "Status" },
-			4 : { "DWORD" : "Uptime" },
-			5 : { "BYTE" : "CreatorLevel" },
-			6 : { "BYTE" : "Difference" },
-			7 : { "BYTE" : "MaxPayers" },
-			8 : { "BYTE" : "CharsInGame" },
-			9 : { "BYTE" : "Class[8]" },
-			10 : { "BYTE" : "Something1[8]" },
-			11 : { "BYTE" : "Level[8]" },
-			12 : { "BYTE" : "Something2[8]" },
-			13 : { "std::string" : "Description" },
-			14 : { "std::string" : "Nick[CharsInGame]" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "WORD" : "RequestId" },
+			"3" : { "DWORD" : "Status" },
+			"4" : { "DWORD" : "Uptime" },
+			"5" : { "BYTE" : "CreatorLevel" },
+			"6" : { "BYTE" : "Difference" },
+			"7" : { "BYTE" : "MaxPayers" },
+			"8" : { "BYTE" : "CharsInGame" },
+			"9" : { "BYTE" : "Class[8]" },
+			"10" : { "BYTE" : "Something1[8]" },
+			"11" : { "BYTE" : "Level[8]" },
+			"12" : { "BYTE" : "Something2[8]" },
+			"13" : { "std::string" : "Description" },
+			"14" : { "std::string" : "Nick[CharsInGame]" },
 		}
 	},
 	"MCP_CHARLOGON" : {
 		"PacketId" : "0x07",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "DWORD" : "Result" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "DWORD" : "Result" }
 		}
 	},
 	"MCP_CHARDELETE" : {
 		"PacketId" : "0x0A",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "DWORD" : "Result" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "DWORD" : "Result" }
 		}
 	},
 	"MCP_MOTD" : {
 		"PacketId" : "0x12",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "BYTE" : "Unknown" },
-			3 : { "std::string" : "Text" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "BYTE" : "Unknown" },
+			"3" : { "std::string" : "Text" }
 		}
 	},
 	"MCP_CREATEQUEUE" : {
 		"PacketId" : "0x14",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "DWORD" : "Position" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "DWORD" : "Position" }
 		}
 	},
 	"MCP_CHARLIST" : {
 		"PacketId" : "0x17",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "WORD" : "RequestCount" },
-			3 : { "DWORD" : "ExistCount" },
-			4 : { "WORD" : "ReturnCount" },
-			5 : { "Characters[ReturnCount]" : {
-					0 : { "std::string" : "Name" },
-					1 : { "std::string" : "Statstring" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "WORD" : "RequestCount" },
+			"3" : { "DWORD" : "ExistCount" },
+			"4" : { "WORD" : "ReturnCount" },
+			"5" : { "Characters[ReturnCount]" : {
+					"0" : { "std::string" : "Name" },
+					"1" : { "std::string" : "Statstring" }
 				},
 			},
 		}
@@ -143,26 +143,26 @@
 		"PacketId" : "0x18",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "DWORD" : "Result" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "DWORD" : "Result" }
 		}
 	},
 	"MCP_CHARLIST2" : {
 		"PacketId" : "0x19",
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" },
-			1 : { "BYTE" : "PacketId" },
-			2 : { "WORD" : "RequestCount" },
-			3 : { "DWORD" : "ExistCount" },
-			4 : { "WORD" : "ReturnCount" },
-			5 : { "Characters[ReturnCount]" : {
-					0 : { "DWORD" : "ExpireTime" },
-					1 : { "std::string" : "Name" },
-					2 : { "std::string" : "Statstring" },
+			"0" : { "WORD" : "nSize" },
+			"1" : { "BYTE" : "PacketId" }, 
+			"2" : { "WORD" : "RequestCount" },
+			"3" : { "DWORD" : "ExistCount" },
+			"4" : { "WORD" : "ReturnCount" },
+			"5" : { "Characters[ReturnCount]" : {
+					"0" : { "DWORD" : "ExpireTime" },
+					"1" : { "std::string" : "Name" },
+					"2" : { "std::string" : "Statstring" }
 				},
 			},
 		}
-	},
+	}
 }
