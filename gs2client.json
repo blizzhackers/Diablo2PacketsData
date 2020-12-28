@@ -2,1288 +2,1288 @@
 	"D2GS_GAMELOADING" : {
 		"PacketId" : "0x00",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_GAMEFLAGS" : {
 		"PacketId" : "0x01",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "nDifficulty" },
-			"2" : { "DWORD" : "dwArenaFlags" },
-			"3" : { "BYTE" : "bIsExpansion" },
-			"4" : { "BYTE" : "bIsLadder" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "nDifficulty" },
+			{ "DWORD" : "dwArenaFlags" },
+			{ "BYTE" : "bIsExpansion" },
+			{ "BYTE" : "bIsLadder" }
+		]
 	},
 	"D2GS_LOADSUCCESSFUL" : {
 		"PacketId" : "0x02",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_LOADACT" : {
 		"PacketId" : "0x03",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Act" },
-			"2" : { "DWORD" : "MapId" },
-			"3" : { "WORD" : "Area" },
-			"4" : { "DWORD" : "Automap" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Act" },
+			{ "DWORD" : "MapId" },
+			{ "WORD" : "Area" },
+			{ "DWORD" : "Automap" }
+		]
 	},
 	"D2GS_LOADCOMPLETE" : {
 		"PacketId" : "0x04",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_UNLOADCOMPLETE" : {
 		"PacketId" : "0x05",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_GAMEEXIT" : {
 		"PacketId" : "0x06",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_MAPREVEAL" : {
 		"PacketId" : "0x07",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "TileX" },
-			"2" : { "WORD" : "TileY" },
-			"3" : { "BYTE" : "AreaId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "TileX" },
+			{ "WORD" : "TileY" },
+			{ "BYTE" : "AreaId" }
+		]
 	},
 	"D2GS_MAPHIDE" : {
 		"PacketId" : "0x08",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "TileX" },
-			"2" : { "WORD" : "TileY" },
-			"3" : { "BYTE" : "AreaId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "TileX" },
+			{ "WORD" : "TileY" },
+			{ "BYTE" : "AreaId" }
+		]
 	},
 	"D2GS_ASSIGNLVLWARP" : {
 		"PacketId" : "0x09",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "WarpType" },
-			"2" : { "DWORD" : "WarpGid" },
-			"3" : { "BYTE" : "WarpClassId" },
-			"4" : { "WORD" : "WarpX" },
-			"5" : { "WORD" : "WarpY" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "WarpType" },
+			{ "DWORD" : "WarpGid" },
+			{ "BYTE" : "WarpClassId" },
+			{ "WORD" : "WarpX" },
+			{ "WORD" : "WarpY" }
+		]
 	},
 	"D2GS_REMOVEOBJECT" : {
 		"PacketId" : "0x0A",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_GAMEHANDSHAKE" : {
 		"PacketId" : "0x0B",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_NPC_HIT" : {
 		"PacketId" : "0x0C",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "BYTE" : "UnitHitType" },
-			"4" : { "BYTE" : "UnitHitClass" },
-			"5" : { "BYTE" : "UnitLife" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "UnitHitType" },
+			{ "BYTE" : "UnitHitClass" },
+			{ "BYTE" : "UnitLife" }
+		]
 	},
 	"D2GS_PLAYERSTOP" : {
 		"PacketId" : "0x0D",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "BYTE" : "bHitClass" },
-			"4" : { "WORD" : "UnitX" },
-			"5" : { "WORD" : "UnitY" },
-			"6" : { "BYTE" : "UnitHitClass" },
-			"7" : { "BYTE" : "UnitLife" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "bHitClass" },
+			{ "WORD" : "UnitX" },
+			{ "WORD" : "UnitY" },
+			{ "BYTE" : "UnitHitClass" },
+			{ "BYTE" : "UnitLife" }
+		]
 	},
 	"D2GS_OBJECTSTATE" : {
 		"PacketId" : "0x0E",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGUID" },
-			"3" : { "BYTE" : "PortalFlags" },
-			"4" : { "BYTE" : "FlagIsTargetable" },
-			"5" : { "DWORD" : "UnitState" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGUID" },
+			{ "BYTE" : "PortalFlags" },
+			{ "BYTE" : "FlagIsTargetable" },
+			{ "DWORD" : "UnitState" }
+		]
 	},
 	"D2GS_PLAYERMOVE" : {
 		"PacketId" : "0x0F",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "BYTE" : "MoveType" },
-			"4" : { "WORD" : "TargetX" },
-			"5" : { "WORD" : "TargetY" },
-			"6" : { "BYTE" : "UnitHitClass" },
-			"7" : { "WORD" : "UnitX" },
-			"8" : { "WORD" : "UnitY" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "MoveType" },
+			{ "WORD" : "TargetX" },
+			{ "WORD" : "TargetY" },
+			{ "BYTE" : "UnitHitClass" },
+			{ "WORD" : "UnitX" },
+			{ "WORD" : "UnitY" }
+		]
 	},
 	"D2GS_CHARTOOBJ" : {
 		"PacketId" : "0x10",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "PlayerType" },
-			"2" : { "DWORD" : "PlayerGid" },
-			"3" : { "BYTE" : "MoveType" },
-			"4" : { "BYTE" : "DestType" },
-			"5" : { "DWORD" : "TargetGid" },
-			"6" : { "WORD" : "TargetX" },
-			"7" : { "WORD" : "TargetY" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "PlayerType" },
+			{ "DWORD" : "PlayerGid" },
+			{ "BYTE" : "MoveType" },
+			{ "BYTE" : "DestType" },
+			{ "DWORD" : "TargetGid" },
+			{ "WORD" : "TargetX" },
+			{ "WORD" : "TargetY" }
+		]
 	},
 	"D2GS_REPORTKILL" : {
 		"PacketId" : "0x11",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "WORD" : "Overlay" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "WORD" : "Overlay" }
+		]
 	},
 	"D2GS_REASSIGNPLAYER" : {
 		"PacketId" : "0x15",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "WORD" : "X" },
-			"4" : { "WORD" : "Y" },
-			"5" : { "BYTE" : "Bool" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "WORD" : "X" },
+			{ "WORD" : "Y" },
+			{ "BYTE" : "Bool" }
+		]
 	},
 	"D2GS_MANYUNITSCOORDSUPDATE" : {
 		"PacketId" : "0x16",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Unused1" },
-			"2" : { "BYTE" : "Unused2" },
-			"3" : { "BYTE" : "Count" },
-			"4" : { "BYTE" : "Info[10204]" },
-			"5" : { "BYTE" : "UnitType" },
-			"6" : { "DWORD" : "UnitGid" },
-			"7" : { "WORD" : "x" },
-			"8" : { "WORD" : "y" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Unused1" },
+			{ "BYTE" : "Unused2" },
+			{ "BYTE" : "Count" },
+			{ "BYTE" : "Info[10204]" },
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "WORD" : "x" },
+			{ "WORD" : "y" }
+		]
 	},
 	"D2GS_UNKNOWN_17" : {
 		"PacketId" : "0x17",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "WORD" : "UnitX" },
-			"4" : { "WORD" : "UnitY" },
-			"5" : { "WORD" : "wUnknown3" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "WORD" : "UnitX" },
+			{ "WORD" : "UnitY" },
+			{ "WORD" : "wUnknown3" }
+		]
 	},
 	"D2GS_SMALLGOLDPICKUP" : {
 		"PacketId" : "0x19",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Amount" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Amount" }
+		]
 	},
 	"D2GS_ADDEXP_BYTE" : {
 		"PacketId" : "0x1A",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Amount" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Amount" }
+		]
 	},
 	"D2GS_ADDEXP_WORD" : {
 		"PacketId" : "0x1B",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "Amount" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "Amount" }
+		]
 	},
 	"D2GS_ADDEXP_DWORD" : {
 		"PacketId" : "0x1C",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "Amount" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "Amount" }
+		]
 	},
 	"D2GS_SETATTR_BYTE" : {
 		"PacketId" : "0x1D",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Attribute" },
-			"2" : { "BYTE" : "Value" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Attribute" },
+			{ "BYTE" : "Value" }
+		]
 	},
 	"D2GS_SETATTR_WORD" : {
 		"PacketId" : "0x1E",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Attribute" },
-			"2" : { "WORD" : "Value" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Attribute" },
+			{ "WORD" : "Value" }
+		]
 	},
 	"D2GS_SETATTR_DWORD" : {
 		"PacketId" : "0x1F",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Attribute" },
-			"2" : { "DWORD" : "Value" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Attribute" },
+			{ "DWORD" : "Value" }
+		]
 	},
 	"D2GS_ATTRIBUTEUPDATE" : {
 		"PacketId" : "0x20",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitGid" },
-			"2" : { "BYTE" : "Attribute" },
-			"3" : { "DWORD" : "Amount" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "Attribute" },
+			{ "DWORD" : "Amount" }
+		]
 	},
 	"D2GS_UPDATEITEM_OSKILL" : {
 		"PacketId" : "0x21",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "BYTE" : "Remove" },
-			"3" : { "DWORD" : "UnitGid" },
-			"4" : { "WORD" : "SkillId" },
-			"5" : { "BYTE" : "BaseAmount" },
-			"6" : { "BYTE" : "BonusAmount" },
-			"7" : { "BYTE" : "UnitSkillBonus" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "BYTE" : "Remove" },
+			{ "DWORD" : "UnitGid" },
+			{ "WORD" : "SkillId" },
+			{ "BYTE" : "BaseAmount" },
+			{ "BYTE" : "BonusAmount" },
+			{ "BYTE" : "UnitSkillBonus" }
+		]
 	},
 	"D2GS_UPDATEITEM_SKILL" : {
 		"PacketId" : "0x22",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "BYTE" : "Gap2" },
-			"3" : { "DWORD" : "UnitGid" },
-			"4" : { "WORD" : "SkillId" },
-			"5" : { "BYTE" : "Amount" },
-			"6" : { "BYTE" : "Gap6" },
-			"7" : { "BYTE" : "ZeroCheck" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "BYTE" : "Gap2" },
+			{ "DWORD" : "UnitGid" },
+			{ "WORD" : "SkillId" },
+			{ "BYTE" : "Amount" },
+			{ "BYTE" : "Gap6" },
+			{ "BYTE" : "ZeroCheck" }
+		]
 	},
 	"D2GS_SETSKILL" : {
 		"PacketId" : "0x23",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitTypeUnused" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "BYTE" : "Hand" },
-			"4" : { "WORD" : "Skill" },
-			"5" : { "DWORD" : "ItemId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitTypeUnused" },
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "Hand" },
+			{ "WORD" : "Skill" },
+			{ "DWORD" : "ItemId" }
+		]
 	},
 	"D2GS_CHAT" : {
 		"PacketId" : "0x26",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "ChatType" },
-			"2" : { "BYTE" : "LanguageCode" },
-			"3" : { "BYTE" : "UnitType" },
-			"4" : { "DWORD" : "UnitGid" },
-			"5" : { "BYTE" : "ChatColor" },
-			"6" : { "BYTE" : "ChatSubType" },
-			"7" : { "std::string" : "Nick" },
-			"8" : { "std::string" : "Message" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "ChatType" },
+			{ "BYTE" : "LanguageCode" },
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "ChatColor" },
+			{ "BYTE" : "ChatSubType" },
+			{ "std::string" : "Nick" },
+			{ "std::string" : "Message" }
+		]
 	},
 	"D2GS_NPC_INFO" : {
 		"PacketId" : "0x27",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "BYTE" : "Count" },
-			"4" : { "BYTE" : "Unknown" },
-			"5" : { "Messages[8]" : {
-					"0" : { "BYTE" : "Show" },
-					"1" : { "BYTE" : "NotUsed" },
-					"2" : { "WORD" : "Msg" }
-				},
-			},
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "Count" },
+			{ "BYTE" : "Unknown" },
+			{ "Messages[8]" : [
+					{ "BYTE" : "Show" },
+					{ "BYTE" : "NotUsed" },
+					{ "WORD" : "Msg" }
+				]
+			}
+		]
 	},
 	"D2GS_PLAYERQUESTINFO" : {
 		"PacketId" : "0x28",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UpdateType" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "BYTE" : "ActionType" },
-			"4" : { "BYTE" : "QuestBits[96]" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UpdateType" },
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "ActionType" },
+			{ "BYTE" : "QuestBits[96]" }
+		]
 	},
 	"D2GS_GAMEQUESTLOG" : {
 		"PacketId" : "0x29",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "QuestBits[96]" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "QuestBits[96]" }
+		]
 	},
 	"D2GS_NPCTRANSACTION" : {
 		"PacketId" : "0x2A",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "TradeType" },
-			"2" : { "BYTE" : "Result" },
-			"3" : { "DWORD" : "Unused" },
-			"4" : { "DWORD" : "NpcGid" },
-			"5" : { "DWORD" : "InventoryGold" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "TradeType" },
+			{ "BYTE" : "Result" },
+			{ "DWORD" : "Unused" },
+			{ "DWORD" : "NpcGid" },
+			{ "DWORD" : "InventoryGold" }
+		]
 	},
 	"D2GS_PLAYSOUND" : {
 		"PacketId" : "0x2C",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Type" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "WORD" : "Sound" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Type" },
+			{ "DWORD" : "UnitGid" },
+			{ "WORD" : "Sound" }
+		]
 	},
 	"D2GS_USESTACKABLEITEM" : {
 		"PacketId" : "0x3F",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "SpellIcon" },
-			"2" : { "DWORD" : "ItemGid" },
-			"3" : { "WORD" : "SkillId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "SpellIcon" },
+			{ "DWORD" : "ItemGid" },
+			{ "WORD" : "SkillId" }
+		]
 	},
 	"D2GS_ITEMFLAGSETTER" : {
 		"PacketId" : "0x40",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitGid" },
-			"2" : { "DWORD" : "ItemFlag" },
-			"3" : { "DWORD" : "bRemove" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitGid" },
+			{ "DWORD" : "ItemFlag" },
+			{ "DWORD" : "bRemove" }
+		]
 	},
 	"D2GS_CLEARCURSOR" : {
 		"PacketId" : "0x42",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_RELATOR1" : {
 		"PacketId" : "0x47",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "BYTE" : "Gap" },
-			"3" : { "DWORD" : "UnitGid" },
-			"4" : { "BYTE" : "Unused[4]" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "BYTE" : "Gap" },
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "Unused[4]" }
+		]
 	},
 	"D2GS_RELATOR2" : {
 		"PacketId" : "0x48",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "BYTE" : "Gap" },
-			"3" : { "DWORD" : "UnitGid" },
-			"4" : { "BYTE" : "Unused[4]" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "BYTE" : "Gap" },
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "Unused[4]" }
+		]
 	},
 	"D2GS_UNITCASTSKILL_TARGET" : {
 		"PacketId" : "0x4C",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "AttackerType" },
-			"2" : { "DWORD" : "AttackerGid" },
-			"3" : { "WORD" : "SkillId" },
-			"4" : { "BYTE" : "SkillLevel" },
-			"5" : { "BYTE" : "TargetType" },
-			"6" : { "DWORD" : "TargetGid" },
-			"7" : { "WORD" : "Zero" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "AttackerType" },
+			{ "DWORD" : "AttackerGid" },
+			{ "WORD" : "SkillId" },
+			{ "BYTE" : "SkillLevel" },
+			{ "BYTE" : "TargetType" },
+			{ "DWORD" : "TargetGid" },
+			{ "WORD" : "Zero" }
+		]
 	},
 	"D2GS_UNITCASTSKILL_XY" : {
 		"PacketId" : "0x4D",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "AttackerType" },
-			"2" : { "DWORD" : "AttackerGid" },
-			"3" : { "WORD" : "SkillId" },
-			"4" : { "WORD" : "Filler" },
-			"5" : { "BYTE" : "SkillLevel" },
-			"6" : { "WORD" : "TargetX" },
-			"7" : { "WORD" : "TargetY" },
-			"8" : { "WORD" : "Zero" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "AttackerType" },
+			{ "DWORD" : "AttackerGid" },
+			{ "WORD" : "SkillId" },
+			{ "WORD" : "Filler" },
+			{ "BYTE" : "SkillLevel" },
+			{ "WORD" : "TargetX" },
+			{ "WORD" : "TargetY" },
+			{ "WORD" : "Zero" }
+		]
 	},
 	"D2GS_MERCFORHIRE" : {
 		"PacketId" : "0x4E",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "NameString" },
-			"2" : { "DWORD" : "Seed" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "NameString" },
+			{ "DWORD" : "Seed" }
+		]
 	},
 	"D2GS_CLEARMERCLIST" : {
 		"PacketId" : "0x4F",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_QUEST_SPECIAL" : {
 		"PacketId" : "0x50",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "MessageType" },
-			"2" : { "WORD" : "Arg1" },
-			"3" : { "WORD" : "Arg2" },
-			"4" : { "WORD" : "Arg3" },
-			"5" : { "WORD" : "Arg4" },
-			"6" : { "WORD" : "Arg5" },
-			"7" : { "WORD" : "Arg6" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "MessageType" },
+			{ "WORD" : "Arg1" },
+			{ "WORD" : "Arg2" },
+			{ "WORD" : "Arg3" },
+			{ "WORD" : "Arg4" },
+			{ "WORD" : "Arg5" },
+			{ "WORD" : "Arg6" }
+		]
 	},
 	"D2GS_WORLDOBJECT" : {
 		"PacketId" : "0x51",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Type" },
-			"2" : { "DWORD" : "Id" },
-			"3" : { "WORD" : "ClassID" },
-			"4" : { "WORD" : "X" },
-			"5" : { "WORD" : "Y" },
-			"6" : { "BYTE" : "State" },
-			"7" : { "BYTE" : "Interaction" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Type" },
+			{ "DWORD" : "Id" },
+			{ "WORD" : "ClassID" },
+			{ "WORD" : "X" },
+			{ "WORD" : "Y" },
+			{ "BYTE" : "State" },
+			{ "BYTE" : "Interaction" }
+		]
 	},
 	"D2GS_PLAYERQUESTLOG" : {
 		"PacketId" : "0x52",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Quests[41]" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Quests[41]" }
+		]
 	},
 	"D2GS_DARKNESS" : {
 		"PacketId" : "0x53",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "Act" },
-			"2" : { "DWORD" : "Angle" },
-			"3" : { "BYTE" : "DarknessOnOff" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "Act" },
+			{ "DWORD" : "Angle" },
+			{ "BYTE" : "DarknessOnOff" }
+		]
 	},
 	"D2GS_NPC_ENCHANTS" : {
 		"PacketId" : "0x57",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "MonsterGid" },
-			"2" : { "BYTE" : "MonsterType" },
-			"3" : { "WORD" : "MonsterNameIDX" },
-			"4" : { "BYTE" : "anEnchant1" },
-			"5" : { "BYTE" : "anEnchant2" },
-			"6" : { "BYTE" : "anEnchant3" },
-			"7" : { "BYTE" : "Filler" },
-			"8" : { "WORD" : "MonsterIsChampion" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "MonsterGid" },
+			{ "BYTE" : "MonsterType" },
+			{ "WORD" : "MonsterNameIDX" },
+			{ "BYTE" : "anEnchant1" },
+			{ "BYTE" : "anEnchant2" },
+			{ "BYTE" : "anEnchant3" },
+			{ "BYTE" : "Filler" },
+			{ "WORD" : "MonsterIsChampion" }
+		]
 	},
 	"D2GS_OPENUI" : {
 		"PacketId" : "0x58",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "nUnitGid" },
-			"2" : { "BYTE" : "nUIType" },
-			"3" : { "BYTE" : "Bool" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "nUnitGid" },
+			{ "BYTE" : "nUIType" },
+			{ "BYTE" : "Bool" }
+		]
 	},
 	"D2GS_ASSIGNPLAYER" : {
 		"PacketId" : "0x59",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitGid" },
-			"2" : { "BYTE" : "UnitType" },
-			"3" : { "char" : "UnitName[16]" },
-			"4" : { "WORD" : "UnitX" },
-			"5" : { "WORD" : "UnitY" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "UnitType" },
+			{ "char" : "UnitName[16]" },
+			{ "WORD" : "UnitX" },
+			{ "WORD" : "UnitY" }
+		]
 	},
 	"D2GS_EVENTMESSAGES" : {
 		"PacketId" : "0x5A",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "MessageType" },
-			"2" : { "BYTE" : "Color" },
-			"3" : { "DWORD" : "Arg" },
-			"4" : { "BYTE" : "ArgTypes" },
-			"5" : { "char" : "Name1[16]" },
-			"6" : { "char" : "Name2[16]" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "MessageType" },
+			{ "BYTE" : "Color" },
+			{ "DWORD" : "Arg" },
+			{ "BYTE" : "ArgTypes" },
+			{ "char" : "Name1[16]" },
+			{ "char" : "Name2[16]" }
+		]
 	},
 	"D2GS_PLAYER_JOIN" : {
 		"PacketId" : "0x5B",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "PacketLength" },
-			"2" : { "DWORD" : "PlayerGid" },
-			"3" : { "BYTE" : "CharType" },
-			"4" : { "char" : "CharName[16]" },
-			"5" : { "WORD" : "CharLevel" },
-			"6" : { "WORD" : "PartyId" },
-			"7" : { "BYTE" : "Zero[8]" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "PacketLength" },
+			{ "DWORD" : "PlayerGid" },
+			{ "BYTE" : "CharType" },
+			{ "char" : "CharName[16]" },
+			{ "WORD" : "CharLevel" },
+			{ "WORD" : "PartyId" },
+			{ "BYTE" : "Zero[8]" }
+		]
 	},
 	"D2GS_PLAYER_LEAVE" : {
 		"PacketId" : "0x5C",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "PlayerGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "PlayerGid" }
+		]
 	},
 	"D2GS_QUESTSTATE" : {
 		"PacketId" : "0x5D",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "QuestID" },
-			"2" : { "BYTE" : "AlertFlags" },
-			"3" : { "BYTE" : "FilterStatus" },
-			"4" : { "WORD" : "Extra" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "QuestID" },
+			{ "BYTE" : "AlertFlags" },
+			{ "BYTE" : "FilterStatus" },
+			{ "WORD" : "Extra" }
+		]
 	},
 	"D2GS_GAME_QUESTS_AVAILABILITY" : {
 		"PacketId" : "0x5E",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "QuestBytes[37]" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "QuestBytes[37]" }
+		]
 	},
 	"D2GS_UNKNOWN_MEUNIT_5F" : {
 		"PacketId" : "0x5F",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "Unknown" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "Unknown" }
+		]
 	},
 	"D2GS_TOWNPORTALSTATE" : {
 		"PacketId" : "0x60",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "State" },
-			"2" : { "BYTE" : "Area" },
-			"3" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "State" },
+			{ "BYTE" : "Area" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_CANGOTOACT" : {
 		"PacketId" : "0x61",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Act" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Act" }
+		]
 	},
 	"D2GS_MAKEUNITTARGETABLE" : {
 		"PacketId" : "0x62",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "BYTE" : "Unused" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "Unused" }
+		]
 	},
 	"D2GS_WAYPOINTMENU" : {
 		"PacketId" : "0x63",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "WaypointGid" },
-			"2" : { "WORD" : "Unknown" },
-			"3" : { "BYTE" : "UInt64[8]" },
-			"4" : { "BYTE" : "Zero[6]" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "WaypointGid" },
+			{ "WORD" : "Unknown" },
+			{ "BYTE" : "UInt64[8]" },
+			{ "BYTE" : "Zero[6]" }
+		]
 	},
 	"D2GS_PLAYERKILLCOUNT" : {
 		"PacketId" : "0x65",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "PlayerGid" },
-			"2" : { "WORD" : "Count" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "PlayerGid" },
+			{ "WORD" : "Count" }
+		]
 	},
 	"D2GS_NPC_MOVE" : {
 		"PacketId" : "0x67",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "NpcGid" },
-			"2" : { "BYTE" : "MoveType" },
-			"3" : { "WORD" : "X" },
-			"4" : { "WORD" : "Y" },
-			"5" : { "BYTE" : "Unknown" },
-			"6" : { "BYTE" : "Unknown1" },
-			"7" : { "BYTE" : "Unknown2" },
-			"8" : { "WORD" : "Velocity" },
-			"9" : { "BYTE" : "Unknown4" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "NpcGid" },
+			{ "BYTE" : "MoveType" },
+			{ "WORD" : "X" },
+			{ "WORD" : "Y" },
+			{ "BYTE" : "Unknown" },
+			{ "BYTE" : "Unknown1" },
+			{ "BYTE" : "Unknown2" },
+			{ "WORD" : "Velocity" },
+			{ "BYTE" : "Unknown4" }
+		]
 	},
 	"D2GS_NPC_MOVETOENTITY" : {
 		"PacketId" : "0x68",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "NpcGid" },
-			"2" : { "BYTE" : "MoveType" },
-			"3" : { "WORD" : "X" },
-			"4" : { "WORD" : "Y" },
-			"5" : { "BYTE" : "TargetType" },
-			"6" : { "DWORD" : "TargetGid" },
-			"7" : { "BYTE" : "Unknown1" },
-			"8" : { "BYTE" : "Unknown2" },
-			"9" : { "BYTE" : "Unknown3" },
-			"10" : { "WORD" : "NotUsed" },
-			"11" : { "BYTE" : "Unknown4" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "NpcGid" },
+			{ "BYTE" : "MoveType" },
+			{ "WORD" : "X" },
+			{ "WORD" : "Y" },
+			{ "BYTE" : "TargetType" },
+			{ "DWORD" : "TargetGid" },
+			{ "BYTE" : "Unknown1" },
+			{ "BYTE" : "Unknown2" },
+			{ "BYTE" : "Unknown3" },
+			{ "WORD" : "NotUsed" },
+			{ "BYTE" : "Unknown4" }
+		]
 	},
 	"D2GS_NPC_STATE" : {
 		"PacketId" : "0x69",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "NpcGid" },
-			"2" : { "BYTE" : "State" },
-			"3" : { "WORD" : "X" },
-			"4" : { "WORD" : "Y" },
-			"5" : { "BYTE" : "Life" },
-			"6" : { "BYTE" : "HitClass" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "NpcGid" },
+			{ "BYTE" : "State" },
+			{ "WORD" : "X" },
+			{ "WORD" : "Y" },
+			{ "BYTE" : "Life" },
+			{ "BYTE" : "HitClass" }
+		]
 	},
 	"D2GS_NPC_UNKNOWN_0x6A" : {
 		"PacketId" : "0x6A",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "NpcGid" },
-			"2" : { "BYTE" : "State" },
-			"3" : { "BYTE" : "Unknown1" },
-			"4" : { "DWORD" : "Unknown2" },
-			"5" : { "BYTE" : "Unknown3" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "NpcGid" },
+			{ "BYTE" : "State" },
+			{ "BYTE" : "Unknown1" },
+			{ "DWORD" : "Unknown2" },
+			{ "BYTE" : "Unknown3" }
+		]
 	},
 	"D2GS_NPC_ACTION" : {
 		"PacketId" : "0x6B",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "NpcGid" },
-			"2" : { "BYTE" : "Action" },
-			"3" : { "BYTE" : "Zero[6]" },
-			"4" : { "WORD" : "X" },
-			"5" : { "WORD" : "Y" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "NpcGid" },
+			{ "BYTE" : "Action" },
+			{ "BYTE" : "Zero[6]" },
+			{ "WORD" : "X" },
+			{ "WORD" : "Y" }
+		]
 	},
 	"D2GS_NPC_ATTACK" : {
 		"PacketId" : "0x6C",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "NpcGid" },
-			"2" : { "WORD" : "AttackType" },
-			"3" : { "DWORD" : "TargetGid" },
-			"4" : { "BYTE" : "TargetType" },
-			"5" : { "WORD" : "X" },
-			"6" : { "WORD" : "Y" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "NpcGid" },
+			{ "WORD" : "AttackType" },
+			{ "DWORD" : "TargetGid" },
+			{ "BYTE" : "TargetType" },
+			{ "WORD" : "X" },
+			{ "WORD" : "Y" }
+		]
 	},
 	"D2GS_NPC_STOP" : {
 		"PacketId" : "0x6D",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "NpcGid" },
-			"2" : { "WORD" : "X" },
-			"3" : { "WORD" : "Y" },
-			"4" : { "BYTE" : "Life" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "NpcGid" },
+			{ "WORD" : "X" },
+			{ "WORD" : "Y" },
+			{ "BYTE" : "Life" }
+		]
 	},
 	"D2GS_MISSILEDATA" : {
 		"PacketId" : "0x73",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "Unused" },
-			"2" : { "WORD" : "MissileClassId" },
-			"3" : { "DWORD" : "MissileX" },
-			"4" : { "DWORD" : "MissileY" },
-			"5" : { "DWORD" : "TargetX" },
-			"6" : { "DWORD" : "TargetY" },
-			"7" : { "WORD" : "UnionData_0x10" },
-			"8" : { "BYTE" : "OwnerType" },
-			"9" : { "DWORD" : "OwnerGid" },
-			"10" : { "BYTE" : "UnionData_0x0C" },
-			"11" : { "BYTE" : "PierceIdxValue" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "Unused" },
+			{ "WORD" : "MissileClassId" },
+			{ "DWORD" : "MissileX" },
+			{ "DWORD" : "MissileY" },
+			{ "DWORD" : "TargetX" },
+			{ "DWORD" : "TargetY" },
+			{ "WORD" : "UnionData_0x10" },
+			{ "BYTE" : "OwnerType" },
+			{ "DWORD" : "OwnerGid" },
+			{ "BYTE" : "UnionData_0x0C" },
+			{ "BYTE" : "PierceIdxValue" }
+		]
 	},
 	"D2GS_PLAYERCORPSEASSIGN" : {
 		"PacketId" : "0x74",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Assign" },
-			"2" : { "DWORD" : "OwnerGid" },
-			"3" : { "DWORD" : "CorpseGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Assign" },
+			{ "DWORD" : "OwnerGid" },
+			{ "DWORD" : "CorpseGid" }
+		]
 	},
 	"D2GS_PLAYERPARTYINFO" : {
 		"PacketId" : "0x75",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitGid" },
-			"2" : { "WORD" : "PartyId" },
-			"3" : { "WORD" : "CharLevel" },
-			"4" : { "WORD" : "Relationship" },
-			"5" : { "WORD" : "InParty" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitGid" },
+			{ "WORD" : "PartyId" },
+			{ "WORD" : "CharLevel" },
+			{ "WORD" : "Relationship" },
+			{ "WORD" : "InParty" }
+		]
 	},
 	"D2GS_PLAYERINPROXIMITY" : {
 		"PacketId" : "0x76",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_TRADEACTION" : {
 		"PacketId" : "0x77",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "RequestType" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "RequestType" }
+		]
 	},
 	"D2GS_TRADEACCEPTED" : {
 		"PacketId" : "0x78",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "char" : "CharName[16]" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "char" : "CharName[16]" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_GOLDINTRADE" : {
 		"PacketId" : "0x79",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "GoldOwner" },
-			"2" : { "DWORD" : "Amount" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "GoldOwner" },
+			{ "DWORD" : "Amount" }
+		]
 	},
 	"D2GS_SUMMONLOG" : {
 		"PacketId" : "0x7A",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Action" },
-			"2" : { "BYTE" : "SkillID" },
-			"3" : { "WORD" : "SummonType" },
-			"4" : { "DWORD" : "PlayerGid" },
-			"5" : { "DWORD" : "SummonGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Action" },
+			{ "BYTE" : "SkillID" },
+			{ "WORD" : "SummonType" },
+			{ "DWORD" : "PlayerGid" },
+			{ "DWORD" : "SummonGid" }
+		]
 	},
 	"D2GS_ASSIGNHOTKEY" : {
 		"PacketId" : "0x7B",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Slot" },
-			"2" : { "BYTE" : "SkillId" },
-			"3" : { "BYTE" : "Hand" },
-			"4" : { "DWORD" : "ItemGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Slot" },
+			{ "BYTE" : "SkillId" },
+			{ "BYTE" : "Hand" },
+			{ "DWORD" : "ItemGid" }
+		]
 	},
 	"D2GS_USESCROLL" : {
 		"PacketId" : "0x7C",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "ScroolType" },
-			"2" : { "DWORD" : "ScroolGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "ScroolType" },
+			{ "DWORD" : "ScroolGid" }
+		]
 	},
 	"D2GS_SETITEMFLAGS" : {
 		"PacketId" : "0x7D",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "DWORD" : "ItemGid" },
-			"4" : { "DWORD" : "AndValue" },
-			"5" : { "DWORD" : "dwFlagsAfterAnd" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "DWORD" : "ItemGid" },
+			{ "DWORD" : "AndValue" },
+			{ "DWORD" : "dwFlagsAfterAnd" }
+		]
 	},
 	"D2GS_CMNCOF" : {
 		"PacketId" : "0x7E",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Unused[4]" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Unused[4]" }
+		]
 	},
 	"D2GS_ALLYPARTYINFO" : {
 		"PacketId" : "0x7F",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "WORD" : "UnitLife" },
-			"3" : { "DWORD" : "UnitGid" },
-			"4" : { "WORD" : "AreaId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "WORD" : "UnitLife" },
+			{ "DWORD" : "UnitGid" },
+			{ "WORD" : "AreaId" }
+		]
 	},
 	"D2GS_ASSIGNMERC" : {
 		"PacketId" : "0x81",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "bSkillId" },
-			"2" : { "WORD" : "wSummonType" },
-			"3" : { "DWORD" : "dwOwnerGid" },
-			"4" : { "DWORD" : "dwMercGid" },
-			"5" : { "DWORD" : "dwSeed2" },
-			"6" : { "DWORD" : "dwInitSeed" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "bSkillId" },
+			{ "WORD" : "wSummonType" },
+			{ "DWORD" : "dwOwnerGid" },
+			{ "DWORD" : "dwMercGid" },
+			{ "DWORD" : "dwSeed2" },
+			{ "DWORD" : "dwInitSeed" }
+		]
 	},
 	"D2GS_PORTALOWNERSHIP" : {
 		"PacketId" : "0x82",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "OwnerGid" },
-			"2" : { "char" : "OwnerName[16]" },
-			"3" : { "DWORD" : "PortalGid" },
-			"4" : { "DWORD" : "DestinationID" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "OwnerGid" },
+			{ "char" : "OwnerName[16]" },
+			{ "DWORD" : "PortalGid" },
+			{ "DWORD" : "DestinationID" }
+		]
 	},
 	"D2GS_UNIQUEEVENTS" : {
 		"PacketId" : "0x89",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "EventType" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "EventType" }
+		]
 	},
 	"D2GS_NPC_WANTSINTERACT" : {
 		"PacketId" : "0x8A",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_PLAYERRELATIONSHIP" : {
 		"PacketId" : "0x8B",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitGid" },
-			"2" : { "BYTE" : "InParty" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "InParty" }
+		]
 	},
 	"D2GS_RELATIONSHIPUPDATE" : {
 		"PacketId" : "0x8C",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitOneGid" },
-			"2" : { "DWORD" : "UnitTwoGid" },
-			"3" : { "WORD" : "Relation" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitOneGid" },
+			{ "DWORD" : "UnitTwoGid" },
+			{ "WORD" : "Relation" }
+		]
 	},
 	"D2GS_ASSIGNPLAYERTOPARTY" : {
 		"PacketId" : "0x8D",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "PlayerGid" },
-			"2" : { "WORD" : "PartyId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "PlayerGid" },
+			{ "WORD" : "PartyId" }
+		]
 	},
 	"D2GS_CORPSEASSIGN" : {
 		"PacketId" : "0x8E",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Assign" },
-			"2" : { "DWORD" : "OwnerGid" },
-			"3" : { "DWORD" : "CorpseGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Assign" },
+			{ "DWORD" : "OwnerGid" },
+			{ "DWORD" : "CorpseGid" }
+		]
 	},
 	"D2GS_PONG" : {
 		"PacketId" : "0x8F",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "Pong1" },
-			"2" : { "DWORD" : "Pong2" },
-			"3" : { "DWORD" : "Pong3" },
-			"4" : { "DWORD" : "TickCount" },
-			"5" : { "DWORD" : "Pong5" },
-			"6" : { "DWORD" : "Pong6WardenRequest" },
-			"7" : { "DWORD" : "Pong7Warden" },
-			"8" : { "DWORD" : "Pong8Warden" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "Pong1" },
+			{ "DWORD" : "Pong2" },
+			{ "DWORD" : "Pong3" },
+			{ "DWORD" : "TickCount" },
+			{ "DWORD" : "Pong5" },
+			{ "DWORD" : "Pong6WardenRequest" },
+			{ "DWORD" : "Pong7Warden" },
+			{ "DWORD" : "Pong8Warden" }
+		]
 	},
 	"D2GS_PARTYAUTOMAPINFO" : {
 		"PacketId" : "0x90",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "PlayerGid" },
-			"2" : { "DWORD" : "PlayerX" },
-			"3" : { "DWORD" : "PlayerY" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "PlayerGid" },
+			{ "DWORD" : "PlayerX" },
+			{ "DWORD" : "PlayerY" }
+		]
 	},
 	"D2GS_NPCGOSSIP" : {
 		"PacketId" : "0x91",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Act" },
-			"2" : { "WORD" : "Strings[12]" },
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Act" },
+			{ "WORD" : "Strings[12]" }
+		]
 	},
 	"D2GS_REMOVEITEMSDISPLAY" : {
 		"PacketId" : "0x92",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_UNKNOWN_UNITSKILL_0x93" : {
 		"PacketId" : "0x93",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "PlayerGid" },
-			"2" : { "BYTE" : "signedUnknown1" },
-			"3" : { "BYTE" : "EType" },
-			"4" : { "BYTE" : "skillPage" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "PlayerGid" },
+			{ "BYTE" : "signedUnknown1" },
+			{ "BYTE" : "EType" },
+			{ "BYTE" : "skillPage" }
+		]
 	},
 	"D2GS_SKILLSLIST" : {
 		"PacketId" : "0x94",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "SkillsCount" },
-			"2" : { "DWORD" : "PlayerGid" },
-			"3" : { "Skills[SkillsCount]" : {
-					"0" : { "WORD" : "SkillId" },
-					"1" : { "BYTE" : "Level" }
-				},
-			},
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "SkillsCount" },
+			{ "DWORD" : "PlayerGid" },
+			{ "Skills[SkillsCount]" : [
+					{ "WORD" : "SkillId" },
+					{ "BYTE" : "Level" }
+				]
+			}
+		]
 	},
 	"D2GS_WEAPONSWITCH" : {
 		"PacketId" : "0x97",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_EVILHUT" : {
 		"PacketId" : "0x98",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitGid" },
-			"2" : { "WORD" : "Value" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitGid" },
+			{ "WORD" : "Value" }
+		]
 	},
 	"D2GS_UNITSKILLCAST_TARGET" : {
 		"PacketId" : "0x99",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "AttackerType" },
-			"2" : { "DWORD" : "AttackerGid" },
-			"3" : { "WORD" : "SkillId" },
-			"4" : { "BYTE" : "SkillLevel" },
-			"5" : { "BYTE" : "TargetType" },
-			"6" : { "DWORD" : "TargetGid" },
-			"7" : { "WORD" : "Zero" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "AttackerType" },
+			{ "DWORD" : "AttackerGid" },
+			{ "WORD" : "SkillId" },
+			{ "BYTE" : "SkillLevel" },
+			{ "BYTE" : "TargetType" },
+			{ "DWORD" : "TargetGid" },
+			{ "WORD" : "Zero" }
+		]
 	},
 	"D2GS_UNITSKILLCAST_XY" : {
 		"PacketId" : "0x9A",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "AttackerType" },
-			"2" : { "DWORD" : "AttackerGid" },
-			"3" : { "WORD" : "SkillId" },
-			"4" : { "WORD" : "Filler" },
-			"5" : { "BYTE" : "SkillLevel" },
-			"6" : { "WORD" : "TargetX" },
-			"7" : { "WORD" : "TargetY" },
-			"8" : { "WORD" : "Zero" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "AttackerType" },
+			{ "DWORD" : "AttackerGid" },
+			{ "WORD" : "SkillId" },
+			{ "WORD" : "Filler" },
+			{ "BYTE" : "SkillLevel" },
+			{ "WORD" : "TargetX" },
+			{ "WORD" : "TargetY" },
+			{ "WORD" : "Zero" }
+		]
 	},
 	"D2GS_MERCREVIVECOST" : {
 		"PacketId" : "0x9B",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "MercNameId" },
-			"2" : { "DWORD" : "ReviveCost" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "MercNameId" },
+			{ "DWORD" : "ReviveCost" }
+		]
 	},
 	"D2GS_MERCATTRIBUTE_BYTE" : {
 		"PacketId" : "0x9E",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Stat" },
-			"2" : { "DWORD" : "MercGid" },
-			"3" : { "BYTE" : "Value" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Stat" },
+			{ "DWORD" : "MercGid" },
+			{ "BYTE" : "Value" }
+		]
 	},
 	"D2GS_MERCATTRIBUTE_WORD" : {
 		"PacketId" : "0x9F",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Stat" },
-			"2" : { "DWORD" : "MercGid" },
-			"3" : { "WORD" : "Value" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Stat" },
+			{ "DWORD" : "MercGid" },
+			{ "WORD" : "Value" }
+		]
 	},
 	"D2GS_MERCATTRIBUTE_DWORD" : {
 		"PacketId" : "0xA0",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Stat" },
-			"2" : { "DWORD" : "MercGid" },
-			"3" : { "DWORD" : "Value" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Stat" },
+			{ "DWORD" : "MercGid" },
+			{ "DWORD" : "Value" }
+		]
 	},
 	"D2GS_MERC_ADDEXP_BYTE" : {
 		"PacketId" : "0xA1",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Stat" },
-			"2" : { "DWORD" : "MercGid" },
-			"3" : { "BYTE" : "Value" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Stat" },
+			{ "DWORD" : "MercGid" },
+			{ "BYTE" : "Value" }
+		]
 	},
 	"D2GS_MERC_ADDEXP_WORD" : {
 		"PacketId" : "0xA2",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Stat" },
-			"2" : { "DWORD" : "MercGid" },
-			"3" : { "WORD" : "Value" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Stat" },
+			{ "DWORD" : "MercGid" },
+			{ "WORD" : "Value" }
+		]
 	},
 	"D2GS_SKILL_AURA_STAT" : {
 		"PacketId" : "0xA3",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "AuraStatId" },
-			"2" : { "WORD" : "SkillId" },
-			"3" : { "WORD" : "SkillLevel" },
-			"4" : { "BYTE" : "UnitType" },
-			"5" : { "DWORD" : "UnitGid" },
-			"6" : { "BYTE" : "TargetType" },
-			"7" : { "DWORD" : "TargetGid" },
-			"8" : { "DWORD" : "TargetX" },
-			"9" : { "DWORD" : "TargetY" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "AuraStatId" },
+			{ "WORD" : "SkillId" },
+			{ "WORD" : "SkillLevel" },
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "TargetType" },
+			{ "DWORD" : "TargetGid" },
+			{ "DWORD" : "TargetX" },
+			{ "DWORD" : "TargetY" }
+		]
 	},
 	"D2GS_BAALWAVES" : {
 		"PacketId" : "0xA4",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "ClassID" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "ClassID" }
+		]
 	},
 	"D2GS_STATE_SKILL_MOVE" : {
 		"PacketId" : "0xA5",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "WORD" : "SkillId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "WORD" : "SkillId" }
+		]
 	},
 	"D2GS_DELAYSTATE" : {
 		"PacketId" : "0xA7",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "BYTE" : "State" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "State" }
+		]
 	},
 	"D2GS_ENDSTATE" : {
 		"PacketId" : "0xA9",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "BYTE" : "State" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "State" }
+		]
 	},
 	"D2GS_NPC_HEAL" : {
 		"PacketId" : "0xAB",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" },
-			"3" : { "BYTE" : "UnitLife" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "UnitType" },
+			{ "DWORD" : "UnitGid" },
+			{ "BYTE" : "UnitLife" }
+		]
 	},
 	"D2GS_STARTLOGON" : {
 		"PacketId" : "0xAF",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_CONNECTIONTERMINATED" : {
 		"PacketId" : "0xB0",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_GAMESINFO" : {
 		"PacketId" : "0xB2",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "char" : "Unk1[16]" },
-			"2" : { "char" : "Unk2[16]" },
-			"3" : { "char" : "Unk3[16]" },
-			"4" : { "WORD" : "nClientsCount" },
-			"5" : { "WORD" : "nGameToken" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "char" : "Unk1[16]" },
+			{ "char" : "Unk2[16]" },
+			{ "char" : "Unk3[16]" },
+			{ "WORD" : "nClientsCount" },
+			{ "WORD" : "nGameToken" }
+		]
 	},
 	"D2GS_DOWNLOADSAVE" : {
 		"PacketId" : "0xB3",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "SaveFile_ChunkSize" },
-			"2" : { "BYTE" : "SaveFile_First" },
-			"3" : { "DWORD" : "SaveFile_FullSize" },
-			"4" : { "BYTE" : "SaveFile_Bytes[SaveFile_ChunkSize]" },
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "SaveFile_ChunkSize" },
+			{ "BYTE" : "SaveFile_First" },
+			{ "DWORD" : "SaveFile_FullSize" },
+			{ "BYTE" : "SaveFile_Bytes[SaveFile_ChunkSize]" }
+		]
 	},
 	"D2GS_CONNECTIONREFUSED" : {
 		"PacketId" : "0xB4",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "Reason" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "Reason" }
+		]
 	}
 }

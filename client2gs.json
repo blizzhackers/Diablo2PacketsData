@@ -2,821 +2,821 @@
 	"D2GS_WALKTOLOCATION" : {
 		"PacketId" : "0x01",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "TargetX" },
-			"2" : { "WORD" : "TargetY" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "TargetX" },
+			{ "WORD" : "TargetY" }
+		]
 	},
 	"D2GS_WALKTOENTITY" : {
 		"PacketId" : "0x02",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_RUNTOLOCATION" : {
 		"PacketId" : "0x03",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "TargetX" },
-			"2" : { "WORD" : "TargetY" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "TargetX" },
+			{ "WORD" : "TargetY" }
+		]
 	},
 	"D2GS_RUNTOENTITY" : {
 		"PacketId" : "0x04",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_LEFTSKILLONLOCATION" : {
 		"PacketId" : "0x05",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "TargetX" },
-			"2" : { "WORD" : "TargetY" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "TargetX" },
+			{ "WORD" : "TargetY" }
+		]
 	},
 	"D2GS_LEFTSKILLONENTITY" : {
 		"PacketId" : "0x06",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_LEFTSKILLONENTITYEX" : {
 		"PacketId" : "0x07",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_LEFTSKILLONLOCATIONEX" : {
 		"PacketId" : "0x08",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "TargetX" },
-			"2" : { "WORD" : "TargetY" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "TargetX" },
+			{ "WORD" : "TargetY" }
+		]
 	},
 	"D2GS_LEFTSKILLONENTITYEX2" : {
 		"PacketId" : "0x09",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_LEFTSKILLONENTITYEX3" : {
 		"PacketId" : "0x0A",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_RIGHTSKILLONLOCATION" : {
 		"PacketId" : "0x0C",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "TargetX" },
-			"2" : { "WORD" : "TargetY" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "TargetX" },
+			{ "WORD" : "TargetY" }
+		]
 	},
 	"D2GS_RIGHTSKILLONENTITY" : {
 		"PacketId" : "0x0D",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_RIGHTSKILLONENTITYEX" : {
 		"PacketId" : "0x0E",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_RIGHTSKILLONLOCATIONEX" : {
 		"PacketId" : "0x0F",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "TargetX" },
-			"2" : { "WORD" : "TargetY" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "TargetX" },
+			{ "WORD" : "TargetY" }
+		]
 	},
 	"D2GS_RIGHTSKILLONENTITYEX2" : {
 		"PacketId" : "0x10",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_RIGHTSKILLONENTITYEX3" : {
 		"PacketId" : "0x11",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_SET_INFERNO_STATE" : {
 		"PacketId" : "0x12",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_INTERACTWITHENTITY" : {
 		"PacketId" : "0x13",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_OVERHEADMESSAGE" : {
 		"PacketId" : "0x14",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "Type" },
-			"2" : { "std::string" : "Message" },
-			"3" : { "std::string" : "Target" },
-			"4" : { "BYTE" : "Zero" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "Type" },
+			{ "std::string" : "Message" },
+			{ "std::string" : "Target" },
+			{ "BYTE" : "Zero" }
+		]
 	},
 	"D2GS_CHAT" : {
 		"PacketId" : "0x15",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Type" },
-			"2" : { "BYTE" : "LanguageCode" },
-			"3" : { "std::string" : "Message" },
-			"4" : { "std::string" : "Target" },
-			"5" : { "BYTE" : "Zero" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Type" },
+			{ "BYTE" : "LanguageCode" },
+			{ "std::string" : "Message" },
+			{ "std::string" : "Target" },
+			{ "BYTE" : "Zero" }
+		]
 	},
 	"D2GS_PICKUPITEM" : {
 		"PacketId" : "0x16",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemType" },
-			"2" : { "DWORD" : "ItemGid" },
-			"3" : { "DWORD" : "Cursor" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemType" },
+			{ "DWORD" : "ItemGid" },
+			{ "DWORD" : "Cursor" }
+		]
 	},
 	"D2GS_DROPITEM" : {
 		"PacketId" : "0x17",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" }
+		]
 	},
 	"D2GS_ITEMTOBUFFER" : {
 		"PacketId" : "0x18",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" },
-			"2" : { "DWORD" : "X" },
-			"3" : { "DWORD" : "Y" },
-			"4" : { "DWORD" : "Buffer" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" },
+			{ "DWORD" : "X" },
+			{ "DWORD" : "Y" },
+			{ "DWORD" : "Buffer" }
+		]
 	},
 	"D2GS_PICKUPBUFFERITEM" : {
 		"PacketId" : "0x19",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" }
+		]
 	},
 	"D2GS_ITEMTOBODY" : {
 		"PacketId" : "0x1A",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" },
-			"2" : { "DWORD" : "BodyLocation" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" },
+			{ "DWORD" : "BodyLocation" }
+		]
 	},
 	"D2GS_SWAP2HANDEDITEM" : {
 		"PacketId" : "0x1B",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" },
-			"2" : { "DWORD" : "BodyLocation" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" },
+			{ "DWORD" : "BodyLocation" }
+		]
 	},
 	"D2GS_PICKUPBODYITEM" : {
 		"PacketId" : "0x1C",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "BodyLocation" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "BodyLocation" }
+		]
 	},
 	"D2GS_SWITCHBODYITEM" : {
 		"PacketId" : "0x1D",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" },
-			"2" : { "DWORD" : "BodyLocation" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" },
+			{ "DWORD" : "BodyLocation" }
+		]
 	},
 	"D2GS_SWITCH1H_2H" : {
 		"PacketId" : "0x1E",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" },
-			"2" : { "DWORD" : "BodyLocation" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" },
+			{ "DWORD" : "BodyLocation" }
+		]
 	},
 	"D2GS_SWITCHINVENTORYITEM" : {
 		"PacketId" : "0x1F",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemIdCursor" },
-			"2" : { "DWORD" : "ItemIdTarget" },
-			"3" : { "DWORD" : "X" },
-			"4" : { "DWORD" : "Y" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemIdCursor" },
+			{ "DWORD" : "ItemIdTarget" },
+			{ "DWORD" : "X" },
+			{ "DWORD" : "Y" }
+		]
 	},
 	"D2GS_USEITEM" : {
 		"PacketId" : "0x20",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" },
-			"2" : { "DWORD" : "ItemX" },
-			"3" : { "DWORD" : "ItemY" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" },
+			{ "DWORD" : "ItemX" },
+			{ "DWORD" : "ItemY" }
+		]
 	},
 	"D2GS_STACKITEM" : {
 		"PacketId" : "0x21",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemIdCursor" },
-			"2" : { "DWORD" : "ItemIdTarget" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemIdCursor" },
+			{ "DWORD" : "ItemIdTarget" }
+		]
 	},
 	"D2GS_REMOVESTACKITEM" : {
 		"PacketId" : "0x22",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" }
+		]
 	},
 	"D2GS_ITEMTOBELT" : {
 		"PacketId" : "0x23",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" },
-			"2" : { "DWORD" : "Location" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" },
+			{ "DWORD" : "Location" }
+		]
 	},
 	"D2GS_REMOVEBELTITEM" : {
 		"PacketId" : "0x24",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" }
+		]
 	},
 	"D2GS_SWITCHBELTITEM" : {
 		"PacketId" : "0x25",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemIdCursor" },
-			"2" : { "DWORD" : "ItemIdTarget" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemIdCursor" },
+			{ "DWORD" : "ItemIdTarget" }
+		]
 	},
 	"D2GS_USEBELTITEM" : {
 		"PacketId" : "0x26",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" },
-			"2" : { "DWORD" : "ToMerc" },
-			"3" : { "DWORD" : "NotUsed" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" },
+			{ "DWORD" : "ToMerc" },
+			{ "DWORD" : "NotUsed" }
+		]
 	},
 	"D2GS_IDENTIFYITEM" : {
 		"PacketId" : "0x27",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" },
-			"2" : { "DWORD" : "ScroolGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" },
+			{ "DWORD" : "ScroolGid" }
+		]
 	},
 	"D2GS_INSERTSOCKETITEM" : {
 		"PacketId" : "0x28",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGidCursor" },
-			"2" : { "DWORD" : "ItemGidTarget" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGidCursor" },
+			{ "DWORD" : "ItemGidTarget" }
+		]
 	},
 	"D2GS_SCROLLTOTOME" : {
 		"PacketId" : "0x29",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGidCursor" },
-			"2" : { "DWORD" : "ItemGidTarget" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGidCursor" },
+			{ "DWORD" : "ItemGidTarget" }
+		]
 	},
 	"D2GS_ITEMTOCUBE" : {
 		"PacketId" : "0x2A",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGidCursor" },
-			"2" : { "DWORD" : "CubeGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGidCursor" },
+			{ "DWORD" : "CubeGid" }
+		]
 	},
 	"D2GS_NPC_INIT" : {
 		"PacketId" : "0x2F",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ActionType" },
-			"2" : { "DWORD" : "NpcGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ActionType" },
+			{ "DWORD" : "NpcGid" }
+		]
 	},
 	"D2GS_NPC_CANCEL" : {
 		"PacketId" : "0x30",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ActionType" },
-			"2" : { "DWORD" : "NpcGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ActionType" },
+			{ "DWORD" : "NpcGid" }
+		]
 	},
 	"D2GS_QUESTMESSAGE" : {
 		"PacketId" : "0x31",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "NpcGid" },
-			"2" : { "DWORD" : "MessageID" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "NpcGid" },
+			{ "DWORD" : "MessageID" }
+		]
 	},
 	"D2GS_NPC_BUY" : {
 		"PacketId" : "0x32",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "NpcGid" },
-			"2" : { "DWORD" : "ItemGid" },
-			"3" : { "DWORD" : "BuyType" },
-			"4" : { "DWORD" : "Cost" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "NpcGid" },
+			{ "DWORD" : "ItemGid" },
+			{ "DWORD" : "BuyType" },
+			{ "DWORD" : "Cost" }
+		]
 	},
 	"D2GS_NPC_SELL" : {
 		"PacketId" : "0x33",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "NpcGid" },
-			"2" : { "DWORD" : "ItemGid" },
-			"3" : { "DWORD" : "bRepairOne" },
-			"4" : { "DWORD" : "dwUnused" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "NpcGid" },
+			{ "DWORD" : "ItemGid" },
+			{ "DWORD" : "bRepairOne" },
+			{ "DWORD" : "dwUnused" }
+		]
 	},
 	"D2GS_NPC_IDENT" : {
 		"PacketId" : "0x34",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "NpcGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "NpcGid" }
+		]
 	},
 	"D2GS_REPAIR" : {
 		"PacketId" : "0x35",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "dwNPCGUID" },
-			"2" : { "DWORD" : "dwItemGUID" },
-			"3" : { "DWORD" : "Tab" },
-			"4" : { "DWORD" : "MaybyCost" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "dwNPCGUID" },
+			{ "DWORD" : "dwItemGUID" },
+			{ "DWORD" : "Tab" },
+			{ "DWORD" : "MaybyCost" }
+		]
 	},
 	"D2GS_HIREMERC" : {
 		"PacketId" : "0x36",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "NpcGid" },
-			"2" : { "DWORD" : "MercGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "NpcGid" },
+			{ "DWORD" : "MercGid" }
+		]
 	},
 	"D2GS_IDENTIFYGAMBLE" : {
 		"PacketId" : "0x37",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" }
+		]
 	},
 	"D2GS_ENTITYACTION" : {
 		"PacketId" : "0x38",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "Action" },
-			"2" : { "DWORD" : "EntityGid" },
-			"3" : { "DWORD" : "Complement" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "Action" },
+			{ "DWORD" : "EntityGid" },
+			{ "DWORD" : "Complement" }
+		]
 	},
 	"D2GS_ADDSTAT" : {
 		"PacketId" : "0x3A",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "Stat" },
-			"2" : { "BYTE" : "CountSubOne" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "Stat" },
+			{ "BYTE" : "CountSubOne" }
+		]
 	},
 	"D2GS_ADDSKILL" : {
 		"PacketId" : "0x3B",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "Skill" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "Skill" }
+		]
 	},
 	"D2GS_SELECTSKILL" : {
 		"PacketId" : "0x3C",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "SkillId" },
-			"2" : { "BYTE" : "Zero" },
-			"3" : { "BYTE" : "Hand" },
-			"4" : { "DWORD" : "ItemGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "SkillId" },
+			{ "BYTE" : "Zero" },
+			{ "BYTE" : "Hand" },
+			{ "DWORD" : "ItemGid" }
+		]
 	},
 	"D2GS_UNKNOWN_3D" : {
 		"PacketId" : "0x3D",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "MeGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "MeGid" }
+		]
 	},
 	"D2GS_ACTIVATEITEM" : {
 		"PacketId" : "0x3E",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" }
+		]
 	},
 	"D2GS_CHARACTERPHRASE" : {
 		"PacketId" : "0x3F",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "PhraseId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "PhraseId" }
+		]
 	},
 	"D2GS_UDPATEQUESTS" : {
 		"PacketId" : "0x40",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_RESURRECT" : {
 		"PacketId" : "0x41",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_STAFFINORIFICE" : {
 		"PacketId" : "0x44",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "EntityKind" },
-			"2" : { "DWORD" : "OrificeGid" },
-			"3" : { "DWORD" : "StaffGid" },
-			"4" : { "DWORD" : "EntityState" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "EntityKind" },
+			{ "DWORD" : "OrificeGid" },
+			{ "DWORD" : "StaffGid" },
+			{ "DWORD" : "EntityState" }
+		]
 	},
 	"D2GS_MERC_INTERACT" : {
 		"PacketId" : "0x46",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "MercGid" },
-			"2" : { "DWORD" : "EntityGid" },
-			"3" : { "DWORD" : "EntityType" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "MercGid" },
+			{ "DWORD" : "EntityGid" },
+			{ "DWORD" : "EntityType" }
+		]
 	},
 	"D2GS_MERC_MOVE" : {
 		"PacketId" : "0x47",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "MercGid" },
-			"2" : { "WORD" : "TargetX" },
-			"3" : { "WORD" : "Zero1" },
-			"4" : { "WORD" : "TargetY" },
-			"5" : { "WORD" : "Zero2" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "MercGid" },
+			{ "WORD" : "TargetX" },
+			{ "WORD" : "Zero1" },
+			{ "WORD" : "TargetY" },
+			{ "WORD" : "Zero2" }
+		]
 	},
 	"D2GS_BUSYSTATE_OFF" : {
 		"PacketId" : "0x48",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_WAYPOINT" : {
 		"PacketId" : "0x49",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "WaypointGid" },
-			"2" : { "DWORD" : "Destination" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "WaypointGid" },
+			{ "DWORD" : "Destination" }
+		]
 	},
 	"D2GS_REQUESTENTITYUPDATE" : {
 		"PacketId" : "0x4B",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "UnitType" },
-			"2" : { "DWORD" : "UnitGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "UnitType" },
+			{ "DWORD" : "UnitGid" }
+		]
 	},
 	"D2GS_TRANSMORGIFY" : {
 		"PacketId" : "0x4C",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ObjectGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ObjectGid" }
+		]
 	},
 	"D2GS_PLAYNPCMESSAGE" : {
 		"PacketId" : "0x4D",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "nMonStatsId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "nMonStatsId" }
+		]
 	},
 	"D2GS_CLICKBUTTON" : {
 		"PacketId" : "0x4F",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "ButtonId" },
-			"2" : { "WORD" : "HiWORDGold" },
-			"3" : { "WORD" : "LoWORDGold" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "ButtonId" },
+			{ "WORD" : "HiWORDGold" },
+			{ "WORD" : "LoWORDGold" }
+		]
 	},
 	"D2GS_DROPGOLD" : {
 		"PacketId" : "0x50",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "PlayerGid" },
-			"2" : { "DWORD" : "GoldAmount" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "PlayerGid" },
+			{ "DWORD" : "GoldAmount" }
+		]
 	},
 	"D2GS_BINDHOTKEY" : {
 		"PacketId" : "0x51",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "SkillId" },
-			"2" : { "BYTE" : "Hand" },
-			"3" : { "WORD" : "Hotkey" },
-			"4" : { "DWORD" : "ItemGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "SkillId" },
+			{ "BYTE" : "Hand" },
+			{ "WORD" : "Hotkey" },
+			{ "DWORD" : "ItemGid" }
+		]
 	},
 	"D2GS_STAMINA_ON" : {
 		"PacketId" : "0x53",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_STAMINA_OFF" : {
 		"PacketId" : "0x54",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_QUESTCOMPLETED" : {
 		"PacketId" : "0x58",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "QuestId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "QuestId" }
+		]
 	},
 	"D2GS_MAKEENTITYMOVE" : {
 		"PacketId" : "0x59",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "EntityType" },
-			"2" : { "DWORD" : "EntityGid" },
-			"3" : { "DWORD" : "X" },
-			"4" : { "DWORD" : "Y" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "EntityType" },
+			{ "DWORD" : "EntityGid" },
+			{ "DWORD" : "X" },
+			{ "DWORD" : "Y" }
+		]
 	},
 	"D2GS_SQUELCH_HOSTILE" : {
 		"PacketId" : "0x5D",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "ActionType" },
-			"2" : { "BYTE" : "Toggle" },
-			"3" : { "DWORD" : "PlayerGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "ActionType" },
+			{ "BYTE" : "Toggle" },
+			{ "DWORD" : "PlayerGid" }
+		]
 	},
 	"D2GS_PARTY" : {
 		"PacketId" : "0x5E",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "ActionType" },
-			"2" : { "DWORD" : "PlayerGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "ActionType" },
+			{ "DWORD" : "PlayerGid" }
+		]
 	},
 	"D2GS_UPDATEPLAYERPOS" : {
 		"PacketId" : "0x5F",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "X" },
-			"2" : { "WORD" : "Y" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "X" },
+			{ "WORD" : "Y" }
+		]
 	},
 	"D2GS_SWAPWEAPON" : {
 		"PacketId" : "0x60",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_MERC_ITEM" : {
 		"PacketId" : "0x61",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "WORD" : "Position" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "WORD" : "Position" }
+		]
 	},
 	"D2GS_MERC_RESSURECT" : {
 		"PacketId" : "0x62",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "NpcGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "NpcGid" }
+		]
 	},
 	"D2GS_ITEM_TOBELT" : {
 		"PacketId" : "0x63",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "ItemGid" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "ItemGid" }
+		]
 	},
 	"D2GS_GAMELOGON_SP" : {
 		"PacketId" : "0x67",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "char" : "GameName[16]" },
-			"2" : { "BYTE" : "GameType" },
-			"3" : { "BYTE" : "CharClass" },
-			"4" : { "BYTE" : "Template" },
-			"5" : { "BYTE" : "SelectedDiff" },
-			"6" : { "char" : "CharName[16]" },
-			"7" : { "WORD" : "Unknown4" },
-			"8" : { "DWORD" : "ArenaFlags" },
-			"9" : { "BYTE" : "Unknown6" },
-			"10" : { "BYTE" : "Unknown7" },
-			"11" : { "BYTE" : "LanguageCode" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "char" : "GameName[16]" },
+			{ "BYTE" : "GameType" },
+			{ "BYTE" : "CharClass" },
+			{ "BYTE" : "Template" },
+			{ "BYTE" : "SelectedDiff" },
+			{ "char" : "CharName[16]" },
+			{ "WORD" : "Unknown4" },
+			{ "DWORD" : "ArenaFlags" },
+			{ "BYTE" : "Unknown6" },
+			{ "BYTE" : "Unknown7" },
+			{ "BYTE" : "LanguageCode" }
+		]
 	},
 	"D2GS_GAMELOGON_MULTI" : {
 		"PacketId" : "0x68",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "GameHash" },
-			"2" : { "WORD" : "GameToken" },
-			"3" : { "BYTE" : "CharClass" },
-			"4" : { "DWORD" : "VerByte" },
-			"5" : { "DWORD" : "VersionConstant" },
-			"6" : { "DWORD" : "Constant" },
-			"7" : { "BYTE" : "LanguageCode" },
-			"8" : { "char" : "CharName[16]" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "GameHash" },
+			{ "WORD" : "GameToken" },
+			{ "BYTE" : "CharClass" },
+			{ "DWORD" : "VerByte" },
+			{ "DWORD" : "VersionConstant" },
+			{ "DWORD" : "Constant" },
+			{ "BYTE" : "LanguageCode" },
+			{ "char" : "CharName[16]" }
+		]
 	},
 	"D2GS_LEAVEGAME" : {
 		"PacketId" : "0x69",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_REQUESTHOSTEDGAMES" : {
 		"PacketId" : "0x6A",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_JOINGAME" : {
 		"PacketId" : "0x6B",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_UPLOADSAVE" : {
 		"PacketId" : "0x6C",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "BYTE" : "SaveFile_ChunkSize" },
-			"2" : { "DWORD" : "SaveFile_FullSize" },
-			"3" : { "BYTE" : "SaveFile_Bytes[SaveFile_ChunkSize]" },
-			"5" : { "BYTE" : "Unk" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "SaveFile_ChunkSize" },
+			{ "DWORD" : "SaveFile_FullSize" },
+			{ "BYTE" : "SaveFile_Bytes[SaveFile_ChunkSize]" },
+			{ "BYTE" : "Unk" }
+		]
 	},
 	"D2GS_PING" : {
 		"PacketId" : "0x6D",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }, 
-			"1" : { "DWORD" : "TickCount" },
-			"2" : { "DWORD" : "Delay" },
-			"3" : { "DWORD" : "WardenOrZero" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "DWORD" : "TickCount" },
+			{ "DWORD" : "Delay" },
+			{ "DWORD" : "WardenOrZero" }
+		]
 	},
 	"D2GS_FINDME_6E" : {
 		"PacketId" : "0x6E",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	},
 	"D2GS_FINDME_70" : {
 		"PacketId" : "0x70",
 		"Description" : "",
-		"Structure" : { 
-			"0" : { "BYTE" : "PacketId" }
-		}
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
 	}
 }
