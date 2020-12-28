@@ -1,48 +1,48 @@
 {
-	MCP_NULL : {
+	"MCP_NULL" : {
 		"PacketId" : 0x00,
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" }
-			1 : { "BYTE" : "PacketId" }
+			0 : { "WORD" : "nSize" },
+			1 : { "BYTE" : "PacketId" },
 		}
 	},
-	MCP_STARTUP : {
+	"MCP_STARTUP" : {
 		"PacketId" : 0x01,
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" }
-			1 : { "BYTE" : "PacketId" }
+			0 : { "WORD" : "nSize" },
+			1 : { "BYTE" : "PacketId" },
 			2 : { "DWORD" : "Result" },
 		}
 	},
-	MCP_CHARCREATE : {
+	"MCP_CHARCREATE" : {
 		"PacketId" : 0x02,
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" }
-			1 : { "BYTE" : "PacketId" }
+			0 : { "WORD" : "nSize" },
+			1 : { "BYTE" : "PacketId" },
 			2 : { "DWORD" : "Result" },
 		}
 	},
-	MCP_CREATEGAME : {
+	"MCP_CREATEGAME" : {
 		"PacketId" : 0x03,
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" }
-			1 : { "BYTE" : "PacketId" }
+			0 : { "WORD" : "nSize" },
+			1 : { "BYTE" : "PacketId" },
 			2 : { "WORD" : "RequestId" },
 			3 : { "WORD" : "GameToken" },
 			4 : { "WORD" : "Unknown" },
 			5 : { "DWORD" : "Result" },
 		}
 	},
-	MCP_JOINGAME : {
+	"MCP_JOINGAME" : {
 		"PacketId" : 0x04,
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" }
-			1 : { "BYTE" : "PacketId" }
+			0 : { "WORD" : "nSize" },
+			1 : { "BYTE" : "PacketId" },
 			2 : { "WORD" : "RequestId" },
 			3 : { "WORD" : "GameToken" },
 			4 : { "WORD" : "Unknown" },
@@ -51,12 +51,12 @@
 			7 : { "DWORD" : "Result" },
 		}
 	},
-	MCP_GAMELIST : {
+	"MCP_GAMELIST" : {
 		"PacketId" : 0x05,
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" }
-			1 : { "BYTE" : "PacketId" }
+			0 : { "WORD" : "nSize" },
+			1 : { "BYTE" : "PacketId" },
 			2 : { "WORD" : "RequestId" },
 			3 : { "DWORD" : "Index" },
 			4 : { "BYTE" : "Players" },
@@ -65,12 +65,12 @@
 			7 : { "std::string" : "GameDesc" },
 		}
 	},
-	MCP_GAMEINFO : {
+	"MCP_GAMEINFO" : {
 		"PacketId" : 0x06,
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" }
-			1 : { "BYTE" : "PacketId" }
+			0 : { "WORD" : "nSize" },
+			1 : { "BYTE" : "PacketId" },
 			2 : { "WORD" : "RequestId" },
 			3 : { "DWORD" : "Status" },
 			4 : { "DWORD" : "Uptime" },
@@ -86,49 +86,49 @@
 			14 : { "std::string" : "Nick[CharsInGame]" },
 		}
 	},
-	MCP_CHARLOGON : {
+	"MCP_CHARLOGON" : {
 		"PacketId" : 0x07,
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" }
-			1 : { "BYTE" : "PacketId" }
+			0 : { "WORD" : "nSize" },
+			1 : { "BYTE" : "PacketId" },
 			2 : { "DWORD" : "Result" },
 		}
 	},
-	MCP_CHARDELETE : {
+	"MCP_CHARDELETE" : {
 		"PacketId" : 0x0a,
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" }
-			1 : { "BYTE" : "PacketId" }
+			0 : { "WORD" : "nSize" },
+			1 : { "BYTE" : "PacketId" },
 			2 : { "DWORD" : "Result" },
 		}
 	},
-	MCP_MOTD : {
+	"MCP_MOTD" : {
 		"PacketId" : 0x12,
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" }
-			1 : { "BYTE" : "PacketId" }
+			0 : { "WORD" : "nSize" },
+			1 : { "BYTE" : "PacketId" },
 			2 : { "BYTE" : "Unknown" },
 			3 : { "std::string" : "Text" },
 		}
 	},
-	MCP_CREATEQUEUE : {
+	"MCP_CREATEQUEUE" : {
 		"PacketId" : 0x14,
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" }
-			1 : { "BYTE" : "PacketId" }
+			0 : { "WORD" : "nSize" },
+			1 : { "BYTE" : "PacketId" },
 			2 : { "DWORD" : "Position" },
 		}
 	},
-	MCP_CHARLIST : {
+	"MCP_CHARLIST" : {
 		"PacketId" : 0x17,
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" }
-			1 : { "BYTE" : "PacketId" }
+			0 : { "WORD" : "nSize" },
+			1 : { "BYTE" : "PacketId" },
 			2 : { "WORD" : "RequestCount" },
 			3 : { "DWORD" : "ExistCount" },
 			4 : { "WORD" : "ReturnCount" },
@@ -139,21 +139,21 @@
 			},
 		}
 	},
-	MCP_CHARUPGRADE : {
+	"MCP_CHARUPGRADE" : {
 		"PacketId" : 0x18,
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" }
-			1 : { "BYTE" : "PacketId" }
+			0 : { "WORD" : "nSize" },
+			1 : { "BYTE" : "PacketId" },
 			2 : { "DWORD" : "Result" },
 		}
 	},
-	MCP_CHARLIST2 : {
+	"MCP_CHARLIST2" : {
 		"PacketId" : 0x19,
 		"Description" : "",
 		"Structure" : { 
-			0 : { "WORD" : "nSize" }
-			1 : { "BYTE" : "PacketId" }
+			0 : { "WORD" : "nSize" },
+			1 : { "BYTE" : "PacketId" },
 			2 : { "WORD" : "RequestCount" },
 			3 : { "DWORD" : "ExistCount" },
 			4 : { "WORD" : "ReturnCount" },
