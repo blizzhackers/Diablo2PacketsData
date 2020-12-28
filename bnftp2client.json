@@ -1,6 +1,6 @@
 {
 	"BNFTP" : {
-		"PacketId" : 0x00,
+		"PacketId" : "0x00",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "Unknown" },

@@ -1,6 +1,6 @@
 {
 	"MCP_NULL" : {
-		"PacketId" : 0x00,
+		"PacketId" : "0x00",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "nSize" },
@@ -8,7 +8,7 @@
 		}
 	},
 	"MCP_STARTUP" : {
-		"PacketId" : 0x01,
+		"PacketId" : "0x01",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "nSize" },
@@ -17,7 +17,7 @@
 		}
 	},
 	"MCP_CHARCREATE" : {
-		"PacketId" : 0x02,
+		"PacketId" : "0x02",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "nSize" },
@@ -26,7 +26,7 @@
 		}
 	},
 	"MCP_CREATEGAME" : {
-		"PacketId" : 0x03,
+		"PacketId" : "0x03",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "nSize" },
@@ -38,7 +38,7 @@
 		}
 	},
 	"MCP_JOINGAME" : {
-		"PacketId" : 0x04,
+		"PacketId" : "0x04",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "nSize" },
@@ -52,7 +52,7 @@
 		}
 	},
 	"MCP_GAMELIST" : {
-		"PacketId" : 0x05,
+		"PacketId" : "0x05",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "nSize" },
@@ -66,7 +66,7 @@
 		}
 	},
 	"MCP_GAMEINFO" : {
-		"PacketId" : 0x06,
+		"PacketId" : "0x06",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "nSize" },
@@ -87,7 +87,7 @@
 		}
 	},
 	"MCP_CHARLOGON" : {
-		"PacketId" : 0x07,
+		"PacketId" : "0x07",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "nSize" },
@@ -96,7 +96,7 @@
 		}
 	},
 	"MCP_CHARDELETE" : {
-		"PacketId" : 0x0a,
+		"PacketId" : "0x0A",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "nSize" },
@@ -105,7 +105,7 @@
 		}
 	},
 	"MCP_MOTD" : {
-		"PacketId" : 0x12,
+		"PacketId" : "0x12",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "nSize" },
@@ -115,7 +115,7 @@
 		}
 	},
 	"MCP_CREATEQUEUE" : {
-		"PacketId" : 0x14,
+		"PacketId" : "0x14",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "nSize" },
@@ -124,7 +124,7 @@
 		}
 	},
 	"MCP_CHARLIST" : {
-		"PacketId" : 0x17,
+		"PacketId" : "0x17",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "nSize" },
@@ -140,7 +140,7 @@
 		}
 	},
 	"MCP_CHARUPGRADE" : {
-		"PacketId" : 0x18,
+		"PacketId" : "0x18",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "nSize" },
@@ -149,7 +149,7 @@
 		}
 	},
 	"MCP_CHARLIST2" : {
-		"PacketId" : 0x19,
+		"PacketId" : "0x19",
 		"Description" : "",
 		"Structure" : { 
 			0 : { "WORD" : "nSize" },
