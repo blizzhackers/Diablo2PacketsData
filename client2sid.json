@@ -2,7 +2,6 @@
 	"SID_NULL" : {
 		"PacketId" : "0x00",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -15,7 +14,6 @@
 	"SID_STOPADV" : {
 		"PacketId" : "0x02",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -28,7 +26,6 @@
 	"SID_GETADVLISTEX" : {
 		"PacketId" : "0x09",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -49,7 +46,6 @@
 	"SID_ENTERCHAT" : {
 		"PacketId" : "0x0A",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -64,7 +60,6 @@
 	"SID_GETCHANNELLIST" : {
 		"PacketId" : "0x0B",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -78,7 +73,6 @@
 	"SID_JOINCHANNEL" : {
 		"PacketId" : "0x0C",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -93,7 +87,6 @@
 	"SID_CHATCOMMAND" : {
 		"PacketId" : "0x0E",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -107,7 +100,6 @@
 	"SID_LEAVECHAT" : {
 		"PacketId" : "0x10",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -120,7 +112,6 @@
 	"SID_CHECKAD" : {
 		"PacketId" : "0x15",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -137,7 +128,6 @@
 	"SID_CLICKAD" : {
 		"PacketId" : "0x16",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -152,7 +142,6 @@
 	"SID_REGISTRY" : {
 		"PacketId" : "0x18",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -167,7 +156,6 @@
 	"SID_STARTADVEX3" : {
 		"PacketId" : "0x1C",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -189,7 +177,6 @@
 	"SID_LEAVEGAME" : {
 		"PacketId" : "0x1F",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -202,7 +189,6 @@
 	"SID_DISPLAYAD" : {
 		"PacketId" : "0x21",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -220,7 +206,6 @@
 	"SID_NOTIFYJOIN" : {
 		"PacketId" : "0x22",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -237,7 +222,6 @@
 	"SID_PING" : {
 		"PacketId" : "0x25",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -251,7 +235,6 @@
 	"SID_READUSERDATA" : {
 		"PacketId" : "0x26",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -269,7 +252,6 @@
 	"SID_WRITEUSERDATA" : {
 		"PacketId" : "0x27",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -287,7 +269,6 @@
 	"SID_CHANGEPASSWORD" : {
 		"PacketId" : "0x31",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -305,7 +286,6 @@
 	"SID_GETFILETIME" : {
 		"PacketId" : "0x33",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -321,7 +301,6 @@
 	"SID_LOGONRESPONSE2" : {
 		"PacketId" : "0x3A",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -338,7 +317,6 @@
 	"SID_CREATEACCOUNT2" : {
 		"PacketId" : "0x3D",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -353,7 +331,6 @@
 	"SID_LOGONREALMEX" : {
 		"PacketId" : "0x3E",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -369,7 +346,6 @@
 	"SID_QUERYREALMS2" : {
 		"PacketId" : "0x40",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -382,7 +358,6 @@
 	"SID_NEWS_INFO" : {
 		"PacketId" : "0x46",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -396,7 +371,6 @@
 	"SID_EXTRAWORK" : {
 		"PacketId" : "0x4B",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -412,7 +386,6 @@
 	"SID_AUTH_INFO" : {
 		"PacketId" : "0x50",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -436,7 +409,6 @@
 	"SID_AUTH_CHECK" : {
 		"PacketId" : "0x51",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -464,7 +436,6 @@
 	"SID_RESETPASSWORD" : {
 		"PacketId" : "0x5A",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -479,7 +450,6 @@
 	"SID_CHANGEEMAIL" : {
 		"PacketId" : "0x5B",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -495,7 +465,6 @@
 	"SID_SETEMAIL" : {
 		"PacketId" : "0x59",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -509,7 +478,6 @@
 	"SID_NEWPACKET" : {
 		"PacketId" : "0xDE",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },

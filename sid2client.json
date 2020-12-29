@@ -2,7 +2,6 @@
 	"SID_NULL" : {
 		"PacketId" : "0x00",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -15,7 +14,6 @@
 	"SID_SERVERLIST" : {
 		"PacketId" : "0x04",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -30,7 +28,6 @@
 	"SID_GETADVLISTEX" : {
 		"PacketId" : "0x09",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -60,7 +57,6 @@
 	"SID_ENTERCHAT" : {
 		"PacketId" : "0x0A",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -76,7 +72,6 @@
 	"SID_GETCHANNELLIST" : {
 		"PacketId" : "0x0B",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -90,7 +85,6 @@
 	"SID_CHATEVENT" : {
 		"PacketId" : "0x0F",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -111,7 +105,6 @@
 	"SID_FLOODDETECTED" : {
 		"PacketId" : "0x13",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -124,7 +117,6 @@
 	"SID_CHECKAD" : {
 		"PacketId" : "0x15",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -142,7 +134,6 @@
 	"SID_REGISTRY" : {
 		"PacketId" : "0x18",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -159,7 +150,6 @@
 	"SID_MESSAGEBOX" : {
 		"PacketId" : "0x19",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -175,7 +165,6 @@
 	"SID_STARTADVEX3" : {
 		"PacketId" : "0x1C",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -189,7 +178,6 @@
 	"SID_PING" : {
 		"PacketId" : "0x25",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -203,7 +191,6 @@
 	"SID_READUSERDATA" : {
 		"PacketId" : "0x26",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -220,7 +207,6 @@
 	"SID_CHANGEPASSWORD" : {
 		"PacketId" : "0x31",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -234,7 +220,6 @@
 	"SID_GETFILETIME" : {
 		"PacketId" : "0x33",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -251,7 +236,6 @@
 	"SID_LOGONRESPONSE2" : {
 		"PacketId" : "0x3A",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -265,7 +249,6 @@
 	"SID_CREATEACCOUNT2" : {
 		"PacketId" : "0x3D",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -281,7 +264,6 @@
 	"SID_LOGONREALMEX" : {
 		"PacketId" : "0x3E",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -301,7 +283,6 @@
 	"SID_QUERYREALMS2" : {
 		"PacketId" : "0x40",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -322,7 +303,6 @@
 	"SID_NEWS_INFO" : {
 		"PacketId" : "0x46",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -344,7 +324,6 @@
 	"SID_OPTIONALWORK" : {
 		"PacketId" : "0x4A",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -358,7 +337,6 @@
 	"SID_REQUIREDWORK" : {
 		"PacketId" : "0x4C",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -372,7 +350,6 @@
 	"SID_AUTH_INFO" : {
 		"PacketId" : "0x50",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -391,7 +368,6 @@
 	"SID_AUTH_CHECK" : {
 		"PacketId" : "0x51",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
@@ -406,7 +382,6 @@
 	"SID_SETEMAIL" : {
 		"PacketId" : "0x59",
 		"Description" : "",
-		"Size" : 0,
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
