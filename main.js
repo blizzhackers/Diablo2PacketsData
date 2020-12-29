@@ -38,19 +38,19 @@ let app = new Vue({
                         });
                     });
 
-                    packets = packets.filter(packet => {
-                        if (this.filterText.length < 1) {
-                            return true;
-                        }
-
-                        return maxrelevance === 0 || packet.relevance > 0;
-                    });
-
                     packets.forEach(packet => {
                         packet.relevance /= maxrelevance;
                     });
                 }
             }
+
+            packets = packets.filter(packet => {
+                if (this.filterText.length < 1) {
+                    return true;
+                }
+
+                return maxrelevance < 0 || (maxrelevance > 0 && packet.relevance > 0);
+            });
 
             return packets.sort((a, b) => {
                 let aid = a.PacketId | 0;

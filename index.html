@@ -30,21 +30,23 @@
                             <div class="card-body collapse" :id="local.body_id">
                                 <div class="row mb-3">
                                     <template v-for="column in columns.filter(v => !['Description', 'Structure'].includes(v))">
-                                        <div class="col"><span class="badge badge-primary">{{ column }}</span> {{ packet[column] }}</div>
+                                        <div class="col-auto"><span class="badge badge-primary">{{ column }}</span> {{ packet[column] }}</div>
                                     </template>
                                 </div>
                                 <template v-if="packet.Description">
                                     <div class="badge badge-primary">Description</div>
                                     <p>{{ packet.Description }}</p>
                                 </template>
-                                <div class="badge badge-primary">Structure</div>
-                                <div class="list-group">
-                                    <template v-for="field in packet.Structure">
-                                        <button v-for="(fieldName, fieldType) in field" class="list-group-item list-group-item-primary">
-                                            [{{ fieldType }}] {{ fieldName }}
-                                        </button>
-                                    </template>
-                                </div>
+                                <templates v-if="packet.Structure">
+                                    <div class="badge badge-primary">Structure</div>
+                                    <div class="list-group">
+                                        <template v-for="field in packet.Structure">
+                                            <button v-for="(fieldName, fieldType) in field" class="list-group-item list-group-item-primary">
+                                                [{{ fieldType }}] {{ fieldName }}
+                                            </button>
+                                        </template>
+                                    </div>
+                                </templates>
                             </div>
                         </template>
                     </div>
