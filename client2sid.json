@@ -477,7 +477,7 @@
 	},
 	"SID_NEWPACKET" : {
 		"PacketId" : "0xDE",
-		"Description" : "",
+		"Description" : "Additional data send to server by ExtraWork library on logon time.",
 		"Structure" : [ 
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
