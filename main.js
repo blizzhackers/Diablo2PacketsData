@@ -46,12 +46,12 @@ let app = new Vue({
     },
     created: async function () {
         for (let [source, data] of [
-            ['client', fetch('https://api.blizzhackers.dev/json/Diablo2PacketsData/client2gs.json').then(data => data.json())],
-            ['client', fetch('https://api.blizzhackers.dev/json/Diablo2PacketsData/client2mcps.json').then(data => data.json())],
-            ['client', fetch('https://api.blizzhackers.dev/json/Diablo2PacketsData/client2sid.json').then(data => data.json())],
-            ['server', fetch('https://api.blizzhackers.dev/json/Diablo2PacketsData/gs2client.json').then(data => data.json())],
-            ['server', fetch('https://api.blizzhackers.dev/json/Diablo2PacketsData/mcps2client.json').then(data => data.json())],
-            ['server', fetch('https://api.blizzhackers.dev/json/Diablo2PacketsData/sid2client.json').then(data => data.json())],
+            ['client', fetch('client2gs.json').then(data => data.json())],
+            ['client', fetch('client2mcps.json').then(data => data.json())],
+            ['client', fetch('client2sid.json').then(data => data.json())],
+            ['server', fetch('gs2client.json').then(data => data.json())],
+            ['server', fetch('mcps2client.json').then(data => data.json())],
+            ['server', fetch('sid2client.json').then(data => data.json())],
         ]) {
             while (data.then) {
                 data = await data;
