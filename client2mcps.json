@@ -2,8 +2,8 @@
 	"MCP_STARTUP" : {
 		"PacketId" : "0x01",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
@@ -19,8 +19,8 @@
 	"MCP_CHARCREATE" : {
 		"PacketId" : "0x02",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
@@ -34,8 +34,8 @@
 	"MCP_CREATEGAME" : {
 		"PacketId" : "0x03",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
@@ -54,8 +54,8 @@
 	"MCP_JOINGAME" : {
 		"PacketId" : "0x04",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
@@ -69,8 +69,8 @@
 	"MCP_GAMELIST" : {
 		"PacketId" : "0x05",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
@@ -84,8 +84,8 @@
 	"MCP_GAMEINFO" : {
 		"PacketId" : "0x06",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
@@ -98,8 +98,8 @@
 	"MCP_CHARLOGON" : {
 		"PacketId" : "0x07",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
@@ -111,8 +111,8 @@
 	"MCP_CHARDELETE" : {
 		"PacketId" : "0x0A",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
@@ -125,8 +125,8 @@
 	"MCP_REQUESTLADDERDATA" : {
 		"PacketId" : "0x11",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
@@ -139,8 +139,8 @@
 	"MCP_MOTD" : {
 		"PacketId" : "0x12",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
@@ -151,8 +151,8 @@
 	"MCP_CANCELGAMECREATE" : {
 		"PacketId" : "0x13",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
@@ -163,8 +163,8 @@
 	"MCP_CHARRANK" : {
 		"PacketId" : "0x16",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
@@ -178,8 +178,8 @@
 	"MCP_CHARLIST" : {
 		"PacketId" : "0x17",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
@@ -191,8 +191,8 @@
 	"MCP_CHARUPGRADE" : {
 		"PacketId" : "0x18",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
@@ -204,8 +204,8 @@
 	"MCP_CHARLIST2" : {
 		"PacketId" : "0x19",
 		"Description" : "",
-		"Structure" : [ 
 		"Size" : 0,
+		"Structure" : [ 
 			{ "McpHeader" : [
 					{ "WORD" : "nSize" },
 					{ "BYTE" : "PacketId" }
