@@ -3,6 +3,7 @@
 		"PacketId" : "0x01",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "TargetX" },
 			{ "WORD" : "TargetY" }
@@ -12,6 +13,7 @@
 		"PacketId" : "0x02",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitType" },
 			{ "DWORD" : "UnitGid" }
@@ -21,6 +23,7 @@
 		"PacketId" : "0x03",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "TargetX" },
 			{ "WORD" : "TargetY" }
@@ -30,6 +33,7 @@
 		"PacketId" : "0x04",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitType" },
 			{ "DWORD" : "UnitGid" }
@@ -39,6 +43,7 @@
 		"PacketId" : "0x05",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "TargetX" },
 			{ "WORD" : "TargetY" }
@@ -48,6 +53,7 @@
 		"PacketId" : "0x06",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitType" },
 			{ "DWORD" : "UnitGid" }
@@ -57,6 +63,7 @@
 		"PacketId" : "0x07",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitType" },
 			{ "DWORD" : "UnitGid" }
@@ -66,6 +73,7 @@
 		"PacketId" : "0x08",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "TargetX" },
 			{ "WORD" : "TargetY" }
@@ -75,6 +83,7 @@
 		"PacketId" : "0x09",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitType" },
 			{ "DWORD" : "UnitGid" }
@@ -84,6 +93,7 @@
 		"PacketId" : "0x0A",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitType" },
 			{ "DWORD" : "UnitGid" }
@@ -93,6 +103,7 @@
 		"PacketId" : "0x0C",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "TargetX" },
 			{ "WORD" : "TargetY" }
@@ -102,6 +113,7 @@
 		"PacketId" : "0x0D",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitType" },
 			{ "DWORD" : "UnitGid" }
@@ -111,6 +123,7 @@
 		"PacketId" : "0x0E",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitType" },
 			{ "DWORD" : "UnitGid" }
@@ -120,6 +133,7 @@
 		"PacketId" : "0x0F",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "TargetX" },
 			{ "WORD" : "TargetY" }
@@ -129,6 +143,7 @@
 		"PacketId" : "0x10",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitType" },
 			{ "DWORD" : "UnitGid" }
@@ -138,6 +153,7 @@
 		"PacketId" : "0x11",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitType" },
 			{ "DWORD" : "UnitGid" }
@@ -147,6 +163,7 @@
 		"PacketId" : "0x12",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }
 		]
 	},
@@ -154,6 +171,7 @@
 		"PacketId" : "0x13",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitType" },
 			{ "DWORD" : "UnitGid" }
@@ -163,6 +181,7 @@
 		"PacketId" : "0x14",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "Type" },
 			{ "std::string" : "Message" },
@@ -174,6 +193,7 @@
 		"PacketId" : "0x15",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Type" },
 			{ "BYTE" : "LanguageCode" },
@@ -186,6 +206,7 @@
 		"PacketId" : "0x16",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemType" },
 			{ "DWORD" : "ItemGid" },
@@ -196,6 +217,7 @@
 		"PacketId" : "0x17",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" }
 		]
@@ -204,6 +226,7 @@
 		"PacketId" : "0x18",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" },
 			{ "DWORD" : "X" },
@@ -215,6 +238,7 @@
 		"PacketId" : "0x19",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" }
 		]
@@ -223,6 +247,7 @@
 		"PacketId" : "0x1A",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" },
 			{ "DWORD" : "BodyLocation" }
@@ -232,6 +257,7 @@
 		"PacketId" : "0x1B",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" },
 			{ "DWORD" : "BodyLocation" }
@@ -241,6 +267,7 @@
 		"PacketId" : "0x1C",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "BodyLocation" }
 		]
@@ -249,6 +276,7 @@
 		"PacketId" : "0x1D",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" },
 			{ "DWORD" : "BodyLocation" }
@@ -258,6 +286,7 @@
 		"PacketId" : "0x1E",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" },
 			{ "DWORD" : "BodyLocation" }
@@ -267,6 +296,7 @@
 		"PacketId" : "0x1F",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemIdCursor" },
 			{ "DWORD" : "ItemIdTarget" },
@@ -278,6 +308,7 @@
 		"PacketId" : "0x20",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" },
 			{ "DWORD" : "ItemX" },
@@ -288,6 +319,7 @@
 		"PacketId" : "0x21",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemIdCursor" },
 			{ "DWORD" : "ItemIdTarget" }
@@ -297,6 +329,7 @@
 		"PacketId" : "0x22",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" }
 		]
@@ -305,6 +338,7 @@
 		"PacketId" : "0x23",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" },
 			{ "DWORD" : "Location" }
@@ -314,6 +348,7 @@
 		"PacketId" : "0x24",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" }
 		]
@@ -322,6 +357,7 @@
 		"PacketId" : "0x25",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemIdCursor" },
 			{ "DWORD" : "ItemIdTarget" }
@@ -331,6 +367,7 @@
 		"PacketId" : "0x26",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" },
 			{ "DWORD" : "ToMerc" },
@@ -341,6 +378,7 @@
 		"PacketId" : "0x27",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" },
 			{ "DWORD" : "ScroolGid" }
@@ -350,6 +388,7 @@
 		"PacketId" : "0x28",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGidCursor" },
 			{ "DWORD" : "ItemGidTarget" }
@@ -359,6 +398,7 @@
 		"PacketId" : "0x29",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGidCursor" },
 			{ "DWORD" : "ItemGidTarget" }
@@ -368,6 +408,7 @@
 		"PacketId" : "0x2A",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGidCursor" },
 			{ "DWORD" : "CubeGid" }
@@ -377,6 +418,7 @@
 		"PacketId" : "0x2F",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ActionType" },
 			{ "DWORD" : "NpcGid" }
@@ -386,6 +428,7 @@
 		"PacketId" : "0x30",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ActionType" },
 			{ "DWORD" : "NpcGid" }
@@ -395,6 +438,7 @@
 		"PacketId" : "0x31",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "NpcGid" },
 			{ "DWORD" : "MessageID" }
@@ -404,6 +448,7 @@
 		"PacketId" : "0x32",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "NpcGid" },
 			{ "DWORD" : "ItemGid" },
@@ -415,6 +460,7 @@
 		"PacketId" : "0x33",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "NpcGid" },
 			{ "DWORD" : "ItemGid" },
@@ -426,6 +472,7 @@
 		"PacketId" : "0x34",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "NpcGid" }
 		]
@@ -434,6 +481,7 @@
 		"PacketId" : "0x35",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "dwNPCGUID" },
 			{ "DWORD" : "dwItemGUID" },
@@ -445,6 +493,7 @@
 		"PacketId" : "0x36",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "NpcGid" },
 			{ "DWORD" : "MercGid" }
@@ -454,6 +503,7 @@
 		"PacketId" : "0x37",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" }
 		]
@@ -462,6 +512,7 @@
 		"PacketId" : "0x38",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "Action" },
 			{ "DWORD" : "EntityGid" },
@@ -472,6 +523,7 @@
 		"PacketId" : "0x3A",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Stat" },
 			{ "BYTE" : "CountSubOne" }
@@ -481,6 +533,7 @@
 		"PacketId" : "0x3B",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "Skill" }
 		]
@@ -489,6 +542,7 @@
 		"PacketId" : "0x3C",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "SkillId" },
 			{ "BYTE" : "Zero" },
@@ -500,6 +554,7 @@
 		"PacketId" : "0x3D",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "MeGid" }
 		]
@@ -508,6 +563,7 @@
 		"PacketId" : "0x3E",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" }
 		]
@@ -516,6 +572,7 @@
 		"PacketId" : "0x3F",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "PhraseId" }
 		]
@@ -524,6 +581,7 @@
 		"PacketId" : "0x40",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }
 		]
 	},
@@ -531,6 +589,7 @@
 		"PacketId" : "0x41",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }
 		]
 	},
@@ -538,6 +597,7 @@
 		"PacketId" : "0x44",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "EntityKind" },
 			{ "DWORD" : "OrificeGid" },
@@ -549,6 +609,7 @@
 		"PacketId" : "0x46",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "MercGid" },
 			{ "DWORD" : "EntityGid" },
@@ -559,6 +620,7 @@
 		"PacketId" : "0x47",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "MercGid" },
 			{ "WORD" : "TargetX" },
@@ -571,6 +633,7 @@
 		"PacketId" : "0x48",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }
 		]
 	},
@@ -578,6 +641,7 @@
 		"PacketId" : "0x49",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "WaypointGid" },
 			{ "DWORD" : "Destination" }
@@ -587,6 +651,7 @@
 		"PacketId" : "0x4B",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitType" },
 			{ "DWORD" : "UnitGid" }
@@ -596,6 +661,7 @@
 		"PacketId" : "0x4C",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ObjectGid" }
 		]
@@ -604,6 +670,7 @@
 		"PacketId" : "0x4D",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "nMonStatsId" }
 		]
@@ -612,6 +679,7 @@
 		"PacketId" : "0x4F",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "ButtonId" },
 			{ "WORD" : "HiWORDGold" },
@@ -622,6 +690,7 @@
 		"PacketId" : "0x50",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "PlayerGid" },
 			{ "DWORD" : "GoldAmount" }
@@ -631,6 +700,7 @@
 		"PacketId" : "0x51",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "SkillId" },
 			{ "BYTE" : "Hand" },
@@ -642,6 +712,7 @@
 		"PacketId" : "0x53",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }
 		]
 	},
@@ -649,6 +720,7 @@
 		"PacketId" : "0x54",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }
 		]
 	},
@@ -656,6 +728,7 @@
 		"PacketId" : "0x58",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "QuestId" }
 		]
@@ -664,6 +737,7 @@
 		"PacketId" : "0x59",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "EntityType" },
 			{ "DWORD" : "EntityGid" },
@@ -675,6 +749,7 @@
 		"PacketId" : "0x5D",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "ActionType" },
 			{ "BYTE" : "Toggle" },
@@ -685,6 +760,7 @@
 		"PacketId" : "0x5E",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "ActionType" },
 			{ "DWORD" : "PlayerGid" }
@@ -694,6 +770,7 @@
 		"PacketId" : "0x5F",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "X" },
 			{ "WORD" : "Y" }
@@ -703,6 +780,7 @@
 		"PacketId" : "0x60",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }
 		]
 	},
@@ -710,6 +788,7 @@
 		"PacketId" : "0x61",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "Position" }
 		]
@@ -718,6 +797,7 @@
 		"PacketId" : "0x62",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "NpcGid" }
 		]
@@ -726,6 +806,7 @@
 		"PacketId" : "0x63",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "ItemGid" }
 		]
@@ -734,6 +815,7 @@
 		"PacketId" : "0x67",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "char" : "GameName[16]" },
 			{ "BYTE" : "GameType" },
@@ -752,6 +834,7 @@
 		"PacketId" : "0x68",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "GameHash" },
 			{ "WORD" : "GameToken" },
@@ -767,6 +850,7 @@
 		"PacketId" : "0x69",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }
 		]
 	},
@@ -774,6 +858,7 @@
 		"PacketId" : "0x6A",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }
 		]
 	},
@@ -781,6 +866,7 @@
 		"PacketId" : "0x6B",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }
 		]
 	},
@@ -788,6 +874,7 @@
 		"PacketId" : "0x6C",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "SaveFile_ChunkSize" },
 			{ "DWORD" : "SaveFile_FullSize" },
@@ -799,6 +886,7 @@
 		"PacketId" : "0x6D",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "TickCount" },
 			{ "DWORD" : "Delay" },
@@ -809,6 +897,7 @@
 		"PacketId" : "0x6E",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }
 		]
 	},
@@ -816,6 +905,7 @@
 		"PacketId" : "0x70",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "BYTE" : "PacketId" }
 		]
 	}

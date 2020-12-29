@@ -3,6 +3,7 @@
 		"PacketId" : "0x00",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -15,6 +16,7 @@
 		"PacketId" : "0x02",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -27,6 +29,7 @@
 		"PacketId" : "0x09",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -47,6 +50,7 @@
 		"PacketId" : "0x0A",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -61,6 +65,7 @@
 		"PacketId" : "0x0B",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -74,6 +79,7 @@
 		"PacketId" : "0x0C",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -88,6 +94,7 @@
 		"PacketId" : "0x0E",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -101,6 +108,7 @@
 		"PacketId" : "0x10",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -113,6 +121,7 @@
 		"PacketId" : "0x15",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -129,6 +138,7 @@
 		"PacketId" : "0x16",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -143,6 +153,7 @@
 		"PacketId" : "0x18",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -157,6 +168,7 @@
 		"PacketId" : "0x1C",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -178,6 +190,7 @@
 		"PacketId" : "0x1F",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -190,6 +203,7 @@
 		"PacketId" : "0x21",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -207,6 +221,7 @@
 		"PacketId" : "0x22",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -223,6 +238,7 @@
 		"PacketId" : "0x25",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -236,6 +252,7 @@
 		"PacketId" : "0x26",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -253,6 +270,7 @@
 		"PacketId" : "0x27",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -270,6 +288,7 @@
 		"PacketId" : "0x31",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -287,6 +306,7 @@
 		"PacketId" : "0x33",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -302,6 +322,7 @@
 		"PacketId" : "0x3A",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -318,6 +339,7 @@
 		"PacketId" : "0x3D",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -332,6 +354,7 @@
 		"PacketId" : "0x3E",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -347,6 +370,7 @@
 		"PacketId" : "0x40",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -359,6 +383,7 @@
 		"PacketId" : "0x46",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -372,6 +397,7 @@
 		"PacketId" : "0x4B",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -387,6 +413,7 @@
 		"PacketId" : "0x50",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -410,6 +437,7 @@
 		"PacketId" : "0x51",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -437,6 +465,7 @@
 		"PacketId" : "0x5A",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -451,6 +480,7 @@
 		"PacketId" : "0x5B",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -466,6 +496,7 @@
 		"PacketId" : "0x59",
 		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
@@ -477,8 +508,9 @@
 	},
 	"SID_NEWPACKET" : {
 		"PacketId" : "0xDE",
-		"Description" : "Additional data send to server by ExtraWork library on logon time.",
+		"Description" : "",
 		"Structure" : [ 
+		"Size" : 0,
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
