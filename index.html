@@ -28,21 +28,23 @@
                                 <span class="badge badge-secondary">{{ packet.PacketId }}</span> <a :href="'#' + local.body_id" data-toggle="collapse" aria-expanded="false" class="text-secondary">{{ packet.Name }}</a>
                             </div>
                             <div class="card-body collapse" :id="local.body_id">
-                                <template v-for="column in columns">
-                                    <template v-if="column === 'Structure'">
-                                        <p><span class="badge badge-primary">{{ column }}</span></p>
-                                        <div class="list-group">
-                                            <template v-for="field in packet.Structure">
-                                                <button v-for="(fieldName, fieldType) in field" class="list-group-item list-group-item-primary">
-                                                    [{{ fieldType }}] {{ fieldName }}
-                                                </button>
-                                            </template>
-                                        </div>
+                                <div class="row mb-3">
+                                    <template v-for="column in columns.filter(v => !['Description', 'Structure'].includes(v))">
+                                        <div class="col"><span class="badge badge-primary">{{ column }}</span> {{ packet[column] }}</div>
                                     </template>
-                                    <template v-else>
-                                        <p><span class="badge badge-primary">{{ column }}</span> {{ packet[column] }}</p>
+                                </div>
+                                <template v-if="packet.Description">
+                                    <div class="badge badge-primary">Description</div>
+                                    <p>{{ packet.Description }}</p>
+                                </template>
+                                <div class="badge badge-primary">Structure</div>
+                                <div class="list-group">
+                                    <template v-for="field in packet.Structure">
+                                        <button v-for="(fieldName, fieldType) in field" class="list-group-item list-group-item-primary">
+                                            [{{ fieldType }}] {{ fieldName }}
+                                        </button>
                                     </template>
-                                </template>     
+                                </div>
                             </div>
                         </template>
                     </div>

@@ -13,30 +13,62 @@ let app = new Vue({
     },
     computed: {
         filteredAndSortedPackets: function () {
-            return this.packets.slice().filter(packet => {
-                if (this.filterText.length < 1) {
-                    return true;
-                }
+            let packets = this.packets.slice(), maxrelevance = -1;
 
-                return [
-                    packet.Name || '',
-                    packet.Source || '',
-                    packet.PacketId || '',
-                    packet.Description || '',
-                ].some(value => value.toString().toLowerCase().includes(this.filterText.toLowerCase()));
-            }).sort((a, b) => {
+            if (this.filterText.length) {
+                let terms = this.filterText.toLowerCase().split(/\s+/).filter(Boolean);
+
+                if (terms.length) {
+                    maxrelevance = 0;
+
+                    packets.forEach(packet => {
+                        packet.relevance = 0;
+
+                        terms.forEach(term => {
+                            [
+                                packet.Name || '',
+                                packet.Source || '',
+                                packet.PacketId || '',
+                                packet.Description || '',
+                                packet.Structure.map(field => Object.values(field).join(' ')).join(' ') || '',
+                            ].forEach(field => {
+                                packet.relevance += field.toLowerCase().split(term).length - 1;
+                                maxrelevance = Math.max(maxrelevance, packet.relevance);
+                            });
+                        });
+                    });
+
+                    packets = packets.filter(packet => {
+                        if (this.filterText.length < 1) {
+                            return true;
+                        }
+
+                        return maxrelevance === 0 || packet.relevance > 0;
+                    });
+
+                    packets.forEach(packet => {
+                        packet.relevance /= maxrelevance;
+                    });
+                }
+            }
+
+            return packets.sort((a, b) => {
                 let aid = a.PacketId | 0;
                 let bid = b.PacketId | 0;
 
-                if (aid !== bid) { // Primary Sort
+                if (maxrelevance >= 0 && a.relevance != b.relevance) {
+                    return b.relevance - a.relevance;
+                }
+
+                if (aid !== bid) {
                     return aid - bid;
                 }
 
-                if (a.Name !== b.Name) { // Secondary Sort
+                if (a.Name !== b.Name) {
                     return a.Name < b.Name ? -1 : 1;
                 }
 
-                if (a.Source !== b.Source) { // Tertiary Sort
+                if (a.Source !== b.Source) {
                     return a.Source < b.Source ? -1 : 1;
                 }
 
