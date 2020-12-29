@@ -3,18 +3,24 @@
 		"PacketId" : "0x00",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}
 		]
 	},
 	"SID_SERVERLIST" : {
 		"PacketId" : "0x04",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "ServerVersion" },
 			{ "std::string" : "ServerList" }
 		]
@@ -23,9 +29,12 @@
 		"PacketId" : "0x09",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "Count" },
 			{ "Game[Count]" : [
 					{ "WORD" : "GameType" },
@@ -49,9 +58,12 @@
 		"PacketId" : "0x0A",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "std::string" : "Username" },
 			{ "std::string" : "Statstring" },
 			{ "std::string" : "Account" }
@@ -61,9 +73,12 @@
 		"PacketId" : "0x0B",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "std::vector<std::string>" : "Channels" }
 		]
 	},
@@ -71,9 +86,12 @@
 		"PacketId" : "0x0F",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "EventID" },
 			{ "DWORD" : "UserFlags" },
 			{ "DWORD" : "Ping" },
@@ -88,18 +106,24 @@
 		"PacketId" : "0x13",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}
 		]
 	},
 	"SID_CHECKAD" : {
 		"PacketId" : "0x15",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "AdID" },
 			{ "DWORD" : "Extension" },
 			{ "FILETIME" : "Filetime" },
@@ -111,9 +135,12 @@
 		"PacketId" : "0x18",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "Cookie" },
 			{ "DWORD" : "HKEY" },
 			{ "std::string" : "RegistryPath" },
@@ -124,9 +151,12 @@
 		"PacketId" : "0x19",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "Style" },
 			{ "std::string" : "Text" },
 			{ "std::string" : "Caption" }
@@ -136,9 +166,12 @@
 		"PacketId" : "0x1C",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "Result" }
 		]
 	},
@@ -146,9 +179,12 @@
 		"PacketId" : "0x25",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "Value" }
 		]
 	},
@@ -156,9 +192,12 @@
 		"PacketId" : "0x26",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "AccountsCount" },
 			{ "DWORD" : "KeysCount" },
 			{ "DWORD" : "RequestId" },
@@ -169,9 +208,12 @@
 		"PacketId" : "0x31",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "Result" }
 		]
 	},
@@ -179,9 +221,12 @@
 		"PacketId" : "0x33",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "RequestId" },
 			{ "DWORD" : "Unknown" },
 			{ "FILETIME" : "Filetime" },
@@ -192,9 +237,12 @@
 		"PacketId" : "0x3A",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "Status" }
 		]
 	},
@@ -202,9 +250,12 @@
 		"PacketId" : "0x3D",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "Result" },
 			{ "BYTE" : "Unknown1" },
 			{ "WORD" : "Something" }
@@ -214,9 +265,12 @@
 		"PacketId" : "0x3E",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "MCPCookie" },
 			{ "DWORD" : "MCPStatus" },
 			{ "BYTE" : "MCPChunk1[8]" },
@@ -230,9 +284,12 @@
 		"PacketId" : "0x40",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "Unknown" },
 			{ "DWORD" : "Count" },
 			{ "Realms[Count]" : [
@@ -247,9 +304,12 @@
 		"PacketId" : "0x46",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "BYTE" : "Count" },
 			{ "DWORD" : "LastLogon" },
 			{ "DWORD" : "OldestNews" },
@@ -265,9 +325,12 @@
 		"PacketId" : "0x4A",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "std::string" : "Filename" }
 		]
 	},
@@ -275,9 +338,12 @@
 		"PacketId" : "0x4C",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "std::string" : "Filename" }
 		]
 	},
@@ -285,9 +351,12 @@
 		"PacketId" : "0x50",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "LogonType" },
 			{ "DWORD" : "ServerToken" },
 			{ "DWORD" : "UDPValue" },
@@ -300,9 +369,12 @@
 		"PacketId" : "0x51",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "Result" },
 			{ "std::string" : "AdditionalInfo" }
 		]
@@ -311,9 +383,12 @@
 		"PacketId" : "0x59",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}
 		]
 	}
 }

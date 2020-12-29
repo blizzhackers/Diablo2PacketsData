@@ -3,16 +3,20 @@
 		"PacketId" : "0x00",
 		"Description" : "",
 		"Structure" : [ 
-			{ "WORD" : "nSize" },
-			{ "BYTE" : "PacketId" }
+			{ "McpHeader" : [
+				{ "WORD" : "nSize" },
+				{ "BYTE" : "PacketId" }				]
+			}
 		]
 	},
 	"MCP_STARTUP" : {
 		"PacketId" : "0x01",
 		"Description" : "",
 		"Structure" : [ 
-			{ "WORD" : "nSize" },
-			{ "BYTE" : "PacketId" }, 
+			{ "McpHeader" : [
+				{ "WORD" : "nSize" },
+				{ "BYTE" : "PacketId" }				]
+			}, 
 			{ "DWORD" : "Result" }
 		]
 	},
@@ -20,8 +24,10 @@
 		"PacketId" : "0x02",
 		"Description" : "",
 		"Structure" : [ 
-			{ "WORD" : "nSize" },
-			{ "BYTE" : "PacketId" }, 
+			{ "McpHeader" : [
+				{ "WORD" : "nSize" },
+				{ "BYTE" : "PacketId" }				]
+			}, 
 			{ "DWORD" : "Result" }
 		]
 	},
@@ -29,8 +35,10 @@
 		"PacketId" : "0x03",
 		"Description" : "",
 		"Structure" : [ 
-			{ "WORD" : "nSize" },
-			{ "BYTE" : "PacketId" }, 
+			{ "McpHeader" : [
+				{ "WORD" : "nSize" },
+				{ "BYTE" : "PacketId" }				]
+			}, 
 			{ "WORD" : "RequestId" },
 			{ "WORD" : "GameToken" },
 			{ "WORD" : "Unknown" },
@@ -41,8 +49,10 @@
 		"PacketId" : "0x04",
 		"Description" : "",
 		"Structure" : [ 
-			{ "WORD" : "nSize" },
-			{ "BYTE" : "PacketId" }, 
+			{ "McpHeader" : [
+				{ "WORD" : "nSize" },
+				{ "BYTE" : "PacketId" }				]
+			}, 
 			{ "WORD" : "RequestId" },
 			{ "WORD" : "GameToken" },
 			{ "WORD" : "Unknown" },
@@ -55,8 +65,10 @@
 		"PacketId" : "0x05",
 		"Description" : "",
 		"Structure" : [ 
-			{ "WORD" : "nSize" },
-			{ "BYTE" : "PacketId" }, 
+			{ "McpHeader" : [
+				{ "WORD" : "nSize" },
+				{ "BYTE" : "PacketId" }				]
+			}, 
 			{ "WORD" : "RequestId" },
 			{ "DWORD" : "Index" },
 			{ "BYTE" : "Players" },
@@ -69,8 +81,10 @@
 		"PacketId" : "0x06",
 		"Description" : "",
 		"Structure" : [ 
-			{ "WORD" : "nSize" },
-			{ "BYTE" : "PacketId" }, 
+			{ "McpHeader" : [
+				{ "WORD" : "nSize" },
+				{ "BYTE" : "PacketId" }				]
+			}, 
 			{ "WORD" : "RequestId" },
 			{ "DWORD" : "Status" },
 			{ "DWORD" : "Uptime" },
@@ -90,8 +104,10 @@
 		"PacketId" : "0x07",
 		"Description" : "",
 		"Structure" : [ 
-			{ "WORD" : "nSize" },
-			{ "BYTE" : "PacketId" }, 
+			{ "McpHeader" : [
+				{ "WORD" : "nSize" },
+				{ "BYTE" : "PacketId" }				]
+			}, 
 			{ "DWORD" : "Result" }
 		]
 	},
@@ -99,8 +115,10 @@
 		"PacketId" : "0x0A",
 		"Description" : "",
 		"Structure" : [ 
-			{ "WORD" : "nSize" },
-			{ "BYTE" : "PacketId" }, 
+			{ "McpHeader" : [
+				{ "WORD" : "nSize" },
+				{ "BYTE" : "PacketId" }				]
+			}, 
 			{ "DWORD" : "Result" }
 		]
 	},
@@ -108,8 +126,10 @@
 		"PacketId" : "0x12",
 		"Description" : "",
 		"Structure" : [ 
-			{ "WORD" : "nSize" },
-			{ "BYTE" : "PacketId" }, 
+			{ "McpHeader" : [
+				{ "WORD" : "nSize" },
+				{ "BYTE" : "PacketId" }				]
+			}, 
 			{ "BYTE" : "Unknown" },
 			{ "std::string" : "Text" }
 		]
@@ -118,8 +138,10 @@
 		"PacketId" : "0x14",
 		"Description" : "",
 		"Structure" : [ 
-			{ "WORD" : "nSize" },
-			{ "BYTE" : "PacketId" }, 
+			{ "McpHeader" : [
+				{ "WORD" : "nSize" },
+				{ "BYTE" : "PacketId" }				]
+			}, 
 			{ "DWORD" : "Position" }
 		]
 	},
@@ -127,8 +149,10 @@
 		"PacketId" : "0x17",
 		"Description" : "",
 		"Structure" : [ 
-			{ "WORD" : "nSize" },
-			{ "BYTE" : "PacketId" }, 
+			{ "McpHeader" : [
+				{ "WORD" : "nSize" },
+				{ "BYTE" : "PacketId" }				]
+			}, 
 			{ "WORD" : "RequestCount" },
 			{ "DWORD" : "ExistCount" },
 			{ "WORD" : "ReturnCount" },
@@ -143,8 +167,10 @@
 		"PacketId" : "0x18",
 		"Description" : "",
 		"Structure" : [ 
-			{ "WORD" : "nSize" },
-			{ "BYTE" : "PacketId" }, 
+			{ "McpHeader" : [
+				{ "WORD" : "nSize" },
+				{ "BYTE" : "PacketId" }				]
+			}, 
 			{ "DWORD" : "Result" }
 		]
 	},
@@ -152,8 +178,10 @@
 		"PacketId" : "0x19",
 		"Description" : "",
 		"Structure" : [ 
-			{ "WORD" : "nSize" },
-			{ "BYTE" : "PacketId" }, 
+			{ "McpHeader" : [
+				{ "WORD" : "nSize" },
+				{ "BYTE" : "PacketId" }				]
+			}, 
 			{ "WORD" : "RequestCount" },
 			{ "DWORD" : "ExistCount" },
 			{ "WORD" : "ReturnCount" },

@@ -3,27 +3,36 @@
 		"PacketId" : "0x00",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}
 		]
 	},
 	"SID_STOPADV" : {
 		"PacketId" : "0x02",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}
 		]
 	},
 	"SID_GETADVLISTEX" : {
 		"PacketId" : "0x09",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "WORD" : "GameType" },
 			{ "WORD" : "GameSubType" },
 			{ "DWORD" : "ViewingFilter" },
@@ -38,9 +47,12 @@
 		"PacketId" : "0x0A",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "std::string" : "Username" },
 			{ "std::string" : "Statstring" }
 		]
@@ -49,9 +61,12 @@
 		"PacketId" : "0x0B",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "ProductCode" }
 		]
 	},
@@ -59,9 +74,12 @@
 		"PacketId" : "0x0C",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "Flags" },
 			{ "std::string" : "Channel" }
 		]
@@ -70,9 +88,12 @@
 		"PacketId" : "0x0E",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "std::string" : "Text" }
 		]
 	},
@@ -80,18 +101,24 @@
 		"PacketId" : "0x10",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}
 		]
 	},
 	"SID_CHECKAD" : {
 		"PacketId" : "0x15",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "PlatformCode" },
 			{ "DWORD" : "ProductCode" },
 			{ "DWORD" : "BannerID" },
@@ -102,9 +129,12 @@
 		"PacketId" : "0x16",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "AdID" },
 			{ "DWORD" : "RequestType" }
 		]
@@ -113,9 +143,12 @@
 		"PacketId" : "0x18",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "Cookie" },
 			{ "std::string" : "KeyValue" }
 		]
@@ -124,9 +157,12 @@
 		"PacketId" : "0x1C",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "IsPrivateGame" },
 			{ "DWORD" : "Uptime" },
 			{ "WORD" : "GameType" },
@@ -142,18 +178,24 @@
 		"PacketId" : "0x1F",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}
 		]
 	},
 	"SID_DISPLAYAD" : {
 		"PacketId" : "0x21",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "PlatformCode" },
 			{ "DWORD" : "ProductCode" },
 			{ "DWORD" : "AdID" },
@@ -165,9 +207,12 @@
 		"PacketId" : "0x22",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "ProductCode" },
 			{ "DWORD" : "ProductVersion" },
 			{ "std::string" : "GameName" },
@@ -178,9 +223,12 @@
 		"PacketId" : "0x25",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "Value" }
 		]
 	},
@@ -188,9 +236,12 @@
 		"PacketId" : "0x26",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "AccountsCount" },
 			{ "DWORD" : "KeysCount" },
 			{ "DWORD" : "RequestId" },
@@ -202,9 +253,12 @@
 		"PacketId" : "0x27",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "AccountsCount" },
 			{ "DWORD" : "KeysCount" },
 			{ "std::string" : "Accounts[AccountsCount]" },
@@ -216,9 +270,12 @@
 		"PacketId" : "0x31",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "ClientToken" },
 			{ "DWORD" : "ServerToken" },
 			{ "BYTE" : "OldDoubleHashPassword[20]" },
@@ -230,9 +287,12 @@
 		"PacketId" : "0x33",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "RequestId" },
 			{ "DWORD" : "Unknown" },
 			{ "std::string" : "Filename" }
@@ -242,9 +302,12 @@
 		"PacketId" : "0x3A",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "ClientToken" },
 			{ "DWORD" : "ServerToken" },
 			{ "BYTE" : "PWHash[20]" },
@@ -255,9 +318,12 @@
 		"PacketId" : "0x3D",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "BYTE" : "PasswordHash[20]" },
 			{ "std::string" : "AccountName" }
 		]
@@ -266,9 +332,12 @@
 		"PacketId" : "0x3E",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "ClientToken" },
 			{ "BYTE" : "HashedRealmPassword[20]" },
 			{ "std::string" : "RealmTitle" }
@@ -278,18 +347,24 @@
 		"PacketId" : "0x40",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}
 		]
 	},
 	"SID_NEWS_INFO" : {
 		"PacketId" : "0x46",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "Timestamp" }
 		]
 	},
@@ -297,9 +372,12 @@
 		"PacketId" : "0x4B",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "WORD" : "GameType" },
 			{ "WORD" : "Length" },
 			{ "BYTE" : "Data[Length]" }
@@ -309,9 +387,12 @@
 		"PacketId" : "0x50",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "ProtocolID" },
 			{ "DWORD" : "PlatformCode" },
 			{ "DWORD" : "ProductCode" },
@@ -329,9 +410,12 @@
 		"PacketId" : "0x51",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "DWORD" : "ClientToken" },
 			{ "DWORD" : "ExeVersion" },
 			{ "DWORD" : "ExeHash" },
@@ -353,9 +437,12 @@
 		"PacketId" : "0x5A",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "std::string" : "Account" },
 			{ "std::string" : "eMail" }
 		]
@@ -364,9 +451,12 @@
 		"PacketId" : "0x5B",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "std::string" : "Account" },
 			{ "std::string" : "eMailOld" },
 			{ "std::string" : "eMailNew" }
@@ -376,9 +466,12 @@
 		"PacketId" : "0x59",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "std::string" : "eMail" }
 		]
 	},
@@ -386,9 +479,12 @@
 		"PacketId" : "0xDE",
 		"Description" : "",
 		"Structure" : [ 
-			{ "BYTE" : "AlwaysFF" },
-			{ "BYTE" : "PacketId" },
-			{ "WORD" : "nSize" }, 
+			{ "SidHeader" : [
+					{ "BYTE" : "AlwaysFF" },
+					{ "BYTE" : "PacketId" },
+					{ "WORD" : "nSize" }
+				]
+			}, 
 			{ "BYTE" : "Something1" },
 			{ "BYTE" : "Size" },
 			{ "BYTE" : "Something2" },
