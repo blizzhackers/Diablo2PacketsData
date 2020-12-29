@@ -5,6 +5,10 @@ html, body {
     font-size: 18px;
 }
 
+#components {
+    display: none;
+}
+
 .collapsing {
     transition: none !important;
 }
