@@ -2,6 +2,7 @@
 	"D2GS_GAMELOADING" : {
 		"PacketId" : "0x00",
 		"Description" : "",
+		"Size" : 1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }
 		]
@@ -9,6 +10,7 @@
 	"D2GS_GAMEFLAGS" : {
 		"PacketId" : "0x01",
 		"Description" : "",
+		"Size" : 8,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "nDifficulty" },
@@ -20,6 +22,7 @@
 	"D2GS_LOADSUCCESSFUL" : {
 		"PacketId" : "0x02",
 		"Description" : "",
+		"Size" : 1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }
 		]
@@ -27,6 +30,7 @@
 	"D2GS_LOADACT" : {
 		"PacketId" : "0x03",
 		"Description" : "",
+		"Size" : 12,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Act" },
@@ -38,6 +42,7 @@
 	"D2GS_LOADCOMPLETE" : {
 		"PacketId" : "0x04",
 		"Description" : "",
+		"Size" : 1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }
 		]
@@ -45,6 +50,7 @@
 	"D2GS_UNLOADCOMPLETE" : {
 		"PacketId" : "0x05",
 		"Description" : "",
+		"Size" : 1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }
 		]
@@ -52,6 +58,7 @@
 	"D2GS_GAMEEXIT" : {
 		"PacketId" : "0x06",
 		"Description" : "",
+		"Size" : 1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }
 		]
@@ -59,6 +66,7 @@
 	"D2GS_MAPREVEAL" : {
 		"PacketId" : "0x07",
 		"Description" : "",
+		"Size" : 6,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "TileX" },
@@ -69,6 +77,7 @@
 	"D2GS_MAPHIDE" : {
 		"PacketId" : "0x08",
 		"Description" : "",
+		"Size" : 6,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "TileX" },
@@ -79,6 +88,7 @@
 	"D2GS_ASSIGNLVLWARP" : {
 		"PacketId" : "0x09",
 		"Description" : "",
+		"Size" : 11,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "WarpType" },
@@ -91,6 +101,7 @@
 	"D2GS_REMOVEOBJECT" : {
 		"PacketId" : "0x0A",
 		"Description" : "",
+		"Size" : 6,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -100,6 +111,7 @@
 	"D2GS_GAMEHANDSHAKE" : {
 		"PacketId" : "0x0B",
 		"Description" : "",
+		"Size" : 6,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -109,6 +121,7 @@
 	"D2GS_NPC_HIT" : {
 		"PacketId" : "0x0C",
 		"Description" : "",
+		"Size" : 9,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -121,6 +134,7 @@
 	"D2GS_PLAYERSTOP" : {
 		"PacketId" : "0x0D",
 		"Description" : "",
+		"Size" : 13,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -135,6 +149,7 @@
 	"D2GS_OBJECTSTATE" : {
 		"PacketId" : "0x0E",
 		"Description" : "",
+		"Size" : 12,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -147,6 +162,7 @@
 	"D2GS_PLAYERMOVE" : {
 		"PacketId" : "0x0F",
 		"Description" : "",
+		"Size" : 16,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -162,6 +178,7 @@
 	"D2GS_CHARTOOBJ" : {
 		"PacketId" : "0x10",
 		"Description" : "",
+		"Size" : 16,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "PlayerType" },
@@ -176,6 +193,7 @@
 	"D2GS_REPORTKILL" : {
 		"PacketId" : "0x11",
 		"Description" : "",
+		"Size" : 8,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -186,6 +204,7 @@
 	"D2GS_REASSIGNPLAYER" : {
 		"PacketId" : "0x15",
 		"Description" : "",
+		"Size" : 11,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -198,21 +217,25 @@
 	"D2GS_MANYUNITSCOORDSUPDATE" : {
 		"PacketId" : "0x16",
 		"Description" : "",
+		"Size" : -1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Unused1" },
 			{ "BYTE" : "Unused2" },
 			{ "BYTE" : "Count" },
-			{ "BYTE" : "Info[10204]" },
-			{ "BYTE" : "UnitType" },
-			{ "DWORD" : "UnitGid" },
-			{ "WORD" : "x" },
-			{ "WORD" : "y" }
+			{ "Info[Count]" : [
+					{ "BYTE" : "UnitType" },
+					{ "DWORD" : "UnitGid" },
+					{ "WORD" : "x" },
+					{ "WORD" : "y" }
+				]
+			}
 		]
 	},
 	"D2GS_UNKNOWN_17" : {
 		"PacketId" : "0x17",
 		"Description" : "",
+		"Size" : 0,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -225,6 +248,7 @@
 	"D2GS_SMALLGOLDPICKUP" : {
 		"PacketId" : "0x19",
 		"Description" : "",
+		"Size" : 2,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Amount" }
@@ -233,6 +257,7 @@
 	"D2GS_ADDEXP_BYTE" : {
 		"PacketId" : "0x1A",
 		"Description" : "",
+		"Size" : 2,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Amount" }
@@ -241,6 +266,7 @@
 	"D2GS_ADDEXP_WORD" : {
 		"PacketId" : "0x1B",
 		"Description" : "",
+		"Size" : 3,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "Amount" }
@@ -249,6 +275,7 @@
 	"D2GS_ADDEXP_DWORD" : {
 		"PacketId" : "0x1C",
 		"Description" : "",
+		"Size" : 5,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "Amount" }
@@ -257,6 +284,7 @@
 	"D2GS_SETATTR_BYTE" : {
 		"PacketId" : "0x1D",
 		"Description" : "",
+		"Size" : 3,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Attribute" },
@@ -266,6 +294,7 @@
 	"D2GS_SETATTR_WORD" : {
 		"PacketId" : "0x1E",
 		"Description" : "",
+		"Size" : 4,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Attribute" },
@@ -275,6 +304,7 @@
 	"D2GS_SETATTR_DWORD" : {
 		"PacketId" : "0x1F",
 		"Description" : "",
+		"Size" : 6,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Attribute" },
@@ -284,6 +314,7 @@
 	"D2GS_ATTRIBUTEUPDATE" : {
 		"PacketId" : "0x20",
 		"Description" : "",
+		"Size" : 10,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitGid" },
@@ -294,6 +325,7 @@
 	"D2GS_UPDATEITEM_OSKILL" : {
 		"PacketId" : "0x21",
 		"Description" : "",
+		"Size" : 12,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -308,6 +340,7 @@
 	"D2GS_UPDATEITEM_SKILL" : {
 		"PacketId" : "0x22",
 		"Description" : "",
+		"Size" : 12,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -322,6 +355,7 @@
 	"D2GS_SETSKILL" : {
 		"PacketId" : "0x23",
 		"Description" : "",
+		"Size" : 13,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitTypeUnused" },
@@ -334,6 +368,7 @@
 	"D2GS_CHAT" : {
 		"PacketId" : "0x26",
 		"Description" : "",
+		"Size" : -1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "ChatType" },
@@ -349,6 +384,7 @@
 	"D2GS_NPC_INFO" : {
 		"PacketId" : "0x27",
 		"Description" : "",
+		"Size" : 40,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -366,6 +402,7 @@
 	"D2GS_PLAYERQUESTINFO" : {
 		"PacketId" : "0x28",
 		"Description" : "",
+		"Size" : 103,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UpdateType" },
@@ -377,6 +414,7 @@
 	"D2GS_GAMEQUESTLOG" : {
 		"PacketId" : "0x29",
 		"Description" : "",
+		"Size" : 97,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "QuestBits[96]" }
@@ -385,6 +423,7 @@
 	"D2GS_NPCTRANSACTION" : {
 		"PacketId" : "0x2A",
 		"Description" : "",
+		"Size" : 15,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "TradeType" },
@@ -397,6 +436,7 @@
 	"D2GS_PLAYSOUND" : {
 		"PacketId" : "0x2C",
 		"Description" : "",
+		"Size" : 8,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Type" },
@@ -407,6 +447,7 @@
 	"D2GS_USESTACKABLEITEM" : {
 		"PacketId" : "0x3F",
 		"Description" : "",
+		"Size" : 8,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "SpellIcon" },
@@ -417,6 +458,7 @@
 	"D2GS_ITEMFLAGSETTER" : {
 		"PacketId" : "0x40",
 		"Description" : "",
+		"Size" : 13,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitGid" },
@@ -427,6 +469,7 @@
 	"D2GS_CLEARCURSOR" : {
 		"PacketId" : "0x42",
 		"Description" : "",
+		"Size" : 6,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -436,6 +479,7 @@
 	"D2GS_RELATOR1" : {
 		"PacketId" : "0x47",
 		"Description" : "",
+		"Size" : 11,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -447,6 +491,7 @@
 	"D2GS_RELATOR2" : {
 		"PacketId" : "0x48",
 		"Description" : "",
+		"Size" : 11,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -458,6 +503,7 @@
 	"D2GS_UNITCASTSKILL_TARGET" : {
 		"PacketId" : "0x4C",
 		"Description" : "",
+		"Size" : 16,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "AttackerType" },
@@ -472,6 +518,7 @@
 	"D2GS_UNITCASTSKILL_XY" : {
 		"PacketId" : "0x4D",
 		"Description" : "",
+		"Size" : 17,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "AttackerType" },
@@ -487,6 +534,7 @@
 	"D2GS_MERCFORHIRE" : {
 		"PacketId" : "0x4E",
 		"Description" : "",
+		"Size" : 7,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "NameString" },
@@ -496,6 +544,7 @@
 	"D2GS_CLEARMERCLIST" : {
 		"PacketId" : "0x4F",
 		"Description" : "",
+		"Size" : 1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }
 		]
@@ -503,6 +552,7 @@
 	"D2GS_QUEST_SPECIAL" : {
 		"PacketId" : "0x50",
 		"Description" : "",
+		"Size" : 15,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "MessageType" },
@@ -517,6 +567,7 @@
 	"D2GS_WORLDOBJECT" : {
 		"PacketId" : "0x51",
 		"Description" : "",
+		"Size" : 14,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Type" },
@@ -531,6 +582,7 @@
 	"D2GS_PLAYERQUESTLOG" : {
 		"PacketId" : "0x52",
 		"Description" : "",
+		"Size" : 42,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Quests[41]" }
@@ -539,6 +591,7 @@
 	"D2GS_DARKNESS" : {
 		"PacketId" : "0x53",
 		"Description" : "",
+		"Size" : 10,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "Act" },
@@ -549,6 +602,7 @@
 	"D2GS_NPC_ENCHANTS" : {
 		"PacketId" : "0x57",
 		"Description" : "",
+		"Size" : 14,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "MonsterGid" },
@@ -564,6 +618,7 @@
 	"D2GS_OPENUI" : {
 		"PacketId" : "0x58",
 		"Description" : "",
+		"Size" : 7,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "nUnitGid" },
@@ -574,6 +629,7 @@
 	"D2GS_ASSIGNPLAYER" : {
 		"PacketId" : "0x59",
 		"Description" : "",
+		"Size" : 26,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitGid" },
@@ -586,6 +642,7 @@
 	"D2GS_EVENTMESSAGES" : {
 		"PacketId" : "0x5A",
 		"Description" : "",
+		"Size" : 40,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "MessageType" },
@@ -599,6 +656,7 @@
 	"D2GS_PLAYER_JOIN" : {
 		"PacketId" : "0x5B",
 		"Description" : "",
+		"Size" : -1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "PacketLength" },
@@ -613,6 +671,7 @@
 	"D2GS_PLAYER_LEAVE" : {
 		"PacketId" : "0x5C",
 		"Description" : "",
+		"Size" : 5,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "PlayerGid" }
@@ -621,6 +680,7 @@
 	"D2GS_QUESTSTATE" : {
 		"PacketId" : "0x5D",
 		"Description" : "",
+		"Size" : 6,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "QuestID" },
@@ -632,6 +692,7 @@
 	"D2GS_GAME_QUESTS_AVAILABILITY" : {
 		"PacketId" : "0x5E",
 		"Description" : "",
+		"Size" : 38,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "QuestBytes[37]" }
@@ -640,6 +701,7 @@
 	"D2GS_UNKNOWN_MEUNIT_5F" : {
 		"PacketId" : "0x5F",
 		"Description" : "",
+		"Size" : 5,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "Unknown" }
@@ -648,6 +710,7 @@
 	"D2GS_TOWNPORTALSTATE" : {
 		"PacketId" : "0x60",
 		"Description" : "",
+		"Size" : 7,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "State" },
@@ -658,6 +721,7 @@
 	"D2GS_CANGOTOACT" : {
 		"PacketId" : "0x61",
 		"Description" : "",
+		"Size" : 2,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Act" }
@@ -666,6 +730,7 @@
 	"D2GS_MAKEUNITTARGETABLE" : {
 		"PacketId" : "0x62",
 		"Description" : "",
+		"Size" : 7,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -676,6 +741,7 @@
 	"D2GS_WAYPOINTMENU" : {
 		"PacketId" : "0x63",
 		"Description" : "",
+		"Size" : 21,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "WaypointGid" },
@@ -687,6 +753,7 @@
 	"D2GS_PLAYERKILLCOUNT" : {
 		"PacketId" : "0x65",
 		"Description" : "",
+		"Size" : 7,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "PlayerGid" },
@@ -696,6 +763,7 @@
 	"D2GS_NPC_MOVE" : {
 		"PacketId" : "0x67",
 		"Description" : "",
+		"Size" : 16,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "NpcGid" },
@@ -712,6 +780,7 @@
 	"D2GS_NPC_MOVETOENTITY" : {
 		"PacketId" : "0x68",
 		"Description" : "",
+		"Size" : 21,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "NpcGid" },
@@ -730,6 +799,7 @@
 	"D2GS_NPC_STATE" : {
 		"PacketId" : "0x69",
 		"Description" : "",
+		"Size" : 12,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "NpcGid" },
@@ -743,6 +813,7 @@
 	"D2GS_NPC_UNKNOWN_0x6A" : {
 		"PacketId" : "0x6A",
 		"Description" : "",
+		"Size" : 12,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "NpcGid" },
@@ -755,6 +826,7 @@
 	"D2GS_NPC_ACTION" : {
 		"PacketId" : "0x6B",
 		"Description" : "",
+		"Size" : 16,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "NpcGid" },
@@ -767,6 +839,7 @@
 	"D2GS_NPC_ATTACK" : {
 		"PacketId" : "0x6C",
 		"Description" : "",
+		"Size" : 16,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "NpcGid" },
@@ -780,6 +853,7 @@
 	"D2GS_NPC_STOP" : {
 		"PacketId" : "0x6D",
 		"Description" : "",
+		"Size" : 10,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "NpcGid" },
@@ -791,6 +865,7 @@
 	"D2GS_MISSILEDATA" : {
 		"PacketId" : "0x73",
 		"Description" : "",
+		"Size" : 32,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "Unused" },
@@ -809,6 +884,7 @@
 	"D2GS_PLAYERCORPSEASSIGN" : {
 		"PacketId" : "0x74",
 		"Description" : "",
+		"Size" : 10,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Assign" },
@@ -819,6 +895,7 @@
 	"D2GS_PLAYERPARTYINFO" : {
 		"PacketId" : "0x75",
 		"Description" : "",
+		"Size" : 13,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitGid" },
@@ -831,6 +908,7 @@
 	"D2GS_PLAYERINPROXIMITY" : {
 		"PacketId" : "0x76",
 		"Description" : "",
+		"Size" : 6,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -840,6 +918,7 @@
 	"D2GS_TRADEACTION" : {
 		"PacketId" : "0x77",
 		"Description" : "",
+		"Size" : 2,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "RequestType" }
@@ -848,6 +927,7 @@
 	"D2GS_TRADEACCEPTED" : {
 		"PacketId" : "0x78",
 		"Description" : "",
+		"Size" : 21,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "char" : "CharName[16]" },
@@ -857,6 +937,7 @@
 	"D2GS_GOLDINTRADE" : {
 		"PacketId" : "0x79",
 		"Description" : "",
+		"Size" : 6,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "GoldOwner" },
@@ -866,6 +947,7 @@
 	"D2GS_SUMMONLOG" : {
 		"PacketId" : "0x7A",
 		"Description" : "",
+		"Size" : 13,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Action" },
@@ -878,6 +960,7 @@
 	"D2GS_ASSIGNHOTKEY" : {
 		"PacketId" : "0x7B",
 		"Description" : "",
+		"Size" : 8,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Slot" },
@@ -889,6 +972,7 @@
 	"D2GS_USESCROLL" : {
 		"PacketId" : "0x7C",
 		"Description" : "",
+		"Size" : 6,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "ScroolType" },
@@ -898,6 +982,7 @@
 	"D2GS_SETITEMFLAGS" : {
 		"PacketId" : "0x7D",
 		"Description" : "",
+		"Size" : 18,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -910,6 +995,7 @@
 	"D2GS_CMNCOF" : {
 		"PacketId" : "0x7E",
 		"Description" : "",
+		"Size" : 5,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Unused[4]" }
@@ -918,6 +1004,7 @@
 	"D2GS_ALLYPARTYINFO" : {
 		"PacketId" : "0x7F",
 		"Description" : "",
+		"Size" : 10,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -929,6 +1016,7 @@
 	"D2GS_ASSIGNMERC" : {
 		"PacketId" : "0x81",
 		"Description" : "",
+		"Size" : 20,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "bSkillId" },
@@ -942,6 +1030,7 @@
 	"D2GS_PORTALOWNERSHIP" : {
 		"PacketId" : "0x82",
 		"Description" : "",
+		"Size" : 29,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "OwnerGid" },
@@ -953,6 +1042,7 @@
 	"D2GS_UNIQUEEVENTS" : {
 		"PacketId" : "0x89",
 		"Description" : "",
+		"Size" : 2,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "EventType" }
@@ -961,6 +1051,7 @@
 	"D2GS_NPC_WANTSINTERACT" : {
 		"PacketId" : "0x8A",
 		"Description" : "",
+		"Size" : 6,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -970,6 +1061,7 @@
 	"D2GS_PLAYERRELATIONSHIP" : {
 		"PacketId" : "0x8B",
 		"Description" : "",
+		"Size" : 6,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitGid" },
@@ -979,6 +1071,7 @@
 	"D2GS_RELATIONSHIPUPDATE" : {
 		"PacketId" : "0x8C",
 		"Description" : "",
+		"Size" : 11,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitOneGid" },
@@ -989,6 +1082,7 @@
 	"D2GS_ASSIGNPLAYERTOPARTY" : {
 		"PacketId" : "0x8D",
 		"Description" : "",
+		"Size" : 7,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "PlayerGid" },
@@ -998,6 +1092,7 @@
 	"D2GS_CORPSEASSIGN" : {
 		"PacketId" : "0x8E",
 		"Description" : "",
+		"Size" : 10,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Assign" },
@@ -1008,6 +1103,7 @@
 	"D2GS_PONG" : {
 		"PacketId" : "0x8F",
 		"Description" : "",
+		"Size" : 33,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "Pong1" },
@@ -1023,6 +1119,7 @@
 	"D2GS_PARTYAUTOMAPINFO" : {
 		"PacketId" : "0x90",
 		"Description" : "",
+		"Size" : 13,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "PlayerGid" },
@@ -1033,6 +1130,7 @@
 	"D2GS_NPCGOSSIP" : {
 		"PacketId" : "0x91",
 		"Description" : "",
+		"Size" : 26,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Act" },
@@ -1042,6 +1140,7 @@
 	"D2GS_REMOVEITEMSDISPLAY" : {
 		"PacketId" : "0x92",
 		"Description" : "",
+		"Size" : 6,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -1051,6 +1150,7 @@
 	"D2GS_UNKNOWN_UNITSKILL_0x93" : {
 		"PacketId" : "0x93",
 		"Description" : "",
+		"Size" : 8,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "PlayerGid" },
@@ -1062,6 +1162,7 @@
 	"D2GS_SKILLSLIST" : {
 		"PacketId" : "0x94",
 		"Description" : "",
+		"Size" : -1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "SkillsCount" },
@@ -1076,6 +1177,7 @@
 	"D2GS_WEAPONSWITCH" : {
 		"PacketId" : "0x97",
 		"Description" : "",
+		"Size" : 1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }
 		]
@@ -1083,6 +1185,7 @@
 	"D2GS_EVILHUT" : {
 		"PacketId" : "0x98",
 		"Description" : "",
+		"Size" : 7,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "UnitGid" },
@@ -1092,6 +1195,7 @@
 	"D2GS_UNITSKILLCAST_TARGET" : {
 		"PacketId" : "0x99",
 		"Description" : "",
+		"Size" : 16,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "AttackerType" },
@@ -1106,6 +1210,7 @@
 	"D2GS_UNITSKILLCAST_XY" : {
 		"PacketId" : "0x9A",
 		"Description" : "",
+		"Size" : 17,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "AttackerType" },
@@ -1121,6 +1226,7 @@
 	"D2GS_MERCREVIVECOST" : {
 		"PacketId" : "0x9B",
 		"Description" : "",
+		"Size" : 7,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "MercNameId" },
@@ -1130,6 +1236,7 @@
 	"D2GS_MERCATTRIBUTE_BYTE" : {
 		"PacketId" : "0x9E",
 		"Description" : "",
+		"Size" : 7,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Stat" },
@@ -1140,6 +1247,7 @@
 	"D2GS_MERCATTRIBUTE_WORD" : {
 		"PacketId" : "0x9F",
 		"Description" : "",
+		"Size" : 8,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Stat" },
@@ -1150,6 +1258,7 @@
 	"D2GS_MERCATTRIBUTE_DWORD" : {
 		"PacketId" : "0xA0",
 		"Description" : "",
+		"Size" : 10,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Stat" },
@@ -1160,6 +1269,7 @@
 	"D2GS_MERC_ADDEXP_BYTE" : {
 		"PacketId" : "0xA1",
 		"Description" : "",
+		"Size" : 7,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Stat" },
@@ -1170,6 +1280,7 @@
 	"D2GS_MERC_ADDEXP_WORD" : {
 		"PacketId" : "0xA2",
 		"Description" : "",
+		"Size" : 8,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "Stat" },
@@ -1180,6 +1291,7 @@
 	"D2GS_SKILL_AURA_STAT" : {
 		"PacketId" : "0xA3",
 		"Description" : "",
+		"Size" : 24,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "AuraStatId" },
@@ -1196,6 +1308,7 @@
 	"D2GS_BAALWAVES" : {
 		"PacketId" : "0xA4",
 		"Description" : "",
+		"Size" : 3,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "WORD" : "ClassID" }
@@ -1204,6 +1317,7 @@
 	"D2GS_STATE_SKILL_MOVE" : {
 		"PacketId" : "0xA5",
 		"Description" : "",
+		"Size" : 8,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -1214,6 +1328,7 @@
 	"D2GS_DELAYSTATE" : {
 		"PacketId" : "0xA7",
 		"Description" : "",
+		"Size" : 7,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -1224,6 +1339,7 @@
 	"D2GS_ENDSTATE" : {
 		"PacketId" : "0xA9",
 		"Description" : "",
+		"Size" : 7,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -1234,6 +1350,7 @@
 	"D2GS_NPC_HEAL" : {
 		"PacketId" : "0xAB",
 		"Description" : "",
+		"Size" : 7,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "UnitType" },
@@ -1244,6 +1361,7 @@
 	"D2GS_STARTLOGON" : {
 		"PacketId" : "0xAF",
 		"Description" : "",
+		"Size" : -1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }
 		]
@@ -1251,6 +1369,7 @@
 	"D2GS_CONNECTIONTERMINATED" : {
 		"PacketId" : "0xB0",
 		"Description" : "",
+		"Size" : 1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }
 		]
@@ -1258,6 +1377,7 @@
 	"D2GS_GAMESINFO" : {
 		"PacketId" : "0xB2",
 		"Description" : "",
+		"Size" : 53,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "char" : "Unk1[16]" },
@@ -1270,6 +1390,7 @@
 	"D2GS_DOWNLOADSAVE" : {
 		"PacketId" : "0xB3",
 		"Description" : "",
+		"Size" : -1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "SaveFile_ChunkSize" },
@@ -1281,6 +1402,7 @@
 	"D2GS_CONNECTIONREFUSED" : {
 		"PacketId" : "0xB4",
 		"Description" : "",
+		"Size" : 5,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "DWORD" : "Reason" }
