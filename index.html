@@ -40,8 +40,8 @@
                     </div>
                     <input type="text" v-model="filterText" class="form-control" placeholder="Type to search packets...">
                 </div>
-                <label>Click to Toggle:</label>
                 <div class="btn-toolbar mb-3">
+                    <label class="btn disabled">Show:</label>
                     <div class="btn-group mr-2" v-for="filters in filterOptions">
                         <button v-for="(filterValue, filterName) in filters" :class="'btn btn-' + ['secondary', 'success'][filterValue | 0]" @click="filters[filterName] = !filterValue">{{ filterName }}</button>
                     </div>
