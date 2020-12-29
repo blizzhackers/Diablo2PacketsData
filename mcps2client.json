@@ -5,7 +5,8 @@
 		"Structure" : [ 
 			{ "McpHeader" : [
 				{ "WORD" : "nSize" },
-				{ "BYTE" : "PacketId" }				]
+				{ "BYTE" : "PacketId" }
+				]
 			}
 		]
 	},
@@ -15,7 +16,8 @@
 		"Structure" : [ 
 			{ "McpHeader" : [
 				{ "WORD" : "nSize" },
-				{ "BYTE" : "PacketId" }				]
+				{ "BYTE" : "PacketId" }
+				]
 			}, 
 			{ "DWORD" : "Result" }
 		]
@@ -26,7 +28,8 @@
 		"Structure" : [ 
 			{ "McpHeader" : [
 				{ "WORD" : "nSize" },
-				{ "BYTE" : "PacketId" }				]
+				{ "BYTE" : "PacketId" }
+				]
 			}, 
 			{ "DWORD" : "Result" }
 		]
@@ -37,7 +40,8 @@
 		"Structure" : [ 
 			{ "McpHeader" : [
 				{ "WORD" : "nSize" },
-				{ "BYTE" : "PacketId" }				]
+				{ "BYTE" : "PacketId" }
+				]
 			}, 
 			{ "WORD" : "RequestId" },
 			{ "WORD" : "GameToken" },
@@ -51,7 +55,8 @@
 		"Structure" : [ 
 			{ "McpHeader" : [
 				{ "WORD" : "nSize" },
-				{ "BYTE" : "PacketId" }				]
+				{ "BYTE" : "PacketId" }
+				]
 			}, 
 			{ "WORD" : "RequestId" },
 			{ "WORD" : "GameToken" },
@@ -67,7 +72,8 @@
 		"Structure" : [ 
 			{ "McpHeader" : [
 				{ "WORD" : "nSize" },
-				{ "BYTE" : "PacketId" }				]
+				{ "BYTE" : "PacketId" }
+				]
 			}, 
 			{ "WORD" : "RequestId" },
 			{ "DWORD" : "Index" },
@@ -83,7 +89,8 @@
 		"Structure" : [ 
 			{ "McpHeader" : [
 				{ "WORD" : "nSize" },
-				{ "BYTE" : "PacketId" }				]
+				{ "BYTE" : "PacketId" }
+				]
 			}, 
 			{ "WORD" : "RequestId" },
 			{ "DWORD" : "Status" },
@@ -106,7 +113,8 @@
 		"Structure" : [ 
 			{ "McpHeader" : [
 				{ "WORD" : "nSize" },
-				{ "BYTE" : "PacketId" }				]
+				{ "BYTE" : "PacketId" }
+				]
 			}, 
 			{ "DWORD" : "Result" }
 		]
@@ -117,7 +125,8 @@
 		"Structure" : [ 
 			{ "McpHeader" : [
 				{ "WORD" : "nSize" },
-				{ "BYTE" : "PacketId" }				]
+				{ "BYTE" : "PacketId" }
+				]
 			}, 
 			{ "DWORD" : "Result" }
 		]
@@ -128,7 +137,8 @@
 		"Structure" : [ 
 			{ "McpHeader" : [
 				{ "WORD" : "nSize" },
-				{ "BYTE" : "PacketId" }				]
+				{ "BYTE" : "PacketId" }
+				]
 			}, 
 			{ "BYTE" : "Unknown" },
 			{ "std::string" : "Text" }
@@ -140,7 +150,8 @@
 		"Structure" : [ 
 			{ "McpHeader" : [
 				{ "WORD" : "nSize" },
-				{ "BYTE" : "PacketId" }				]
+				{ "BYTE" : "PacketId" }
+				]
 			}, 
 			{ "DWORD" : "Position" }
 		]
@@ -151,7 +162,8 @@
 		"Structure" : [ 
 			{ "McpHeader" : [
 				{ "WORD" : "nSize" },
-				{ "BYTE" : "PacketId" }				]
+				{ "BYTE" : "PacketId" }
+				]
 			}, 
 			{ "WORD" : "RequestCount" },
 			{ "DWORD" : "ExistCount" },
@@ -169,7 +181,8 @@
 		"Structure" : [ 
 			{ "McpHeader" : [
 				{ "WORD" : "nSize" },
-				{ "BYTE" : "PacketId" }				]
+				{ "BYTE" : "PacketId" }
+				]
 			}, 
 			{ "DWORD" : "Result" }
 		]
@@ -180,7 +193,8 @@
 		"Structure" : [ 
 			{ "McpHeader" : [
 				{ "WORD" : "nSize" },
-				{ "BYTE" : "PacketId" }				]
+				{ "BYTE" : "PacketId" }
+				]
 			}, 
 			{ "WORD" : "RequestCount" },
 			{ "DWORD" : "ExistCount" },
