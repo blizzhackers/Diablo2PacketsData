@@ -116,7 +116,12 @@ let app = new Vue({
             }
     
             for (let key in data) {
-                data[key] = Object.assign({Name: key, Source: source, Type: type}, data[key]);
+                data[key] = Object.assign({
+                    Name: key,
+                    Source: source,
+                    Type: type,
+                    'Game Version': '1.14d',
+                }, data[key]);
                 this.packets.push(data[key]);
     
                 for (let column in data[key]) {
