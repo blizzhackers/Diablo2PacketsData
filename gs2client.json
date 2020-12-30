@@ -245,6 +245,15 @@
 			{ "short" : "Unknown3" }
 		]
 	},
+	"D2GS_HPMPUPDATE2" : {
+		"PacketId" : "0x18",
+		"Description" : "",
+		"Size" : 15,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "aBitStream[14]" }
+		]
+	},
 	"D2GS_SMALLGOLDPICKUP" : {
 		"PacketId" : "0x19",
 		"Description" : "",
@@ -442,6 +451,16 @@
 			{ "BYTE" : "nType" },
 			{ "int" : "nUnitGUID" },
 			{ "short" : "nSoundID" }
+		]
+	},
+	"D2GS_UPDATEITEMSTATS" : {
+		"PacketId" : "0x3E",
+		"Description" : "",
+		"Size" : -1,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "nFullPacketSize" },
+			{ "BYTE" : "StatBitStream[nFullPacketSize - 2]" }
 		]
 	},
 	"D2GS_USESTACKABLEITEM" : {
@@ -1172,6 +1191,24 @@
 			}
 		]
 	},
+	"D2GS_HPMPUPDATE" : {
+		"PacketId" : "0x95",
+		"Description" : "",
+		"Size" : 13,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "aBitStream[12]" }
+		]
+	},
+	"D2GS_WALKVERIFY" : {
+		"PacketId" : "0x96",
+		"Description" : "",
+		"Size" : 9,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "aBitStream[8]" }
+		]
+	},
 	"D2GS_WEAPONSWITCH" : {
 		"PacketId" : "0x97",
 		"Description" : "",
@@ -1229,6 +1266,34 @@
 			{ "BYTE" : "PacketId" }, 
 			{ "short" : "nMercNameId" },
 			{ "int" : "nReviveCost" }
+		]
+	},
+	"D2GS_ITEM_WORLD" : {
+		"PacketId" : "0x9C",
+		"Description" : "",
+		"Size" : -1,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "nAction" },
+			{ "BYTE" : "nFullPacketSize" },
+			{ "BYTE" : "nCategory" },
+			{ "int" : "nItemGUID" },
+			{ "BYTE" : "BitStream[nFullPacketSize - 8]" }
+		]
+	},
+	"D2GS_ITEM_OWNED" : {
+		"PacketId" : "0x9D",
+		"Description" : "",
+		"Size" : -1,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "nAction" },
+			{ "BYTE" : "nFullPacketSize" },
+			{ "BYTE" : "nCategory" },
+			{ "int" : "nItemGUID" },
+			{ "BYTE" : "nOwnerType" },
+			{ "int" : "nOwnerGUID" },
+			{ "BYTE" : "BitStream[nFullPacketSize - 13]" }
 		]
 	},
 	"D2GS_MERCATTRIBUTE_BYTE" : {
@@ -1334,6 +1399,19 @@
 			{ "BYTE" : "nStateID" }
 		]
 	},
+	"D2GS_SETSTATE" : {
+		"PacketId" : "0xA8",
+		"Description" : "",
+		"Size" : -1,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "nUnitType" },
+			{ "int" : "nUnitGUID" },
+			{ "BYTE" : "nFullPacketSize" },
+			{ "BYTE" : "State" },
+			{ "BYTE" : "BitStream[nFullPacketSize - 8]" }
+		]
+	},
 	"D2GS_ENDSTATE" : {
 		"PacketId" : "0xA9",
 		"Description" : "",
@@ -1345,6 +1423,18 @@
 			{ "BYTE" : "nStateID" }
 		]
 	},
+	"D2GS_MULTISTATES" : {
+		"PacketId" : "0xAA",
+		"Description" : "",
+		"Size" : -1,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "nUnitType" },
+			{ "int" : "nUnitGUID" },
+			{ "BYTE" : "nFullPacketSize" },
+			{ "BYTE" : "BitStream[nFullPacketSize - 7]" }
+		]
+	},
 	"D2GS_NPC_HEAL" : {
 		"PacketId" : "0xAB",
 		"Description" : "",
@@ -1354,6 +1444,31 @@
 			{ "BYTE" : "nUnitType" },
 			{ "int" : "nUnitGUID" },
 			{ "BYTE" : "nUnitLife" }
+		]
+	},
+	"D2GS_MONSTERPACKET" : {
+		"PacketId" : "0xAC",
+		"Description" : "",
+		"Size" : -1,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "int" : "nUnitGUID" },
+			{ "short" : "nUnitClassID" },
+			{ "short" : "nUnitX" },
+			{ "short" : "nUnitY" },
+			{ "BYTE" : "nHPPercent" },
+			{ "BYTE" : "FullPacketSize" },
+			{ "BYTE" : "BitStream[FullPacketSize - 13]" }
+		]
+	},
+	"D2GS_WARDEN" : {
+		"PacketId" : "0xAE",
+		"Description" : "",
+		"Size" : -1,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "short" : "nStreamSize" },
+			{ "BYTE" : "Stream[nStreamSize]" }
 		]
 	},
 	"D2GS_STARTLOGON" : {
