@@ -886,9 +886,9 @@
 		"Size" : -1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
-			{ "BYTE" : "nSaveFile_ChunkSize" },
-			{ "int" : "nSaveFile_FullSize" },
-			{ "BYTE" : "SaveFile_Bytes[nSaveFile_ChunkSize]" },
+			{ "BYTE" : "nChunkSize" },
+			{ "int" : "nFullSize" },
+			{ "BYTE" : "Bytes[nChunkSize]" },
 			{ "BYTE" : "Terminator" }
 		]
 	},
