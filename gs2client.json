@@ -1387,6 +1387,18 @@
 			{ "int" : "nUnitGUID" },
 			{ "short" : "nSkillID" }
 		]
+	},	
+	"D2GS_RUNES_TXT" : {
+		"PacketId" : "0xA6",
+		"Description" : "This packet has it's handler in game code but it seems like it is never used.",
+		"Size" : -1,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "BYTE" : "nMustBeZero" },
+			{ "short" : "nFullPacketSize" },
+			{ "short" : "nTxtRunesSize" },
+			{ "BYTE" : "BitStream[nFullPacketSize - 6]" }
+		]
 	},
 	"D2GS_DELAYSTATE" : {
 		"PacketId" : "0xA7",
