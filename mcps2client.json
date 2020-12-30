@@ -131,6 +131,33 @@
 			{ "int" : "Result" }
 		]
 	},
+	"MCP_REQUESTLADDERDATA" : {
+		"PacketId" : "0x11",
+		"Description" : "",
+		"Structure" : [ 
+			{ "McpHeader" : [
+					{ "short" : "nSize" },
+					{ "BYTE" : "PacketId" }
+				]
+			}, 
+			{ "BYTE" : "LadderType" },
+			{ "short" : "TotalSize" },
+			{ "short" : "CurrentSize" },
+			{ "short" : "SizeLeft" },
+			{ "short" : "RankFirst" },
+			{ "short" : "Unknown0" },
+			{ "int" : "Count" },
+			{ "int" : "Unknown1" },
+			{ "Entry[(TotalSize - 22) / 28]" : [
+					{ "long long" : "Experience" },
+					{ "BYTE" : "Flags" },
+					{ "BYTE" : "Act" },
+					{ "short" : "Level" },
+					{ "char" : "szName[16]" }
+				]
+			}
+		]
+	},
 	"MCP_MOTD" : {
 		"PacketId" : "0x12",
 		"Description" : "",
