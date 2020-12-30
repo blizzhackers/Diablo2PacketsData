@@ -1202,7 +1202,7 @@
 	},
 	"D2GS_WALKVERIFY" : {
 		"PacketId" : "0x96",
-		"Description" : "",
+		"Description" : "BitStream data contains:\n Stamina (15bits) \n X (16bits) \n Y (16bits) \n dX (8bits) \n dY (8bits)",
 		"Size" : 9,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
