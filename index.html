@@ -57,7 +57,7 @@
                                 </div>
                                 <template v-if="packet.Description">
                                     <div class="badge badge-primary">Description</div>
-                                    <p class="text-pre">{{ packet.Description }}</p>
+                                    <p style="white-space: pre">{{ packet.Description }}</p>
                                 </template>
                                 <packet-structure v-if="packet.Structure" :structure="packet.Structure" title="Structure">
                             </div>
