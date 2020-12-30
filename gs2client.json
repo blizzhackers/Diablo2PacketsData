@@ -247,7 +247,7 @@
 	},
 	"D2GS_HPMPUPDATE2" : {
 		"PacketId" : "0x18",
-		"Description" : "",
+		"Description" : "BitStream data contains:\n HP (15bits) \n MP (15bits) \n Stamina (15bits) \n HPRegen (7bits) \n MPRegen (7bits) \n X (16bits) \n Y (16bits) \n dX (8bits) \n dY (8bits)",
 		"Size" : 15,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
@@ -1193,7 +1193,7 @@
 	},
 	"D2GS_HPMPUPDATE" : {
 		"PacketId" : "0x95",
-		"Description" : "",
+		"Description" : "BitStream data contains:\n HP (15bits) \n MP (15bits) \n Stamina (15bits) \n X (16bits) \n Y (16bits) \n dX (8bits) \n dY (8bits)",
 		"Size" : 13,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
