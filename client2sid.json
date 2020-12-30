@@ -6,7 +6,7 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}
 		]
@@ -18,7 +18,7 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}
 		]
@@ -30,14 +30,14 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "WORD" : "GameType" },
-			{ "WORD" : "GameSubType" },
-			{ "DWORD" : "ViewingFilter" },
-			{ "DWORD" : "Zero" },
-			{ "DWORD" : "NumberOfGames" },
+			{ "short" : "GameType" },
+			{ "short" : "GameSubType" },
+			{ "int" : "ViewingFilter" },
+			{ "int" : "Zero" },
+			{ "int" : "NumberOfGames" },
 			{ "std::string" : "GameName" },
 			{ "std::string" : "GamePass" },
 			{ "std::string" : "GameDesc" }
@@ -50,7 +50,7 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
 			{ "std::string" : "Username" },
@@ -64,10 +64,10 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "ProductCode" }
+			{ "int" : "ProductCode" }
 		]
 	},
 	"SID_JOINCHANNEL" : {
@@ -77,10 +77,10 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "Flags" },
+			{ "int" : "Flags" },
 			{ "std::string" : "Channel" }
 		]
 	},
@@ -91,7 +91,7 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
 			{ "std::string" : "Text" }
@@ -104,7 +104,7 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}
 		]
@@ -116,13 +116,13 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "PlatformCode" },
-			{ "DWORD" : "ProductCode" },
-			{ "DWORD" : "BannerID" },
-			{ "DWORD" : "CurrentTime" }
+			{ "int" : "PlatformCode" },
+			{ "int" : "ProductCode" },
+			{ "int" : "BannerID" },
+			{ "int" : "CurrentTime" }
 		]
 	},
 	"SID_CLICKAD" : {
@@ -132,11 +132,11 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "AdID" },
-			{ "DWORD" : "RequestType" }
+			{ "int" : "AdID" },
+			{ "int" : "RequestType" }
 		]
 	},
 	"SID_REGISTRY" : {
@@ -146,10 +146,10 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "Cookie" },
+			{ "int" : "Cookie" },
 			{ "std::string" : "KeyValue" }
 		]
 	},
@@ -160,15 +160,15 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "IsPrivateGame" },
-			{ "DWORD" : "Uptime" },
-			{ "WORD" : "GameType" },
-			{ "WORD" : "GameSubtype" },
-			{ "DWORD" : "ProviderVersion" },
-			{ "DWORD" : "LadderType" },
+			{ "int" : "IsPrivateGame" },
+			{ "int" : "Uptime" },
+			{ "short" : "GameType" },
+			{ "short" : "GameSubtype" },
+			{ "int" : "ProviderVersion" },
+			{ "int" : "LadderType" },
 			{ "std::string" : "GameName" },
 			{ "std::string" : "GamePass" },
 			{ "std::string" : "GameStatString" }
@@ -181,7 +181,7 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}
 		]
@@ -193,12 +193,12 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "PlatformCode" },
-			{ "DWORD" : "ProductCode" },
-			{ "DWORD" : "AdID" },
+			{ "int" : "PlatformCode" },
+			{ "int" : "ProductCode" },
+			{ "int" : "AdID" },
 			{ "std::string" : "Filename" },
 			{ "std::string" : "URL" }
 		]
@@ -210,11 +210,11 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "ProductCode" },
-			{ "DWORD" : "ProductVersion" },
+			{ "int" : "ProductCode" },
+			{ "int" : "ProductVersion" },
 			{ "std::string" : "GameName" },
 			{ "std::string" : "GamePass" }
 		]
@@ -226,10 +226,10 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "Value" }
+			{ "int" : "Value" }
 		]
 	},
 	"SID_READUSERDATA" : {
@@ -239,12 +239,12 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "AccountsCount" },
-			{ "DWORD" : "KeysCount" },
-			{ "DWORD" : "RequestId" },
+			{ "int" : "AccountsCount" },
+			{ "int" : "KeysCount" },
+			{ "int" : "RequestId" },
 			{ "std::string" : "Accounts[AccountsCount]" },
 			{ "std::string" : "Keys[KeysCount]" }
 		]
@@ -256,11 +256,11 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "AccountsCount" },
-			{ "DWORD" : "KeysCount" },
+			{ "int" : "AccountsCount" },
+			{ "int" : "KeysCount" },
 			{ "std::string" : "Accounts[AccountsCount]" },
 			{ "std::string" : "Keys[KeysCount]" },
 			{ "std::string" : "Values[KeysCount]" }
@@ -273,11 +273,11 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "ClientToken" },
-			{ "DWORD" : "ServerToken" },
+			{ "int" : "ClientToken" },
+			{ "int" : "ServerToken" },
 			{ "BYTE" : "OldDoubleHashPassword[20]" },
 			{ "BYTE" : "NewPasswordHash[20]" },
 			{ "std::string" : "Account" }
@@ -290,11 +290,11 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "RequestId" },
-			{ "DWORD" : "Unknown" },
+			{ "int" : "RequestId" },
+			{ "int" : "Unknown" },
 			{ "std::string" : "Filename" }
 		]
 	},
@@ -305,11 +305,11 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "ClientToken" },
-			{ "DWORD" : "ServerToken" },
+			{ "int" : "ClientToken" },
+			{ "int" : "ServerToken" },
 			{ "BYTE" : "PWHash[20]" },
 			{ "std::string" : "Username" }
 		]
@@ -321,7 +321,7 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
 			{ "BYTE" : "PasswordHash[20]" },
@@ -335,10 +335,10 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "ClientToken" },
+			{ "int" : "ClientToken" },
 			{ "BYTE" : "HashedRealmPassword[20]" },
 			{ "std::string" : "RealmTitle" }
 		]
@@ -350,7 +350,7 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}
 		]
@@ -362,10 +362,10 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "Timestamp" }
+			{ "int" : "Timestamp" }
 		]
 	},
 	"SID_EXTRAWORK" : {
@@ -375,12 +375,12 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "WORD" : "GameType" },
-			{ "WORD" : "Length" },
-			{ "BYTE" : "Data[Length]" }
+			{ "short" : "GameType" },
+			{ "short" : "Length" },
+			{ "BYTE" : "Stream[Length]" }
 		]
 	},
 	"SID_AUTH_INFO" : {
@@ -390,18 +390,18 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "ProtocolID" },
-			{ "DWORD" : "PlatformCode" },
-			{ "DWORD" : "ProductCode" },
-			{ "DWORD" : "ProductVersion" },
-			{ "DWORD" : "ProductLanguage" },
-			{ "DWORD" : "LocalIP" },
-			{ "DWORD" : "TimeZoneBias" },
-			{ "DWORD" : "LocaleID" },
-			{ "DWORD" : "LanguageID" },
+			{ "int" : "ProtocolID" },
+			{ "int" : "PlatformCode" },
+			{ "int" : "ProductCode" },
+			{ "int" : "ProductVersion" },
+			{ "int" : "ProductLanguage" },
+			{ "int" : "LocalIP" },
+			{ "int" : "TimeZoneBias" },
+			{ "int" : "LocaleID" },
+			{ "int" : "LanguageID" },
 			{ "std::string" : "CountryAbreviation" },
 			{ "std::string" : "Coutry" }
 		]
@@ -413,19 +413,19 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
-			{ "DWORD" : "ClientToken" },
-			{ "DWORD" : "ExeVersion" },
-			{ "DWORD" : "ExeHash" },
-			{ "DWORD" : "CDKeyCount" },
-			{ "DWORD" : "Spawn" },
+			{ "int" : "ClientToken" },
+			{ "int" : "ExeVersion" },
+			{ "int" : "ExeHash" },
+			{ "int" : "CDKeyCount" },
+			{ "int" : "Spawn" },
 			{ "CDKeys[CDKeyCount]" : [
-					{ "DWORD" : "Length" },
-					{ "DWORD" : "Product" },
-					{ "DWORD" : "Public" },
-					{ "DWORD" : "Unknown" },
+					{ "int" : "Length" },
+					{ "int" : "Product" },
+					{ "int" : "Public" },
+					{ "int" : "Unknown" },
 					{ "BYTE" : "Private[20]" }
 				]
 			},
@@ -440,7 +440,7 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
 			{ "std::string" : "Account" },
@@ -454,7 +454,7 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
 			{ "std::string" : "Account" },
@@ -469,7 +469,7 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
 			{ "std::string" : "eMail" }
@@ -482,13 +482,13 @@
 			{ "SidHeader" : [
 					{ "BYTE" : "AlwaysFF" },
 					{ "BYTE" : "PacketId" },
-					{ "WORD" : "nSize" }
+					{ "short" : "nSize" }
 				]
 			}, 
 			{ "BYTE" : "Something1" },
 			{ "BYTE" : "Size" },
 			{ "BYTE" : "Something2" },
-			{ "BYTE" : "Data[Size]" }
+			{ "BYTE" : "Stream[Size]" }
 		]
 	}
 }

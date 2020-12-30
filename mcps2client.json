@@ -4,7 +4,7 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}
@@ -15,11 +15,11 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "DWORD" : "Result" }
+			{ "int" : "Result" }
 		]
 	},
 	"MCP_CHARCREATE" : {
@@ -27,11 +27,11 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "DWORD" : "Result" }
+			{ "int" : "Result" }
 		]
 	},
 	"MCP_CREATEGAME" : {
@@ -39,14 +39,14 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "WORD" : "RequestId" },
-			{ "WORD" : "GameToken" },
-			{ "WORD" : "Unknown" },
-			{ "DWORD" : "Result" }
+			{ "short" : "RequestId" },
+			{ "short" : "GameToken" },
+			{ "short" : "Unknown" },
+			{ "int" : "Result" }
 		]
 	},
 	"MCP_JOINGAME" : {
@@ -54,16 +54,16 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "WORD" : "RequestId" },
-			{ "WORD" : "GameToken" },
-			{ "WORD" : "Unknown" },
-			{ "DWORD" : "GameIP" },
-			{ "DWORD" : "GameHash" },
-			{ "DWORD" : "Result" }
+			{ "short" : "RequestId" },
+			{ "short" : "GameToken" },
+			{ "short" : "Unknown" },
+			{ "int" : "GameIP" },
+			{ "int" : "GameHash" },
+			{ "int" : "Result" }
 		]
 	},
 	"MCP_GAMELIST" : {
@@ -71,14 +71,14 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "WORD" : "RequestId" },
-			{ "DWORD" : "Index" },
+			{ "short" : "RequestId" },
+			{ "int" : "Index" },
 			{ "BYTE" : "Players" },
-			{ "DWORD" : "Status" },
+			{ "int" : "Status" },
 			{ "std::string" : "GameName" },
 			{ "std::string" : "GameDesc" }
 		]
@@ -88,13 +88,13 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "WORD" : "RequestId" },
-			{ "DWORD" : "Status" },
-			{ "DWORD" : "Uptime" },
+			{ "short" : "RequestId" },
+			{ "int" : "Status" },
+			{ "int" : "Uptime" },
 			{ "BYTE" : "CreatorLevel" },
 			{ "BYTE" : "Difference" },
 			{ "BYTE" : "MaxPayers" },
@@ -112,11 +112,11 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "DWORD" : "Result" }
+			{ "int" : "Result" }
 		]
 	},
 	"MCP_CHARDELETE" : {
@@ -124,11 +124,11 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "DWORD" : "Result" }
+			{ "int" : "Result" }
 		]
 	},
 	"MCP_MOTD" : {
@@ -136,7 +136,7 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
@@ -149,11 +149,11 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "DWORD" : "Position" }
+			{ "int" : "Position" }
 		]
 	},
 	"MCP_CHARLIST" : {
@@ -161,13 +161,13 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "WORD" : "RequestCount" },
-			{ "DWORD" : "ExistCount" },
-			{ "WORD" : "ReturnCount" },
+			{ "short" : "RequestCount" },
+			{ "int" : "ExistCount" },
+			{ "short" : "ReturnCount" },
 			{ "Characters[ReturnCount]" : [
 					{ "std::string" : "Name" },
 					{ "std::string" : "Statstring" }
@@ -180,11 +180,11 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "DWORD" : "Result" }
+			{ "int" : "Result" }
 		]
 	},
 	"MCP_CHARLIST2" : {
@@ -192,15 +192,15 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "WORD" : "RequestCount" },
-			{ "DWORD" : "ExistCount" },
-			{ "WORD" : "ReturnCount" },
+			{ "short" : "RequestCount" },
+			{ "int" : "ExistCount" },
+			{ "short" : "ReturnCount" },
 			{ "Characters[ReturnCount]" : [
-					{ "DWORD" : "ExpireTime" },
+					{ "int" : "ExpireTime" },
 					{ "std::string" : "Name" },
 					{ "std::string" : "Statstring" }
 				]

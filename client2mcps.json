@@ -4,12 +4,12 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "DWORD" : "MCPCookie" },
-			{ "DWORD" : "MCPStatus" },
+			{ "int" : "MCPCookie" },
+			{ "int" : "MCPStatus" },
 			{ "BYTE" : "MCPChunk1[8]" },
 			{ "BYTE" : "MCPChunk2[48]" },
 			{ "std::string" : "BnetName" }
@@ -20,12 +20,12 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "DWORD" : "Class" },
-			{ "WORD" : "Flags" },
+			{ "int" : "Class" },
+			{ "short" : "Flags" },
 			{ "std::string" : "CharName" }
 		]
 	},
@@ -34,12 +34,12 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "WORD" : "RequestId" },
-			{ "DWORD" : "nGameFlags" },
+			{ "short" : "RequestId" },
+			{ "int" : "nGameFlags" },
 			{ "BYTE" : "Unknown1" },
 			{ "BYTE" : "Difference" },
 			{ "BYTE" : "MaxPlayers" },
@@ -53,11 +53,11 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "WORD" : "RequestId" },
+			{ "short" : "RequestId" },
 			{ "std::string" : "GameName" },
 			{ "std::string" : "GamePass" }
 		]
@@ -67,12 +67,12 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "WORD" : "RequestId" },
-			{ "DWORD" : "HardcoreFlag" },
+			{ "short" : "RequestId" },
+			{ "int" : "HardcoreFlag" },
 			{ "std::string" : "SearchString" }
 		]
 	},
@@ -81,11 +81,11 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "WORD" : "RequestId" },
+			{ "short" : "RequestId" },
 			{ "std::string" : "GameName" }
 		]
 	},
@@ -94,7 +94,7 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
@@ -106,11 +106,11 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "WORD" : "RequestId" },
+			{ "short" : "RequestId" },
 			{ "std::string" : "CharName" }
 		]
 	},
@@ -119,12 +119,12 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
 			{ "BYTE" : "LadderType" },
-			{ "WORD" : "StartPosition" }
+			{ "short" : "StartPosition" }
 		]
 	},
 	"MCP_MOTD" : {
@@ -132,7 +132,7 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}
@@ -143,7 +143,7 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}
@@ -154,12 +154,12 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "DWORD" : "Hardcore" },
-			{ "DWORD" : "Expansion" },
+			{ "int" : "Hardcore" },
+			{ "int" : "Expansion" },
 			{ "std::string" : "CharName" }
 		]
 	},
@@ -168,11 +168,11 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "DWORD" : "Quantity" }
+			{ "int" : "Quantity" }
 		]
 	},
 	"MCP_CHARUPGRADE" : {
@@ -180,7 +180,7 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
@@ -192,11 +192,11 @@
 		"Description" : "",
 		"Structure" : [ 
 			{ "McpHeader" : [
-					{ "WORD" : "nSize" },
+					{ "short" : "nSize" },
 					{ "BYTE" : "PacketId" }
 				]
 			}, 
-			{ "DWORD" : "RequestCount" }
+			{ "int" : "RequestCount" }
 		]
 	}
 }
