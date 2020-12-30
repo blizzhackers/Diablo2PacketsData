@@ -1457,8 +1457,8 @@
 			{ "short" : "nUnitX" },
 			{ "short" : "nUnitY" },
 			{ "BYTE" : "nHPPercent" },
-			{ "BYTE" : "FullPacketSize" },
-			{ "BYTE" : "BitStream[FullPacketSize - 13]" }
+			{ "BYTE" : "nFullPacketSize" },
+			{ "BYTE" : "BitStream[nFullPacketSize - 13]" }
 		]
 	},
 	"D2GS_WARDEN" : {
