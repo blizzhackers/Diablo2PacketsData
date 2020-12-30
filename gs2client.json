@@ -9,12 +9,12 @@
 	},
 	"D2GS_GAMEFLAGS" : {
 		"PacketId" : "0x01",
-		"Description" : "",
+		"Description" : "eArenaFlags contains informatons about current game.\n eArenaFlags & 0x00000004 = Unknown (Always set) \n eArenaFlags & 0x00000800 = Hardcore \n eArenaFlags & 0x00100000 = Expansion",
 		"Size" : 8,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "nDifficulty" },
-			{ "int" : "nArenaFlags" },
+			{ "int" : "eArenaFlags" },
 			{ "BYTE" : "bIsExpansion" },
 			{ "BYTE" : "bIsLadder" }
 		]
