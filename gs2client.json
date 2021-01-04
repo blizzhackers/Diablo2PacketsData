@@ -1151,7 +1151,7 @@
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "nAct" },
-			{ "WORD" : "nStringID[12]" }
+			{ "WORD" : "nNpcID[12]" }
 		]
 	},
 	"D2GS_REMOVEITEMSDISPLAY" : {
