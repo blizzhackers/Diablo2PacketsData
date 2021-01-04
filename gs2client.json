@@ -1146,7 +1146,7 @@
 	},
 	"D2GS_NPCGOSSIP" : {
 		"PacketId" : "0x91",
-		"Description" : "",
+		"Description" : "Add intro (! above head) to NPC",
 		"Size" : 26,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
