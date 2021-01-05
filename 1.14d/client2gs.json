@@ -850,7 +850,7 @@
 			{ "short" : "nGameToken" },
 			{ "BYTE" : "nCharClass" },
 			{ "int" : "nVerByte" },
-			{ "int" : "VnersionConstant" },
+			{ "int" : "VersionConstant" },
 			{ "int" : "nConstant" },
 			{ "BYTE" : "nLanguageCode" },
 			{ "char" : "szCharName[16]" }

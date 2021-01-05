@@ -16,12 +16,12 @@
                     <div :class="'badge badge-' + color">{{ title }}</div>
                     <div class="list-group">
                         <template v-for="field in structure">
-                            <button v-for="(field, fieldType) in field" :class="'list-group-item list-group-item-' + color">
+                            <div v-for="(field, fieldType) in field" :class="'text-center list-group-item list-group-item-' + color">
                                 <template v-if="typeof field === 'string'"><span :class="'badge badge-' + color">{{ fieldType }}</span> {{ field }}</template>
                                 <template v-else>
                                     <packet-structure :structure="field" :title="fieldType" :level="(level | 0) + 1">
                                 </template>
-                            </button>
+                            </div>
                         </template>
                     </div>
                 </template>
