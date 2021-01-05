@@ -458,11 +458,11 @@
 	},
 	"D2GS_NPC_SELL" : {
 		"PacketId" : "0x33",
-		"Description" : "Sells item to interacted NPC",
+		"Description" : "Sells item to NPC",
 		"Size" : 17,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
-			{ "int" : "nUnitGUID" },
+			{ "int" : "nNpcGUID" },
 			{ "int" : "nItemGUID" },
 			{ "WORD" : "nMode" },
 			{ "BYTE" : "Padding[6]" }
