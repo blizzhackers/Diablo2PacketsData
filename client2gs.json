@@ -468,13 +468,13 @@
 			{ "BYTE" : "Padding[6]" }
 		]
 	},
-	"D2GS_NPC_IDENT" : {
+	"D2GS_NPC_IDENTIFYITEMS" : {
 		"PacketId" : "0x34",
-		"Description" : "",
+		"Description" : "Identifies all items if player can afford it",
 		"Size" : 5,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
-			{ "int" : "nUnitGUID" }
+			{ "int" : "nNpcGUID" }
 		]
 	},
 	"D2GS_REPAIR" : {
