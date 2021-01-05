@@ -465,8 +465,7 @@
 			{ "int" : "nUnitGUID" },
 			{ "int" : "nItemGUID" },
 			{ "WORD" : "nMode" },
-			{ "WORD" : "wUnused" },
-			{ "int" : "dwUnused" }
+			{ "BYTE" : "Padding[6]" }
 		]
 	},
 	"D2GS_NPC_IDENT" : {
