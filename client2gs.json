@@ -464,7 +464,8 @@
 			{ "BYTE" : "PacketId" }, 
 			{ "int" : "nUnitGUID" },
 			{ "int" : "nItemGUID" },
-			{ "int" : "bRepairOne" },
+			{ "WORD" : "wRep"),
+			{ "WORD" : "wPad" },
 			{ "int" : "dwUnused" }
 		]
 	},
