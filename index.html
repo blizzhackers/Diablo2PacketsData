@@ -45,8 +45,8 @@
                     </div>
                 </div>
                 <div v-if="active" class="accordion">
-                    <div v-for="packet in filteredAndSortedPackets" class="card" :data-relevance="packet.relevance" :key="attrSafeName(packet.Source, packet.Name)">
-                        <template v-for="local in [{body_id: attrSafeName(packet.Source, packet.Name)}]">
+                    <div v-for="packet in filteredAndSortedPackets" class="card" :data-relevance="packet.relevance" :key="attrSafeName(packet.Source, packet.Name, packet['Game Version'])">
+                        <template v-for="local in [{body_id: attrSafeName(packet.Source, packet.Name, packet['Game Version'])}]">
                             <div class="card-header">
                                 <span class="badge badge-secondary">{{ packet.PacketId }}</span> <a :href="'#' + local.body_id" data-toggle="collapse" aria-expanded="false" class="text-secondary">{{ packet.Name }}</a>
                             </div>

@@ -30,6 +30,10 @@ let app = new Vue({
                 mcp: true,
                 sid: true,
             },
+            version: {
+                '1.14d': true,
+                '1.13c': false,
+            }
         },
         filterText: '',
     },
@@ -50,6 +54,10 @@ let app = new Vue({
                 }
 
                 if (!this.filterOptions.type[packet.Type]) {
+                    return false;
+                }
+
+                if (!this.filterOptions.version[packet['Game Version']]) {
                     return false;
                 }
 
@@ -103,13 +111,19 @@ let app = new Vue({
         },
     },
     created: async function () {
-        for (let [source, type, data] of [
-            ['client', 'd2gs', fetch('client2gs.json').then(data => data.json())],
-            ['client', 'mcp', fetch('client2mcps.json').then(data => data.json())],
-            ['client', 'sid', fetch('client2sid.json').then(data => data.json())],
-            ['server', 'd2gs', fetch('gs2client.json').then(data => data.json())],
-            ['server', 'mcp', fetch('mcps2client.json').then(data => data.json())],
-            ['server', 'sid', fetch('sid2client.json').then(data => data.json())],
+        for (let [source, type, version, data] of [
+            ['client', 'd2gs', '1.14d', fetch('1.14d/client2gs.json').then(data => data.json())],
+            ['client', 'mcp', '1.14d', fetch('1.14d/client2mcps.json').then(data => data.json())],
+            ['client', 'sid', '1.14d', fetch('1.14d/client2sid.json').then(data => data.json())],
+            ['server', 'd2gs', '1.14d', fetch('1.14d/gs2client.json').then(data => data.json())],
+            ['server', 'mcp', '1.14d', fetch('1.14d/mcps2client.json').then(data => data.json())],
+            ['server', 'sid', '1.14d', fetch('1.14d/sid2client.json').then(data => data.json())],
+            ['client', 'd2gs', '1.13c', fetch('1.14d/client2gs.json').then(data => data.json())],
+            ['client', 'mcp', '1.13c', fetch('1.14d/client2mcps.json').then(data => data.json())],
+            ['client', 'sid', '1.13c', fetch('1.14d/client2sid.json').then(data => data.json())],
+            ['server', 'd2gs', '1.13c', fetch('1.13c/gs2client.json').then(data => data.json())],
+            ['server', 'mcp', '1.13c', fetch('1.14d/mcps2client.json').then(data => data.json())],
+            ['server', 'sid', '1.13c', fetch('1.14d/sid2client.json').then(data => data.json())],
         ]) {
             while (data.then) {
                 data = await data;
@@ -120,7 +134,7 @@ let app = new Vue({
                     Name: key,
                     Source: source,
                     Type: type,
-                    'Game Version': '1.14d',
+                    'Game Version': version,
                 }, data[key]);
                 this.packets.push(data[key]);
     
