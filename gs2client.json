@@ -353,12 +353,12 @@
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "nUnitType" },
-			{ "BYTE" : "Gap2" },
+			{ "BYTE" : "bDelete" },
 			{ "int" : "nUnitGUID" },
 			{ "short" : "nSkillID" },
 			{ "BYTE" : "nAmount" },
 			{ "BYTE" : "Gap6" },
-			{ "BYTE" : "bZeroCheck" }
+			{ "BYTE" : "bBody" }
 		]
 	},
 	"D2GS_SETSKILL" : {

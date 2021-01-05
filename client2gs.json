@@ -458,13 +458,14 @@
 	},
 	"D2GS_NPC_SELL" : {
 		"PacketId" : "0x33",
-		"Description" : "",
+		"Description" : "Sells item to interacted NPC",
 		"Size" : 17,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "int" : "nUnitGUID" },
 			{ "int" : "nItemGUID" },
-			{ "int" : "bRepairOne" },
+			{ "WORD" : "nMode" },
+			{ "WORD" : "wUnused" },
 			{ "int" : "dwUnused" }
 		]
 	},
