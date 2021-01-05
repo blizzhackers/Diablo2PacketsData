@@ -16,3 +16,7 @@ html, body {
 *[v-cloak] {
     display: none;
 }
+
+.border-2 {
+    border-width: 2px !important;
+}

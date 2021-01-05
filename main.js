@@ -41,6 +41,9 @@ let app = new Vue({
         attrSafeName(...args) {
             return args.map(v => v.match(/[a-z0-9]+/gi).map(v => v.toLowerCase()).join('-')).join('-');
         },
+        anyFiltersEnabled(group) {
+            return Object.values(this.filterOptions[group]).some(Boolean);
+        }
     },
     computed: {
         filteredAndSortedPackets: function () {

@@ -40,7 +40,7 @@
                     <input type="text" v-model="filterText" class="form-control" placeholder="Type to search packets...">
                 </div>
                 <div class="btn-toolbar mb-3">
-                    <div class="mr-2" v-for="filters in filterOptions">
+                    <div v-for="(filters, groupName) in filterOptions" :class="'mr-2 p-1 border border-2 rounded ' + (anyFiltersEnabled(groupName) ? 'border-success' : 'border-danger')">
                         <button v-for="(filterValue, filterName) in filters" :class="'btn mr-1 btn-' + ['secondary', 'success'][filterValue | 0]" @click="filters[filterName] = !filterValue">{{ filterName }} <span class="badge badge-light">{{ filterValue ? 'Show' : 'Hide' }}</span></span></button>
                     </div>
                 </div>
