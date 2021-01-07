@@ -40,7 +40,36 @@
 </template>
 
 <script>
-import PacketStructure from './components/PacketStructure.vue'
+
+function duplicateObject(obj) {
+    return JSON.parse(JSON.stringify(obj));
+}
+
+import PacketStructure from './components/PacketStructure.vue';
+import Packets_client2gs_1_14d from './data/1.14d/client2gs.json';
+import Packets_client2mcps_1_14d from './data/1.14d/client2mcps.json';
+import Packets_client2sid_1_14d from './data/1.14d/client2sid.json';
+import Packets_gs2client_1_14d from './data/1.14d/gs2client.json';
+import Packets_mcps2client_1_14d from './data/1.14d/mcps2client.json';
+import Packets_sid2client_1_14d from './data/1.14d/sid2client.json';
+
+import Packets_client2sid_1_13c from './data/1.13c/client2sid.json';
+import Packets_gs2client_1_13c from './data/1.13c/gs2client.json';
+
+let packetSources = [
+    ['client', 'd2gs', '1.14d', Packets_client2gs_1_14d],
+    ['client', 'mcp', '1.14d', Packets_client2mcps_1_14d],
+    ['client', 'sid', '1.14d', Packets_client2sid_1_14d],
+    ['server', 'd2gs', '1.14d', Packets_gs2client_1_14d],
+    ['server', 'mcp', '1.14d', Packets_mcps2client_1_14d],
+    ['server', 'sid', '1.14d', Packets_sid2client_1_14d],
+    ['client', 'd2gs', '1.13c', Packets_client2gs_1_14d],
+    ['client', 'mcp', '1.13c', Packets_client2mcps_1_14d],
+    ['client', 'sid', '1.13c', Packets_client2sid_1_13c],
+    ['server', 'd2gs', '1.13c', Packets_gs2client_1_13c],
+    ['server', 'mcp', '1.13c', Packets_mcps2client_1_14d],
+    ['server', 'sid', '1.13c', Packets_sid2client_1_14d],
+];
 
 export default {
   name: 'App',
@@ -145,23 +174,8 @@ export default {
         },
     },
     created: async function () {
-        for (let [source, type, version, data] of [
-            ['client', 'd2gs', '1.14d', fetch('1.14d/client2gs.json').then(data => data.json())],
-            ['client', 'mcp', '1.14d', fetch('1.14d/client2mcps.json').then(data => data.json())],
-            ['client', 'sid', '1.14d', fetch('1.14d/client2sid.json').then(data => data.json())],
-            ['server', 'd2gs', '1.14d', fetch('1.14d/gs2client.json').then(data => data.json())],
-            ['server', 'mcp', '1.14d', fetch('1.14d/mcps2client.json').then(data => data.json())],
-            ['server', 'sid', '1.14d', fetch('1.14d/sid2client.json').then(data => data.json())],
-            ['client', 'd2gs', '1.13c', fetch('1.14d/client2gs.json').then(data => data.json())],
-            ['client', 'mcp', '1.13c', fetch('1.14d/client2mcps.json').then(data => data.json())],
-            ['client', 'sid', '1.13c', fetch('1.13c/client2sid.json').then(data => data.json())],
-            ['server', 'd2gs', '1.13c', fetch('1.13c/gs2client.json').then(data => data.json())],
-            ['server', 'mcp', '1.13c', fetch('1.14d/mcps2client.json').then(data => data.json())],
-            ['server', 'sid', '1.13c', fetch('1.14d/sid2client.json').then(data => data.json())],
-        ]) {
-            while (data.then) {
-                data = await data;
-            }
+        for (let [source, type, version, data] of packetSources) {
+            data = duplicateObject(data);
     
             for (let key in data) {
                 data[key] = Object.assign({
