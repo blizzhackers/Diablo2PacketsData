@@ -2,7 +2,7 @@
   <div class="card">
     <h1 class="card-header text-center">D2 Packet Browser</h1>
     <div class="card-body">
-        <h4 class="text-center">To contribute visit our <a href="https://github.com/blizzhackers/Diablo2PacketsData" target="_blank">GitHub repository</a></h4>
+        <h5 class="text-center">Visit our <a href="https://github.com/blizzhackers/Diablo2PacketsData" target="_blank" class="badge badge-pill badge-primary">GitHub Repository</a> to contribute!</h5>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text">Search</span>
