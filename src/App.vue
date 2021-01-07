@@ -1,42 +1,74 @@
-(elem => {
-    if (elem) {
-        for (let i = 0; i < elem.children.length; i++) {
-            let comp = {};
+<template>
+  <div class="card">
+    <h1 class="card-header text-center">D2 Packet Browser</h1>
+    <div class="card-body">
+        <h4 class="text-center">To contribute visit our <a href="https://github.com/blizzhackers/Diablo2PacketsData" target="_blank">GitHub repository</a></h4>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Search</span>
+            </div>
+            <input type="text" v-model="filterText" class="form-control" placeholder="Type to search packets...">
+        </div>
+        <div class="btn-toolbar mb-3">
+            <div v-for="(filters, groupName) in filterOptions" :class="'mr-2 p-1 border border-2 rounded ' + (anyFiltersEnabled(groupName) ? 'border-success' : 'border-danger')" :key="groupName">
+                <button v-for="(filterValue, filterName) in filters" :key="filterName" :class="'btn mr-1 btn-' + ['secondary', 'success'][filterValue | 0]" @click="filters[filterName] = !filterValue">{{ filterName }} <span class="badge badge-light">{{ filterValue ? 'Show' : 'Hide' }}</span></button>
+            </div>
+        </div>
+        <div class="accordion">
+            <div v-for="packet in filteredAndSortedPackets" class="card" :data-relevance="packet.relevance" :key="attrSafeName(packet.Source, packet.Name, packet['Game Version'])">
+                <template v-for="local in [{body_id: attrSafeName(packet.Source, packet.Name, packet['Game Version'])}]">
+                    <div class="card-header" :key="local.body_id + '-packet-header'">
+                        <span class="badge badge-secondary">{{ packet.PacketId }}</span> <a :href="'#' + local.body_id" data-toggle="collapse" aria-expanded="false" class="text-secondary">{{ packet.Name }}</a>
+                    </div>
+                    <div class="card-body collapse" :id="local.body_id" :key="local.body_id + '-packet-body'">
+                        <div class="row mb-3">
+                            <template v-for="(column, columnIndex) in columns.filter(v => !['Description', 'Structure'].includes(v))">
+                                <div class="col-auto" :key="columnIndex"><span class="badge badge-primary">{{ column }}</span> {{ packet[column] }}</div>
+                            </template>
+                        </div>
+                        <template v-if="packet.Description">
+                            <div class="badge badge-primary">Description</div>
+                            <p style="white-space: pre">{{ packet.Description }}</p>
+                        </template>
+                        <PacketStructure v-if="packet.Structure" :structure="packet.Structure" title="Structure" :id="local.body_id + '-packet-structure'" />
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+  </div>
+</template>
 
-            if (elem.children[i].getAttribute('props')) {
-                comp.props = elem.children[i].getAttribute('props').split(',').map(v => v.trim());
-            }
+<script>
+import PacketStructure from './components/PacketStructure.vue'
 
-            comp.template = '<div>' + elem.children[i].innerHTML + '</div>';
-
-            Vue.component(elem.children[i].id, comp);
-        }
-    }
-})(document.getElementById('components'));
-
-let app = new Vue({
-    el: '#app',
-    data: {
-        active: false,
-        columns: [],
-        packets: [],
-        filterOptions: {
-            source: {
-                client: true,
-                server: true,
-            },
-            type: {
-                d2gs: true,
-                mcp: true,
-                sid: true,
-            },
-            version: {
-                '1.14d': true,
-                '1.13c': false,
-            }
+export default {
+  name: 'App',
+  components: {
+    PacketStructure
+  },
+  data() {
+    return {
+      columns: [],
+      packets: [],
+      filterOptions: {
+        source: {
+          client: true,
+          server: true,
         },
-        filterText: '',
-    },
+        type: {
+          d2gs: true,
+          mcp: true,
+          sid: true,
+        },
+        version: {
+          '1.14d': true,
+          '1.13c': false,
+        }
+      },
+      filterText: '',
+    };
+  },
     methods: {
         attrSafeName(...args) {
             return args.map(v => v.match(/[a-z0-9]+/gi).map(v => v.toLowerCase()).join('-')).join('-');
@@ -47,7 +79,7 @@ let app = new Vue({
     },
     computed: {
         filteredAndSortedPackets: function () {
-            let packets = this.packets.slice(), maxrelevance = -1, possiblerelevance = -1;
+            let packets = this.packets.slice(), maxrelevance = -1;
 
             packets = packets.filter(packet => {
                 packet.relevance = 0;
@@ -71,7 +103,6 @@ let app = new Vue({
                 let terms = this.filterText.toLowerCase().split(/\s+/).filter(Boolean);
 
                 if (terms.length) {
-                    possiblerelevance = terms.length;
                     maxrelevance = 0;
 
                     packets.forEach(packet => {
@@ -153,4 +184,28 @@ let app = new Vue({
     
         this.active = true;
     },
-});
+}
+</script>
+
+<style lang="scss">
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+html, body {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+}
+
+#components {
+    display: none;
+}
+
+.collapsing {
+    transition: none !important;
+}
+
+.border-2 {
+    border-width: 2px !important;
+}
+
+</style>
