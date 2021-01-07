@@ -1,0 +1,22 @@
+{
+  "name": "diablo2packetsdata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "local_server.js",
+  "scripts": {
+    "run": "node local_server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blizzhackers/Diablo2PacketsData.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blizzhackers/Diablo2PacketsData/issues"
+  },
+  "homepage": "https://github.com/blizzhackers/Diablo2PacketsData#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
