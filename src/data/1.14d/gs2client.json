@@ -1262,11 +1262,12 @@
 		"PacketId" : "0x9B",
 		"Description" : "",
 		"Size" : 7,
-		"Structure" : [ 
-			{ "BYTE" : "PacketId" }, 
-			{ "short" : "nMercNameId" },
-			{ "int" : "nReviveCost" }
-		]
+    "Structure": [
+      { "BYTE": "PacketId" },
+      { "short": "nMercNameId" },
+      { "short": "nReviveCost" },
+      { "short": "wPad" }
+    ]
 	},
 	"D2GS_ITEM_WORLD" : {
 		"PacketId" : "0x9C",
