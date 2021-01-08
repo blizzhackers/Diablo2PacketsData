@@ -1265,7 +1265,8 @@
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "short" : "nMercNameId" },
-			{ "int" : "nReviveCost" }
+			{ "short" : "nReviveCost" },
+			{ "short" : "wPad" }
 		]
 	},
 	"D2GS_ITEM_WORLD" : {
