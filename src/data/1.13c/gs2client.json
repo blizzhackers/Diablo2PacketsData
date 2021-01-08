@@ -338,12 +338,12 @@
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "nUnitType" },
-			{ "BYTE" : "bRemove" },
+			{ "BYTE" : "bDelete" },
 			{ "int" : "nUnitGUID" },
 			{ "short" : "nSkillID" },
-			{ "BYTE" : "nBaseAmount" },
-			{ "BYTE" : "nBonusAmount" },
-			{ "BYTE" : "nUnitSkillBonus" }
+			{ "BYTE" : "nBaseLevel" },
+			{ "BYTE" : "Padding" },
+			{ "BYTE" : "nBonusLevel" }
 		]
 	},
 	"D2GS_UPDATEITEM_SKILL" : {
@@ -353,12 +353,12 @@
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "nUnitType" },
-			{ "BYTE" : "Gap2" },
+			{ "BYTE" : "bDelete" },
 			{ "int" : "nUnitGUID" },
 			{ "short" : "nSkillID" },
-			{ "BYTE" : "nAmount" },
-			{ "BYTE" : "Gap6" },
-			{ "BYTE" : "bZeroCheck" }
+			{ "BYTE" : "nQuantity" },
+			{ "BYTE" : "Padding" },
+			{ "BYTE" : "bBody" }
 		]
 	},
 	"D2GS_SETSKILL" : {

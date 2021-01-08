@@ -458,24 +458,23 @@
 	},
 	"D2GS_NPC_SELL" : {
 		"PacketId" : "0x33",
-		"Description" : "",
+		"Description" : "Sells item to NPC",
 		"Size" : 17,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
-			{ "int" : "nUnitGUID" },
+			{ "int" : "nNpcGUID" },
 			{ "int" : "nItemGUID" },
-			{ "WORD" : "wRep"),
-			{ "WORD" : "wPad" },
-			{ "int" : "dwUnused" }
+			{ "WORD" : "nMode" },
+			{ "BYTE" : "Padding[6]" }
 		]
 	},
-	"D2GS_NPC_IDENT" : {
+	"D2GS_NPC_IDENTIFYITEMS" : {
 		"PacketId" : "0x34",
-		"Description" : "",
+		"Description" : "Identifies all items if player can afford it",
 		"Size" : 5,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
-			{ "int" : "nUnitGUID" }
+			{ "int" : "nNpcGUID" }
 		]
 	},
 	"D2GS_REPAIR" : {
@@ -843,15 +842,15 @@
 	},
 	"D2GS_GAMELOGON_MULTI" : {
 		"PacketId" : "0x68",
-		"Description" : "",
+		"Description" : "nMinorGameVersion:\n\t- 1.14\t\t= 0x0000000E\n\t- 1.13\t\t= 0x0000000D\n\t- 1.12\t\t= 0x0000000C\n\t- 1.11\t\t= 0x0000000B\nnVersionConstant:\n\t- Classic \t= 0x2185EDD6\n\t- Expansion \t= 0xED5DCC50\nnConstant:\n\t\t\t= 0x91A519B6",
 		"Size" : 37,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "int" : "nGameHash" },
 			{ "short" : "nGameToken" },
 			{ "BYTE" : "nCharClass" },
-			{ "int" : "nVerByte" },
-			{ "int" : "VnersionConstant" },
+			{ "int" : "nMinorGameVersion" },
+			{ "int" : "nVersionConstant" },
 			{ "int" : "nConstant" },
 			{ "BYTE" : "nLanguageCode" },
 			{ "char" : "szCharName[16]" }
