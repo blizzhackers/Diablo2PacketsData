@@ -204,6 +204,7 @@ export default {
 <style lang="scss">
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+@import "./styles/bootstrap-4.5.3/scss/bootstrap.scss";
 
 html, body {
     font-family: 'Inconsolata', monospace;
