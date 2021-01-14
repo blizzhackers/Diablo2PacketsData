@@ -11,7 +11,7 @@
         </div>
         <div class="btn-toolbar mb-3">
             <div v-for="(filters, groupName) in filterOptions" :class="'mr-2 p-1 border border-2 rounded ' + (anyFiltersEnabled(groupName) ? 'border-success' : 'border-danger')" :key="groupName">
-                <button v-for="(filterValue, filterName) in filters" :key="filterName" :class="'btn mr-1 btn-' + ['secondary', 'success'][filterValue | 0]" @click="filters[filterName] = !filterValue">{{ filterName }} <span class="badge badge-light">{{ filterValue ? 'Show' : 'Hide' }}</span></button>
+                <button v-for="(filterValue, filterName) in filters" :key="filterName" :class="'btn mr-1 btn-' + ['dark', 'success'][filterValue | 0]" @click="filters[filterName] = !filterValue">{{ filterName }} <span class="badge badge-light">{{ filterValue ? 'Show' : 'Hide' }}</span></button>
             </div>
         </div>
         <div class="accordion">
@@ -203,11 +203,9 @@ export default {
 
 <style lang="scss">
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
 @import "./styles/bootstrap-4.5.3/scss/bootstrap.scss";
 
-html, body {
-    font-family: 'Inconsolata', monospace;
+html {
     font-size: 18px;
 }
 

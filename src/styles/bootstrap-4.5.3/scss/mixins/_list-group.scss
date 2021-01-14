@@ -1,6 +1,6 @@
 // List Groups
 
-@mixin list-group-item-variant($state, $background, $color) {
+@mixin list-group-item-variant($state, $color, $background) {
   .list-group-item-#{$state} {
     color: $color;
     background-color: $background;
