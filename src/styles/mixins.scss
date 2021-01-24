@@ -1,0 +1,219 @@
+@mixin ie-only {
+
+    @media all and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+        @content;
+    }
+}
+
+@mixin min-small {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin min-medium {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin min-large {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin min-xlarge {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin max-xsmall {
+    @media (max-width: 575.98px) {
+        @content;
+    }
+}
+
+@mixin max-small {
+    @media (max-width: 767.98px) {
+        @content;
+    }
+}
+
+@mixin max-medium {
+    @media (max-width: 991.98px) {
+        @content;
+    }
+}
+
+@mixin max-large {
+    @media (max-width: 1199.98px) {
+        @content;
+    }
+}
+
+@mixin input-type-button {
+
+    button,
+    .button,
+    .btn,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"],
+    input[type="file"] {
+        @content;
+    }
+}
+
+@mixin input-type-box {
+
+    textarea,
+    select,
+    datalist,
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"] {
+        &:not(.visually-hidden) {
+            @content;
+        }
+    }
+}
+
+@mixin input-type-checkbox {
+    input[type="checkbox"] {
+        &:not(.visually-hidden) {
+            @content;
+        }
+    }
+}
+
+@mixin input-type-radio {
+    input[type="radio"] {
+        &:not(.visually-hidden) {
+            @content;
+        }
+    }
+}
+
+@mixin input-type-image {
+    input[type="image"] {
+        &:not(.visually-hidden) {
+            @content;
+        }
+    }
+}
+
+@mixin flex-row($child-display: null) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+    >* {
+        flex: 1 1 1px;
+
+        @if $child-display {
+            display: $child-display;
+        }
+    }
+}
+
+@mixin flex-column($child-display: null) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    >* {
+        flex: 1 1 auto;
+
+        @if $child-display {
+            display: $child-display;
+        }
+    }
+}
+
+@mixin anchor($color: $color_0_100, $hover_color: $color_0_40, $underline: true, $important: false) {
+
+    &,
+    &:visited,
+    &:active {
+        color: $color #{if($important, '!important', '')};
+        text-decoration: none #{if($important, '!important', '')};
+        cursor: pointer #{if($important, '!important', '')};
+    }
+
+    &:hover {
+        color: $hover_color #{if($important, '!important', '')};
+
+        @if $underline {
+            text-decoration: underline #{if($important, '!important', '')};
+        }
+
+        @else {
+            text-decoration: none #{if($important, '!important', '')};
+        }
+    }
+}
+
+@mixin button($color, $hover_color, $text_color, $important: false) {
+    display: inline-block #{if($important, '!important', '')};
+    font-style: normal #{if($important, '!important', '')};
+    text-decoration: none #{if($important, '!important', '')};
+    padding: $normal_padding #{if($important, '!important', '')};
+    border: 2px solid $color #{if($important, '!important', '')};
+    border-radius: $border_radius #{if($important, '!important', '')};
+    transition: all 150ms #{if($important, '!important', '')};
+    white-space: nowrap #{if($important, '!important', '')};
+    cursor: pointer #{if($important, '!important', '')};
+
+    color: $text_color #{if($important, '!important', '')};
+    background-color: $color #{if($important, '!important', '')};
+    text-decoration: none #{if($important, '!important', '')};
+
+    &:hover {
+        color: $text_color #{if($important, '!important', '')};
+        background-color: $color #{if($important, '!important', '')};
+        text-decoration: none #{if($important, '!important', '')};
+        border: 2px solid $hover_color #{if($important, '!important', '')};
+    }
+}
+
+@mixin badge($color, $hover_color, $text_color, $important: false) {
+    display: inline-block #{if($important, '!important', '')};
+    font-size: 0.75em #{if($important, '!important', '')};
+    font-weight: bold #{if($important, '!important', '')};
+    font-style: normal #{if($important, '!important', '')};
+    vertical-align: middle #{if($important, '!important', '')};
+    text-decoration: none #{if($important, '!important', '')};
+    padding: $tight_padding #{if($important, '!important', '')};
+    border: 2px solid $color #{if($important, '!important', '')};
+    border-radius: $border_radius #{if($important, '!important', '')};
+    transition: all 150ms #{if($important, '!important', '')};
+    white-space: nowrap #{if($important, '!important', '')};
+
+    color: $text_color #{if($important, '!important', '')};
+    background-color: $color #{if($important, '!important', '')};
+    text-decoration: none #{if($important, '!important', '')};
+
+    &:hover {
+        color: $text_color #{if($important, '!important', '')};
+        background-color: $color #{if($important, '!important', '')};
+        text-decoration: none #{if($important, '!important', '')};
+        border: 2px solid $hover_color #{if($important, '!important', '')};
+    }
+}

@@ -1,42 +1,42 @@
 <template>
-  <div class="card">
-    <h1 class="card-header text-center">D2 Packet Browser</h1>
-    <div class="card-body">
-        <h5 class="text-center">Visit our <a href="https://github.com/blizzhackers/Diablo2PacketsData" target="_blank" class="badge badge-pill badge-primary">GitHub Repository</a> to contribute!</h5>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text">Search</span>
-            </div>
-            <input type="text" v-model="filterText" class="form-control" placeholder="Type to search packets...">
-        </div>
-        <div class="btn-toolbar mb-3">
-            <div v-for="(filters, groupName) in filterOptions" :class="'mr-2 p-1 border border-2 rounded ' + (anyFiltersEnabled(groupName) ? 'border-success' : 'border-danger')" :key="groupName">
-                <button v-for="(filterValue, filterName) in filters" :key="filterName" :class="'btn mr-1 btn-' + ['dark', 'success'][filterValue | 0]" @click="filters[filterName] = !filterValue">{{ filterName }} <span class="badge badge-light">{{ filterValue ? 'Show' : 'Hide' }}</span></button>
-            </div>
-        </div>
-        <div class="accordion">
-            <div v-for="packet in filteredAndSortedPackets" class="card" :data-relevance="packet.relevance" :key="attrSafeName(packet.Source, packet.Name, packet['Game Version'])">
-                <template v-for="local in [{body_id: attrSafeName(packet.Source, packet.Name, packet['Game Version'])}]">
-                    <div class="card-header" :key="local.body_id + '-packet-header'">
-                        <span class="badge badge-secondary">{{ packet.PacketId }}</span> <a :href="'#' + local.body_id" data-toggle="collapse" aria-expanded="false" class="text-secondary">{{ packet.Name }}</a>
+    <div :class="'app ' + (dark ? 'dark' : 'light')">
+        <a class="light theme-button" @click="toggleTheme">{{ dark ? 'Use Light Mode' : 'Use Dark Mode' }}</a>
+        <div class="app-content-wrapper my-5 container">
+            <div class="app-content">
+                <h1 class="text-center">D2 Packet Browser</h1>
+                <h5 class="text-center">Visit our <a href="https://github.com/blizzhackers/Diablo2PacketsData" target="_blank" class="button primary pill">GitHub Repository</a> to contribute!</h5>
+                <div class="search-input">
+                    <input type="text" v-model="filterText" placeholder="Type to search packets...">
+                </div>
+                <div class="filter-input row">
+                    <div v-for="(filters, groupName) in filterOptions" :class="'filter-input-group border col-auto p-1 ' + (anyFiltersEnabled(groupName) ? 'success' : 'danger')" :key="groupName">
+                        <button v-for="(filterValue, filterName) in filters" :key="filterName" :class="'filter-button ' + ['secondary', 'success'][filterValue | 0]" @click="filters[filterName] = !filterValue">{{ filterName }} <span class="badge inner">{{ filterValue ? 'Show' : 'Hide' }}</span></button>
                     </div>
-                    <div class="card-body collapse" :id="local.body_id" :key="local.body_id + '-packet-body'">
-                        <div class="row mb-3">
-                            <template v-for="(column, columnIndex) in columns.filter(v => !['Description', 'Structure'].includes(v))">
-                                <div class="col-auto" :key="columnIndex"><span class="badge badge-primary">{{ column }}</span> {{ packet[column] }}</div>
-                            </template>
-                        </div>
-                        <template v-if="packet.Description">
-                            <div class="badge badge-primary">Description</div>
-                            <p style="white-space: pre">{{ packet.Description }}</p>
+                </div>
+                <div class="results">
+                    <div v-for="packet in filteredAndSortedPackets" class="result" :data-relevance="packet.relevance" :key="attrSafeName(packet.Source, packet.Name, packet['Game Version'])">
+                        <template v-for="local in [{body_id: attrSafeName(packet.Source, packet.Name, packet['Game Version'])}]">
+                            <div :key="local.body_id + '-packet-header'" class="result-title background">
+                                <span class="badge secondary">{{ packet.PacketId }}</span> <a href="javascript:;" @click="togglePacket(packet)" :aria-expanded="packet.open ? 'true' : 'false'" class="secondary">{{ packet.Name }}</a>
+                            </div>
+                            <div :class="packet.state.open ? 'result-details drawer' : 'drawer closed'" :id="local.body_id" :key="local.body_id + '-packet-body'">
+                                <div class="field-row row">
+                                    <template v-for="(column, columnIndex) in columns.filter(v => !['Description', 'Structure'].includes(v))">
+                                        <div class="col-auto field" :key="columnIndex"><span class="badge primary">{{ column }}</span> {{ packet[column] }}</div>
+                                    </template>
+                                </div>
+                                <template v-if="packet.Description">
+                                    <div class="badge primary">Description</div>
+                                    <p style="white-space: pre">{{ packet.Description }}</p>
+                                </template>
+                                <PacketStructure v-if="packet.Structure" :structure="packet.Structure" title="Structure" :id="local.body_id + '-packet-structure'" />
+                            </div>
                         </template>
-                        <PacketStructure v-if="packet.Structure" :structure="packet.Structure" title="Structure" :id="local.body_id + '-packet-structure'" />
                     </div>
-                </template>
+                </div>
             </div>
         </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -78,6 +78,7 @@ export default {
   },
   data() {
     return {
+      dark: this.getCookie('darkMode'),
       columns: [],
       packets: [],
       filterOptions: {
@@ -99,11 +100,40 @@ export default {
     };
   },
     methods: {
+        setCookie(name, value) {
+            document.cookie = name + "=" + JSON.stringify(value) + "; expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/";
+        },
+        deleteCookie(name) {
+            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
+        },
+        getCookie(name) {
+            let cookies = document.cookie.split(';');
+            for (let cookie of cookies) {
+                let item = cookie.trimStart().split('=');
+
+                if (item[0] === name) {
+                    if (item[0].length) {
+                        return JSON.parse(item[1]);
+                    } else {
+                        return null;
+                    }
+                }
+            }
+
+            return null;
+        },
+        toggleTheme() {
+            this.dark = !this.dark;
+            this.setCookie('darkMode', this.dark);
+        },
         attrSafeName(...args) {
             return args.map(v => v.match(/[a-z0-9]+/gi).map(v => v.toLowerCase()).join('-')).join('-');
         },
         anyFiltersEnabled(group) {
             return Object.values(this.filterOptions[group]).some(Boolean);
+        },
+        togglePacket: function (packet) {
+            packet.state.open = !packet.state.open;
         }
     },
     computed: {
@@ -183,16 +213,21 @@ export default {
                     Source: source,
                     Type: type,
                     'Game Version': version,
+                    searchText: JSON.stringify(data[key]).match(/[a-z0-9_]+/gi).join(' '),
+                    state: {
+                        open: false,
+                    },
                 }, data[key]);
                 this.packets.push(data[key]);
     
                 for (let column in data[key]) {
-                    if (!this.columns.includes(column)) {
+                    if (!this.columns.includes(column) && ![
+                        'searchText',
+                        'state'
+                    ].includes(column)) {
                         this.columns.push(column);
                     }
                 }
-
-                data[key].searchText = JSON.stringify(data[key]).match(/[a-z0-9_]+/gi).join(' ');
             }
         }
     
@@ -203,22 +238,6 @@ export default {
 
 <style lang="scss">
 
-@import "./styles/bootstrap-4.5.3/scss/bootstrap.scss";
-
-html {
-    font-size: 18px;
-}
-
-#components {
-    display: none;
-}
-
-.collapsing {
-    transition: none !important;
-}
-
-.border-2 {
-    border-width: 2px !important;
-}
+@import "styles/base";
 
 </style>

@@ -1,0 +1,42 @@
+$border_radius: 3px;
+$normal_padding: 0.5em 0.75em;
+$tight_padding: 0 0.25em;
+
+$sizes: ("0": 0,
+    "1": 0.25rem,
+    "2": 0.5rem,
+    "3": 1rem,
+    "4": 2rem,
+    "5": 3rem,
+);
+
+$light_colors: (
+    null $color_210_60 $color_dark_210_60 $color_light_210_60 #fff,
+    "secondary" $color_dark_0_0 #000 $color_light_0_0 #fff,
+    "light" $color_light_0_0 #fff $color_dark_0_0 #000,
+    "success" $color_135_60 $color_dark_135_60 $color_light_135_60 #fff,
+    "danger" $color_0_60 $color_dark_0_60 $color_light_0_60 #fff,
+    "inner" #fff $color_light_0_0 $color_dark_0_0 #000,
+    "color-1" $color_180_60 $color_dark_180_60 $color_light_180_60 #fff,
+    "color-2" $color_150_60 $color_dark_150_60 $color_light_150_60 #fff,
+    "color-3" $color_120_60 $color_dark_120_60 $color_light_120_60 #fff,
+    "color-4" $color_90_60 $color_dark_90_60 $color_light_90_60 #fff,
+);
+
+$dark_colors: (
+    null $color_210_60 $color_light_210_60 $color_dark_210_60 #000,
+    "secondary" $color_light_0_0 #fff $color_dark_0_0 #000,
+    "light" $color_light_0_0 #fff $color_dark_0_0 #000,
+    "success" $color_135_60 $color_light_135_60 $color_dark_135_60 #000,
+    "danger" $color_0_60 $color_light_0_60 $color_dark_0_60 #000,
+    "inner" #000 $color_dark_0_0 $color_light_0_0 #fff,
+    "color-1" $color_180_60 $color_light_180_60 $color_dark_180_60 #000,
+    "color-2" $color_150_60 $color_light_150_60 $color_dark_150_60 #000,
+    "color-3" $color_120_60 $color_light_120_60 $color_dark_120_60 #000,
+    "color-4" $color_90_60 $color_light_90_60 $color_dark_90_60 #000,
+);
+
+$themes: (
+    "light" $color_dark_0_0 #fff #ccc $light_colors,
+    "dark" $color_light_0_0 #000 #333 $dark_colors,
+);
