@@ -179,11 +179,12 @@
 	},
 	"D2GS_OVERHEADMESSAGE" : {
 		"PacketId" : "0x14",
-		"Description" : "",
+		"Description" : "nType is ignored by server",
 		"Size" : -1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
-			{ "short" : "nType" },
+			{ "BYTE" : "nType" },
+			{ "BYTE" : "nLanguageCode" },
 			{ "std::string" : "szMessage" },
 			{ "std::string" : "szTarget" },
 			{ "std::string" : "szUnknown" }
