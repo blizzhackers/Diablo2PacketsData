@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-weight: inherit;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+html,
+body,
+p,
+.p,
+div,
+header,
+footer,
+section,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+label,
+.label,
+a,
+ol,
+ul {
+    margin: 0;
+}
+
+html,
+body,
+p,
+.p,
+div,
+header,
+footer,
+section,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+label,
+.label,
+a {
+    padding: 0;
+}
+
+ol,
+ul {
+    padding: 0 0 0 1em;
+}
+
+html,
+body,
+p,
+.p,
+div,
+header,
+footer,
+section,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: block;
+}
+
+span,
+label,
+.label,
+a {
+    display: inline;
+}
+
+/* Extended from type-scale.com */
+h1 {
+    font-size: 2.000rem;
+}
+
+h2 {
+    font-size: 1.741rem;
+}
+
+h3 {
+    font-size: 1.516rem;
+}
+
+h4 {
+    font-size: 1.320rem;
+}
+
+h5 {
+    font-size: 1.149rem;
+}
+
+h6 {
+    font-size: 1.000rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+label {
+    font-weight: 700;
+}
+
+h1:not(.page-title),
+h2,
+h3,
+h4,
+h5,
+h6 {
+    &:not(.field__label) {
+        margin-bottom: 0.5rem;
+    }
+}
+
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+html {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    height: 100%;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+}
+
+body, .app {
+    flex: 1 1 auto;
+    position: relative;
+}
+
+.theme-button {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.search-input, .filter-input {
+    margin-bottom: 1rem;
+}
+
+.filter-input-group:not(:first-child) {
+    margin-left: 0.25rem;
+}
+
+.filter-button:not(:first-child) {
+    margin-left: 0.25rem;
+}
+
+.result {
+    overflow: hidden;
+    border: 1px solid $color_0_0;
+    border-radius: $border_radius;
+
+    &:not(:first-child) {
+        margin-top: 0.5rem;
+    }
+}
+
+.result-title {
+    padding: $normal_padding;
+}
+
+.result-details {
+    border-top: 1px solid $color_0_0;
+    padding: $normal_padding;
+}
+
+.field-row {
+    margin-bottom: 0.5rem;
+}
+
+.field:not(:first-child) {
+    margin-left: 0.5rem;
+}
+
+.border {
+    border-radius: $border_radius;
+}
+
+.list {
+    border: 1px solid $color_0_0;
+    border-radius: $border_radius;
+}
+
+.list-item {
+    padding: $normal_padding;
+
+    &:not(:first-child) {
+        border-top: 1px solid $color_0_0;
+    }
+}
+
+@include input-type-box {
+    border: 1px solid $color_0_0;
+    border-radius: $border_radius;
+    padding: $normal_padding;
+    width: 100%;
+}
+
+.app-content {
+    padding: $normal_padding;
+    border-radius: $border_radius;
+}
+
+@each $name, $color, $bg_color, $title_bg_color, $colors in $themes {
+    .app.#{$name} {
+        background-color: hsl(210, 10%, 20%);
+    
+        .app-content {
+            color: $color;
+            background-color: $bg_color;
+        }
+
+        .background {
+            background-color: $title_bg_color;
+        }
+
+        .result, .result-details {
+            border-color: $color;
+        }
+
+        @each $name, $color, $hover_color, $subtle_color, $text_color in $colors {
+            a:not(.button):not(.btn):not(.badge) {
+                @if $name {
+                    &.#{$name} {
+                        @include anchor($color, $hover_color);
+                    }    
+                } @else {
+                    @include anchor($color, $hover_color);
+                }
+            }
+
+            @include input-type-button {
+                @if $name {
+                    &.#{$name} {
+                        @include button($color, $hover_color, $text_color);
+                    }    
+                } @else {
+                    @include button($color, $hover_color, $text_color);
+                }
+            }
+
+            .list {
+                @if $name {
+                    &.#{$name} {
+                        background-color: $subtle_color;
+                        border-color: $color;
+                        color: $hover_color;
+                    }    
+                } @else {
+                    background-color: $subtle_color;
+                    border-color: $color;
+                    color: $hover_color;
+                }
+            }
+
+            .list-item {
+                @if $name {
+                    &.#{$name} {
+                        background-color: $subtle_color;
+                        border-color: $color;
+                        color: $hover_color;
+                    }    
+                } @else {
+                    background-color: $subtle_color;
+                    border-color: $color;
+                    color: $hover_color;
+                }
+            }
+
+            .border {
+                @if $name {
+                    &.#{$name} {
+                        border: 2px solid $color;
+                    }    
+                } @else {
+                    border: 2px solid $color;
+                }
+            }
+
+            .badge {
+                @if $name {
+                    &.#{$name} {
+                        @include badge($color, $color, $text_color);
+                    }    
+                } @else {
+                    @include badge($color, $color, $text_color);
+                }
+            }
+        }
+    
+        @include input-type-box {
+            color: $color;
+            background-color: $bg_color;    
+        }
+    }
+}

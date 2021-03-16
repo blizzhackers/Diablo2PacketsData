@@ -147,21 +147,6 @@
 			{ "std::string" : "RegistryKey" }
 		]
 	},
-	"SID_MESSAGEBOX" : {
-		"PacketId" : "0x19",
-		"Description" : "",
-		"Structure" : [ 
-			{ "SidHeader" : [
-					{ "BYTE" : "AlwaysFF" },
-					{ "BYTE" : "PacketId" },
-					{ "short" : "nSize" }
-				]
-			}, 
-			{ "int" : "Style" },
-			{ "std::string" : "Text" },
-			{ "std::string" : "Caption" }
-		]
-	},
 	"SID_STARTADVEX3" : {
 		"PacketId" : "0x1C",
 		"Description" : "",

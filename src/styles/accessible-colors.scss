@@ -1,0 +1,638 @@
+// accessible-colors.scss - colors generated with accessibility-friendly color contrast
+
+// contrast ratio must be 4.5+ for AA accessibility
+// white and black have a contrast ratio of 21 together
+
+// light and dark colors have contrast ratio of 4.5+
+// extra light and dark colors have even higher contrast ratios
+// so hue and saturation is interchangable
+
+// hue: 0, saturation: 0%
+$color_0_0: #757575; // Contrast on white & black: 4.61 & 4.56
+$color_light_0_0: #c9c9c9;
+$color_dark_0_0: #545454; // Contrast against each other: 4.57
+$color_extra_light_0_0: #eeeeee; // Contrast against dark color: 6.53
+
+// hue: 0, saturation: 100%
+$color_0_100: #ec0000; // Contrast on white & black: 4.6 & 4.57
+$color_light_0_100: #ffb6b6;
+$color_dark_0_100: #ac0000; // Contrast against each other: 4.58
+$color_extra_light_0_100: #ffe9e9; // Contrast against dark color: 6.57
+// hue: 0, saturation: 80%
+$color_0_80: #e61d1d; // Contrast on white & black: 4.61 & 4.56
+$color_light_0_80: #f8b9b9;
+$color_dark_0_80: #a81212; // Contrast against each other: 4.58
+$color_extra_light_0_80: #fdeaea; // Contrast against dark color: 6.57
+// hue: 0, saturation: 60%
+$color_0_60: #d04343; // Contrast on white & black: 4.6 & 4.57
+$color_light_0_60: #efbdbd;
+$color_dark_0_60: #9d2727; // Contrast against each other: 4.61
+$color_extra_light_0_60: #faeaea; // Contrast against dark color: 6.55
+// hue: 0, saturation: 40%
+$color_0_40: #b75858; // Contrast on white & black: 4.62 & 4.55
+$color_light_0_40: #e5c1c1;
+$color_dark_0_40: #8a3b3b; // Contrast against each other: 4.6
+$color_extra_light_0_40: #f7ebeb; // Contrast against dark color: 6.51
+// hue: 0, saturation: 20%
+$color_0_20: #9a6868; // Contrast on white & black: 4.61 & 4.55
+$color_light_0_20: #d8c4c4;
+$color_dark_0_20: #6f4a4a; // Contrast against each other: 4.58
+$color_extra_light_0_20: #f3eded; // Contrast against dark color: 6.59
+
+// hue: 15, saturation: 100%
+$color_15_100: #db3700; // Contrast on white & black: 4.61 & 4.56
+$color_light_15_100: #ffb8a1;
+$color_dark_15_100: #9f2700; // Contrast against each other: 4.57
+$color_extra_light_15_100: #ffe9e2; // Contrast against dark color: 6.51
+// hue: 15, saturation: 80%
+$color_15_80: #d04517; // Contrast on white & black: 4.62 & 4.55
+$color_light_15_80: #f6bca9;
+$color_dark_15_80: #963210; // Contrast against each other: 4.6
+$color_extra_light_15_80: #fceae4; // Contrast against dark color: 6.53
+// hue: 15, saturation: 60%
+$color_15_60: #c05430; // Contrast on white & black: 4.61 & 4.55
+$color_light_15_60: #ecbfb0;
+$color_dark_15_60: #8a3c22; // Contrast against each other: 4.6
+$color_extra_light_15_60: #f9ebe6; // Contrast against dark color: 6.56
+// hue: 15, saturation: 40%
+$color_15_40: #ab6249; // Contrast on white & black: 4.59 & 4.57
+$color_light_15_40: #e1c3b8;
+$color_dark_15_40: #7a4634; // Contrast against each other: 4.61
+$color_extra_light_15_40: #f6ece9; // Contrast against dark color: 6.57
+// hue: 15, saturation: 20%
+$color_15_20: #916d61; // Contrast on white & black: 4.6 & 4.56
+$color_light_15_20: #d6c6c1;
+$color_dark_15_20: #684e45; // Contrast against each other: 4.6
+$color_extra_light_15_20: #f2edeb; // Contrast against dark color: 6.54
+
+// hue: 30, saturation: 100%
+$color_30_100: #b85c00; // Contrast on white & black: 4.6 & 4.57
+$color_light_30_100: #ffbb77;
+$color_dark_30_100: #844200; // Contrast against each other: 4.57
+$color_extra_light_30_100: #ffebd6; // Contrast against dark color: 6.56
+// hue: 30, saturation: 80%
+$color_30_80: #af6113; // Contrast on white & black: 4.62 & 4.54
+$color_light_30_80: #f3bf8c;
+$color_dark_30_80: #7e460e; // Contrast against each other: 4.56
+$color_extra_light_30_80: #fbebdb; // Contrast against dark color: 6.5
+// hue: 30, saturation: 60%
+$color_30_60: #a46729; // Contrast on white & black: 4.61 & 4.55
+$color_light_30_60: #e7c39e;
+$color_dark_30_60: #764a1d; // Contrast against each other: 4.59
+$color_extra_light_30_60: #f8ece1; // Contrast against dark color: 6.53
+// hue: 30, saturation: 40%
+$color_30_40: #976c41; // Contrast on white & black: 4.63 & 4.54
+$color_light_30_40: #dcc5ae;
+$color_dark_30_40: #6c4d2e; // Contrast against each other: 4.62
+$color_extra_light_30_40: #f4ede5; // Contrast against dark color: 6.61
+// hue: 30, saturation: 20%
+$color_30_20: #88715a; // Contrast on white & black: 4.61 & 4.56
+$color_light_30_20: #d2c7bc;
+$color_dark_30_20: #615141; // Contrast against each other: 4.58
+$color_extra_light_30_20: #f1edea; // Contrast against dark color: 6.53
+
+// hue: 45, saturation: 100%
+$color_45_100: #946f00; // Contrast on white & black: 4.63 & 4.53
+$color_light_45_100: #febf00;
+$color_dark_45_100: #6a5000; // Contrast against each other: 4.59
+$color_extra_light_45_100: #ffedb6; // Contrast against dark color: 6.54
+// hue: 45, saturation: 80%
+$color_45_80: #917110; // Contrast on white & black: 4.59 & 4.57
+$color_light_45_80: #ecc550;
+$color_dark_45_80: #68510b; // Contrast against each other: 4.57
+$color_extra_light_45_80: #faeeca; // Contrast against dark color: 6.55
+// hue: 45, saturation: 60%
+$color_45_60: #8c7223; // Contrast on white & black: 4.62 & 4.55
+$color_light_45_60: #dfc77f;
+$color_dark_45_60: #645219; // Contrast against each other: 4.57
+$color_extra_light_45_60: #f5eed7; // Contrast against dark color: 6.55
+// hue: 45, saturation: 40%
+$color_45_40: #87733a; // Contrast on white & black: 4.62 & 4.54
+$color_light_45_40: #d6c89f;
+$color_dark_45_40: #605229; // Contrast against each other: 4.61
+$color_extra_light_45_40: #f2eee1; // Contrast against dark color: 6.61
+// hue: 45, saturation: 20%
+$color_45_20: #7f7455; // Contrast on white & black: 4.63 & 4.53
+$color_light_45_20: #cfc9b7;
+$color_dark_45_20: #5b533c; // Contrast against each other: 4.62
+$color_extra_light_45_20: #f0eee8; // Contrast against dark color: 6.59
+
+// hue: 60, saturation: 100%
+$color_60_100: #797900; // Contrast on white & black: 4.62 & 4.55
+$color_light_60_100: #d0d000;
+$color_dark_60_100: #575700; // Contrast against each other: 4.59
+$color_extra_light_60_100: #f6f600; // Contrast against dark color: 6.54
+// hue: 60, saturation: 80%
+$color_60_80: #79790d; // Contrast on white & black: 4.61 & 4.55
+$color_light_60_80: #d0d018;
+$color_dark_60_80: #575709; // Contrast against each other: 4.59
+$color_extra_light_60_80: #f3f391; // Contrast against dark color: 6.51
+// hue: 60, saturation: 60%
+$color_60_60: #79791e; // Contrast on white & black: 4.6 & 4.57
+$color_light_60_60: #cfcf3e;
+$color_dark_60_60: #565615; // Contrast against each other: 4.62
+$color_extra_light_60_60: #f1f1c4; // Contrast against dark color: 6.62
+// hue: 60, saturation: 40%
+$color_60_40: #787834; // Contrast on white & black: 4.63 & 4.53
+$color_light_60_40: #cdcd89;
+$color_dark_60_40: #565625; // Contrast against each other: 4.61
+$color_extra_light_60_40: #efefda; // Contrast against dark color: 6.55
+// hue: 60, saturation: 20%
+$color_60_20: #77774f; // Contrast on white & black: 4.63 & 4.54
+$color_light_60_20: #cbcbb0;
+$color_dark_60_20: #555539; // Contrast against each other: 4.63
+$color_extra_light_60_20: #eeeee6; // Contrast against dark color: 6.56
+
+// hue: 75, saturation: 100%
+$color_75_100: #607f00; // Contrast on white & black: 4.63 & 4.53
+$color_light_75_100: #a4db00;
+$color_dark_75_100: #445b00; // Contrast against each other: 4.64
+$color_extra_light_75_100: #cfff3c; // Contrast against dark color: 6.57
+// hue: 75, saturation: 80%
+$color_75_80: #637f0e; // Contrast on white & black: 4.59 & 4.57
+$color_light_75_80: #a9d919;
+$color_dark_75_80: #465b0a; // Contrast against each other: 4.57
+$color_extra_light_75_80: #e4f6ac; // Contrast against dark color: 6.55
+// hue: 75, saturation: 60%
+$color_75_60: #667e1f; // Contrast on white & black: 4.6 & 4.57
+$color_light_75_60: #b6d557;
+$color_dark_75_60: #495a16; // Contrast against each other: 4.59
+$color_extra_light_75_60: #e9f2cb; // Contrast against dark color: 6.54
+// hue: 75, saturation: 40%
+$color_75_40: #6a7c35; // Contrast on white & black: 4.62 & 4.55
+$color_light_75_40: #c0d091;
+$color_dark_75_40: #4c5926; // Contrast against each other: 4.58
+$color_extra_light_75_40: #ebf0dc; // Contrast against dark color: 6.52
+// hue: 75, saturation: 20%
+$color_75_20: #6f7951; // Contrast on white & black: 4.64 & 4.53
+$color_light_75_20: #c6ccb2;
+$color_dark_75_20: #50573a; // Contrast against each other: 4.59
+$color_extra_light_75_20: #edefe7; // Contrast against dark color: 6.55
+
+// hue: 90, saturation: 100%
+$color_90_100: #428400; // Contrast on white & black: 4.63 & 4.53
+$color_light_90_100: #72e300;
+$color_dark_90_100: #2f5f00; // Contrast against each other: 4.61
+$color_extra_light_90_100: #c4ff89; // Contrast against dark color: 6.53
+// hue: 90, saturation: 80%
+$color_90_80: #49830f; // Contrast on white & black: 4.63 & 4.54
+$color_light_90_80: #7de119;
+$color_dark_90_80: #345e0a; // Contrast against each other: 4.6
+$color_extra_light_90_80: #d9f8bb; // Contrast against dark color: 6.58
+// hue: 90, saturation: 60%
+$color_90_60: #518220; // Contrast on white & black: 4.6 & 4.56
+$color_light_90_60: #a0d967;
+$color_dark_90_60: #3a5d17; // Contrast against each other: 4.57
+$color_extra_light_90_60: #e2f4d1; // Contrast against dark color: 6.56
+// hue: 90, saturation: 40%
+$color_90_40: #5b7f37; // Contrast on white & black: 4.63 & 4.54
+$color_light_90_40: #b4d296;
+$color_dark_90_40: #415b27; // Contrast against each other: 4.58
+$color_extra_light_90_40: #e8f1de; // Contrast against dark color: 6.57
+// hue: 90, saturation: 20%
+$color_90_20: #677b52; // Contrast on white & black: 4.63 & 4.53
+$color_light_90_20: #c1cdb4;
+$color_dark_90_20: #49583b; // Contrast against each other: 4.62
+$color_extra_light_90_20: #ebefe7; // Contrast against dark color: 6.58
+
+// hue: 105, saturation: 100%
+$color_105_100: #228700; // Contrast on white & black: 4.63 & 4.53
+$color_light_105_100: #3ae700;
+$color_dark_105_100: #186100; // Contrast against each other: 4.59
+$color_extra_light_105_100: #bdffa7; // Contrast against dark color: 6.56
+// hue: 105, saturation: 80%
+$color_105_80: #2d860f; // Contrast on white & black: 4.64 & 4.53
+$color_light_105_80: #4de61b;
+$color_dark_105_80: #20600a; // Contrast against each other: 4.62
+$color_extra_light_105_80: #d2f9c5; // Contrast against dark color: 6.61
+// hue: 105, saturation: 60%
+$color_105_60: #3a8521; // Contrast on white & black: 4.61 & 4.56
+$color_light_105_60: #8ddc73;
+$color_dark_105_60: #295f17; // Contrast against each other: 4.6
+$color_extra_light_105_60: #ddf5d5; // Contrast against dark color: 6.6
+// hue: 105, saturation: 40%
+$color_105_40: #4a8238; // Contrast on white & black: 4.62 & 4.54
+$color_light_105_40: #aad59c;
+$color_dark_105_40: #355d28; // Contrast against each other: 4.62
+$color_extra_light_105_40: #e4f2e0; // Contrast against dark color: 6.58
+// hue: 105, saturation: 20%
+$color_105_20: #5e7d54; // Contrast on white & black: 4.63 & 4.54
+$color_light_105_20: #bcceb6;
+$color_dark_105_20: #435a3c; // Contrast against each other: 4.57
+$color_extra_light_105_20: #eaf0e8; // Contrast against dark color: 6.55
+
+// hue: 120, saturation: 100%
+$color_120_100: #008800; // Contrast on white & black: 4.64 & 4.52
+$color_light_120_100: #00e900;
+$color_dark_120_100: #006200; // Contrast against each other: 4.61
+$color_extra_light_120_100: #b7ffb7; // Contrast against dark color: 6.55
+// hue: 120, saturation: 80%
+$color_120_80: #0f880f; // Contrast on white & black: 4.62 & 4.55
+$color_light_120_80: #2be82b;
+$color_dark_120_80: #0a620a; // Contrast against each other: 4.59
+$color_extra_light_120_80: #ccfacc; // Contrast against dark color: 6.55
+// hue: 120, saturation: 60%
+$color_120_60: #228722; // Contrast on white & black: 4.61 & 4.56
+$color_light_120_60: #7cdf7c;
+$color_dark_120_60: #186118; // Contrast against each other: 4.6
+$color_extra_light_120_60: #d8f6d8; // Contrast against dark color: 6.55
+// hue: 120, saturation: 40%
+$color_120_40: #398439; // Contrast on white & black: 4.63 & 4.53
+$color_light_120_40: #a0d6a0;
+$color_dark_120_40: #285f28; // Contrast against each other: 4.58
+$color_extra_light_120_40: #e1f3e1; // Contrast against dark color: 6.57
+// hue: 120, saturation: 20%
+$color_120_20: #557f55; // Contrast on white & black: 4.61 & 4.55
+$color_light_120_20: #b7cfb7;
+$color_dark_120_20: #3c5b3c; // Contrast against each other: 4.58
+$color_extra_light_120_20: #e8f0e8; // Contrast against dark color: 6.56
+
+// hue: 135, saturation: 100%
+$color_135_100: #008822; // Contrast on white & black: 4.62 & 4.54
+$color_light_135_100: #00e83a;
+$color_dark_135_100: #006218; // Contrast against each other: 4.57
+$color_extra_light_135_100: #b2ffc6; // Contrast against dark color: 6.53
+// hue: 135, saturation: 80%
+$color_135_80: #0f872d; // Contrast on white & black: 4.64 & 4.52
+$color_light_135_80: #25e755;
+$color_dark_135_80: #0a6120; // Contrast against each other: 4.61
+$color_extra_light_135_80: #cafad6; // Contrast against dark color: 6.62
+// hue: 135, saturation: 60%
+$color_135_60: #22863b; // Contrast on white & black: 4.62 & 4.54
+$color_light_135_60: #79de92;
+$color_dark_135_60: #18602a; // Contrast against each other: 4.62
+$color_extra_light_135_60: #d7f5df; // Contrast against dark color: 6.56
+// hue: 135, saturation: 40%
+$color_135_40: #38844b; // Contrast on white & black: 4.59 & 4.57
+$color_light_135_40: #9ed6ac;
+$color_dark_135_40: #285e36; // Contrast against each other: 4.62
+$color_extra_light_135_40: #e1f2e5; // Contrast against dark color: 6.57
+// hue: 135, saturation: 20%
+$color_135_20: #547e5f; // Contrast on white & black: 4.64 & 4.53
+$color_light_135_20: #b7cfbd;
+$color_dark_135_20: #3c5a44; // Contrast against each other: 4.63
+$color_extra_light_135_20: #e8f0ea; // Contrast against dark color: 6.6
+
+// hue: 150, saturation: 100%
+$color_150_100: #008744; // Contrast on white & black: 4.62 & 4.55
+$color_light_150_100: #00e774;
+$color_dark_150_100: #006130; // Contrast against each other: 4.61
+$color_extra_light_150_100: #acffd6; // Contrast against dark color: 6.55
+// hue: 150, saturation: 80%
+$color_150_80: #0f864b; // Contrast on white & black: 4.63 & 4.53
+$color_light_150_80: #1ae680;
+$color_dark_150_80: #0a6035; // Contrast against each other: 4.63
+$color_extra_light_150_80: #c7f9e0; // Contrast against dark color: 6.6
+// hue: 150, saturation: 60%
+$color_150_60: #218553; // Contrast on white & black: 4.62 & 4.54
+$color_light_150_60: #75dda9;
+$color_dark_150_60: #175f3b; // Contrast against each other: 4.63
+$color_extra_light_150_60: #d6f5e6; // Contrast against dark color: 6.6
+// hue: 150, saturation: 40%
+$color_150_40: #38835d; // Contrast on white & black: 4.59 & 4.57
+$color_light_150_40: #9dd5b9;
+$color_dark_150_40: #285e43; // Contrast against each other: 4.56
+$color_extra_light_150_40: #e0f2e9; // Contrast against dark color: 6.51
+// hue: 150, saturation: 20%
+$color_150_20: #547e69; // Contrast on white & black: 4.6 & 4.57
+$color_light_150_20: #b6cfc2;
+$color_dark_150_20: #3c5a4b; // Contrast against each other: 4.61
+$color_extra_light_150_20: #e8f0ec; // Contrast against dark color: 6.57
+
+// hue: 165, saturation: 100%
+$color_165_100: #008564; // Contrast on white & black: 4.63 & 4.54
+$color_light_165_100: #00e4ab;
+$color_dark_165_100: #006048; // Contrast against each other: 4.58
+$color_extra_light_165_100: #a2ffe8; // Contrast against dark color: 6.51
+// hue: 165, saturation: 80%
+$color_165_80: #0f8567; // Contrast on white & black: 4.59 & 4.57
+$color_light_165_80: #1ae3b1;
+$color_dark_165_80: #0a5f4a; // Contrast against each other: 4.61
+$color_extra_light_165_80: #c4f9ec; // Contrast against dark color: 6.59
+// hue: 165, saturation: 60%
+$color_165_60: #21846b; // Contrast on white & black: 4.59 & 4.58
+$color_light_165_60: #70dcc1;
+$color_dark_165_60: #175e4d; // Contrast against each other: 4.63
+$color_extra_light_165_60: #d5f5ed; // Contrast against dark color: 6.6
+// hue: 165, saturation: 40%
+$color_165_40: #37816f; // Contrast on white & black: 4.63 & 4.53
+$color_light_165_40: #9bd4c6;
+$color_dark_165_40: #275d4f; // Contrast against each other: 4.57
+$color_extra_light_165_40: #e0f2ed; // Contrast against dark color: 6.54
+// hue: 165, saturation: 20%
+$color_165_20: #537d73; // Contrast on white & black: 4.62 & 4.55
+$color_light_165_20: #b6cec8;
+$color_dark_165_20: #3b5952; // Contrast against each other: 4.62
+$color_extra_light_165_20: #e8f0ee; // Contrast against dark color: 6.62
+
+// hue: 180, saturation: 100%
+$color_180_100: #008383; // Contrast on white & black: 4.59 & 4.57
+$color_light_180_100: #00dfdf;
+$color_dark_180_100: #005e5e; // Contrast against each other: 4.57
+$color_extra_light_180_100: #94ffff; // Contrast against dark color: 6.52
+// hue: 180, saturation: 80%
+$color_180_80: #0e8282; // Contrast on white & black: 4.63 & 4.53
+$color_light_180_80: #19dfdf;
+$color_dark_180_80: #0a5d5d; // Contrast against each other: 4.63
+$color_extra_light_180_80: #c0f8f8; // Contrast against dark color: 6.59
+// hue: 180, saturation: 60%
+$color_180_60: #208282; // Contrast on white & black: 4.59 & 4.58
+$color_light_180_60: #6adada;
+$color_dark_180_60: #175d5d; // Contrast against each other: 4.58
+$color_extra_light_180_60: #d3f4f4; // Contrast against dark color: 6.53
+// hue: 180, saturation: 40%
+$color_180_40: #378080; // Contrast on white & black: 4.6 & 4.56
+$color_light_180_40: #99d4d4;
+$color_dark_180_40: #275c5c; // Contrast against each other: 4.59
+$color_extra_light_180_40: #dff2f2; // Contrast against dark color: 6.54
+// hue: 180, saturation: 20%
+$color_180_20: #537c7c; // Contrast on white & black: 4.62 & 4.54
+$color_light_180_20: #b5cece;
+$color_dark_180_20: #3b5959; // Contrast against each other: 4.6
+$color_extra_light_180_20: #e8f0f0; // Contrast against dark color: 6.58
+
+// hue: 195, saturation: 100%
+$color_195_100: #007ea8; // Contrast on white & black: 4.62 & 4.55
+$color_light_195_100: #5ed7ff;
+$color_dark_195_100: #005b79; // Contrast against each other: 4.56
+$color_extra_light_195_100: #d1f4ff; // Contrast against dark color: 6.53
+// hue: 195, saturation: 80%
+$color_195_80: #127ea2; // Contrast on white & black: 4.63 & 4.53
+$color_light_195_80: #7fd5f1;
+$color_dark_195_80: #0d5b75; // Contrast against each other: 4.58
+$color_extra_light_195_80: #d8f2fb; // Contrast against dark color: 6.5
+// hue: 195, saturation: 60%
+$color_195_60: #277e9b; // Contrast on white & black: 4.62 & 4.54
+$color_light_195_60: #97d2e5;
+$color_dark_195_60: #1b5a6f; // Contrast against each other: 4.62
+$color_extra_light_195_60: #dff1f7; // Contrast against dark color: 6.6
+// hue: 195, saturation: 40%
+$color_195_40: #3e7d92; // Contrast on white & black: 4.61 & 4.55
+$color_light_195_40: #abcfdb;
+$color_dark_195_40: #2c5968; // Contrast against each other: 4.63
+$color_extra_light_195_40: #e4f0f4; // Contrast against dark color: 6.6
+// hue: 195, saturation: 20%
+$color_195_20: #597a85; // Contrast on white & black: 4.62 & 4.55
+$color_light_195_20: #bbccd2;
+$color_dark_195_20: #3f575f; // Contrast against each other: 4.63
+$color_extra_light_195_20: #e9eff1; // Contrast against dark color: 6.6
+
+// hue: 210, saturation: 100%
+$color_210_100: #0072e5; // Contrast on white & black: 4.63 & 4.54
+$color_light_210_100: #9cceff;
+$color_dark_210_100: #0052a5; // Contrast against each other: 4.61
+$color_extra_light_210_100: #e0f0ff; // Contrast against dark color: 6.57
+// hue: 210, saturation: 80%
+$color_210_80: #1775d3; // Contrast on white & black: 4.64 & 4.52
+$color_light_210_80: #a5cdf5;
+$color_dark_210_80: #105498; // Contrast against each other: 4.61
+$color_extra_light_210_80: #e3f0fc; // Contrast against dark color: 6.61
+// hue: 210, saturation: 60%
+$color_210_60: #3078bf; // Contrast on white & black: 4.6 & 4.56
+$color_light_210_60: #aecceb;
+$color_dark_210_60: #225689; // Contrast against each other: 4.58
+$color_extra_light_210_60: #e5eff9; // Contrast against dark color: 6.54
+// hue: 210, saturation: 40%
+$color_210_40: #4878a8; // Contrast on white & black: 4.64 & 4.53
+$color_light_210_40: #b7cbe0;
+$color_dark_210_40: #335679; // Contrast against each other: 4.6
+$color_extra_light_210_40: #e8eff5; // Contrast against dark color: 6.59
+// hue: 210, saturation: 20%
+$color_210_20: #60778f; // Contrast on white & black: 4.63 & 4.53
+$color_light_210_20: #c0cad5;
+$color_dark_210_20: #445567; // Contrast against each other: 4.62
+$color_extra_light_210_20: #ebeef2; // Contrast against dark color: 6.58
+
+// hue: 225, saturation: 100%
+$color_225_100: #3567ff; // Contrast on white & black: 4.63 & 4.54
+$color_light_225_100: #b5c8ff;
+$color_dark_225_100: #003ae8; // Contrast against each other: 4.57
+$color_extra_light_225_100: #e8eeff; // Contrast against dark color: 6.54
+// hue: 225, saturation: 80%
+$color_225_80: #426cea; // Contrast on white & black: 4.6 & 4.56
+$color_light_225_80: #b8c8f8;
+$color_dark_225_80: #1644ce; // Contrast against each other: 4.6
+$color_extra_light_225_80: #e9eefd; // Contrast against dark color: 6.58
+// hue: 225, saturation: 60%
+$color_225_60: #4e6fd3; // Contrast on white & black: 4.63 & 4.54
+$color_light_225_60: #bcc8ef;
+$color_dark_225_60: #2b4caf; // Contrast against each other: 4.59
+$color_extra_light_225_60: #eaeefa; // Contrast against dark color: 6.57
+// hue: 225, saturation: 40%
+$color_225_40: #5b72b9; // Contrast on white & black: 4.61 & 4.55
+$color_light_225_40: #bfc9e4;
+$color_dark_225_40: #3c518e; // Contrast against each other: 4.6
+$color_extra_light_225_40: #ebeef7; // Contrast against dark color: 6.56
+// hue: 225, saturation: 20%
+$color_225_20: #67749a; // Contrast on white & black: 4.62 & 4.54
+$color_light_225_20: #c4c9d8;
+$color_dark_225_20: #4a536f; // Contrast against each other: 4.6
+$color_extra_light_225_20: #eceef3; // Contrast against dark color: 6.56
+
+// hue: 240, saturation: 100%
+$color_240_100: #5f5fff; // Contrast on white & black: 4.6 & 4.57
+$color_light_240_100: #c4c4ff;
+$color_dark_240_100: #2424ff; // Contrast against each other: 4.58
+$color_extra_light_240_100: #ececff; // Contrast against dark color: 6.5
+// hue: 240, saturation: 80%
+$color_240_80: #6363ee; // Contrast on white & black: 4.62 & 4.55
+$color_light_240_80: #c4c4f9;
+$color_dark_240_80: #3232e8; // Contrast against each other: 4.57
+$color_extra_light_240_80: #ededfd; // Contrast against dark color: 6.58
+// hue: 240, saturation: 60%
+$color_240_60: #6868d9; // Contrast on white & black: 4.59 & 4.57
+$color_light_240_60: #c5c5f1;
+$color_dark_240_60: #3d3dce; // Contrast against each other: 4.58
+$color_extra_light_240_60: #ededfb; // Contrast against dark color: 6.57
+// hue: 240, saturation: 40%
+$color_240_40: #6c6cc0; // Contrast on white & black: 4.62 & 4.54
+$color_light_240_40: #c6c6e7;
+$color_dark_240_40: #4848a8; // Contrast against each other: 4.56
+$color_extra_light_240_40: #ededf8; // Contrast against dark color: 6.53
+// hue: 240, saturation: 20%
+$color_240_20: #7171a0; // Contrast on white & black: 4.59 & 4.57
+$color_light_240_20: #c7c7da;
+$color_dark_240_20: #505078; // Contrast against each other: 4.57
+$color_extra_light_240_20: #ededf3; // Contrast against dark color: 6.53
+
+// hue: 255, saturation: 100%
+$color_255_100: #7e53ff; // Contrast on white & black: 4.6 & 4.57
+$color_light_255_100: #d0c0ff;
+$color_dark_255_100: #480bff; // Contrast against each other: 4.58
+$color_extra_light_255_100: #f0ebff; // Contrast against dark color: 6.52
+// hue: 255, saturation: 80%
+$color_255_80: #7e59ed; // Contrast on white & black: 4.63 & 4.54
+$color_light_255_80: #cfc1f9;
+$color_dark_255_80: #5423e6; // Contrast against each other: 4.58
+$color_extra_light_255_80: #f0ecfd; // Contrast against dark color: 6.57
+// hue: 255, saturation: 60%
+$color_255_60: #7e60d7; // Contrast on white & black: 4.62 & 4.54
+$color_light_255_60: #cec3f0;
+$color_dark_255_60: #5933cc; // Contrast against each other: 4.58
+$color_extra_light_255_60: #f0ecfb; // Contrast against dark color: 6.53
+// hue: 255, saturation: 40%
+$color_255_40: #7d67be; // Contrast on white & black: 4.61 & 4.56
+$color_light_255_40: #cdc4e6;
+$color_dark_255_40: #5a449f; // Contrast against each other: 4.57
+$color_extra_light_255_40: #efedf7; // Contrast against dark color: 6.56
+// hue: 255, saturation: 20%
+$color_255_20: #7a6e9e; // Contrast on white & black: 4.61 & 4.55
+$color_light_255_20: #cbc6d9;
+$color_dark_255_20: #584e75; // Contrast against each other: 4.57
+$color_extra_light_255_20: #efedf3; // Contrast against dark color: 6.55
+
+// hue: 270, saturation: 100%
+$color_270_100: #9e3cff; // Contrast on white & black: 4.62 & 4.54
+$color_light_270_100: #ddbbff;
+$color_dark_270_100: #7000e0; // Contrast against each other: 4.57
+$color_extra_light_270_100: #f5eaff; // Contrast against dark color: 6.54
+// hue: 270, saturation: 80%
+$color_270_80: #9a4aeb; // Contrast on white & black: 4.61 & 4.55
+$color_light_270_80: #dbbdf8;
+$color_dark_270_80: #7317d0; // Contrast against each other: 4.58
+$color_extra_light_270_80: #f4eafd; // Contrast against dark color: 6.53
+// hue: 270, saturation: 60%
+$color_270_60: #9555d5; // Contrast on white & black: 4.63 & 4.54
+$color_light_270_60: #d8c0f0;
+$color_dark_270_60: #712db6; // Contrast against each other: 4.62
+$color_extra_light_270_60: #f3ebfa; // Contrast against dark color: 6.57
+// hue: 270, saturation: 40%
+$color_270_40: #8e60bb; // Contrast on white & black: 4.62 & 4.54
+$color_light_270_40: #d4c2e5;
+$color_dark_270_40: #6a3f94; // Contrast against each other: 4.6
+$color_extra_light_270_40: #f1ecf7; // Contrast against dark color: 6.57
+// hue: 270, saturation: 20%
+$color_270_20: #836b9c; // Contrast on white & black: 4.62 & 4.55
+$color_light_270_20: #cfc5d9;
+$color_dark_270_20: #5f4c72; // Contrast against each other: 4.57
+$color_extra_light_270_20: #f0edf3; // Contrast against dark color: 6.55
+
+// hue: 285, saturation: 100%
+$color_285_100: #bd00fb; // Contrast on white & black: 4.61 & 4.56
+$color_light_285_100: #edb5ff;
+$color_dark_285_100: #8a00b8; // Contrast against each other: 4.56
+$color_extra_light_285_100: #fae8ff; // Contrast against dark color: 6.51
+// hue: 285, saturation: 80%
+$color_285_80: #b82be7; // Contrast on white & black: 4.63 & 4.54
+$color_light_285_80: #e8b8f8;
+$color_dark_285_80: #8813af; // Contrast against each other: 4.58
+$color_extra_light_285_80: #f8e9fd; // Contrast against dark color: 6.55
+// hue: 285, saturation: 60%
+$color_285_60: #ae45d0; // Contrast on white & black: 4.6 & 4.56
+$color_light_285_60: #e2bcef;
+$color_dark_285_60: #8228a0; // Contrast against each other: 4.59
+$color_extra_light_285_60: #f6eafa; // Contrast against dark color: 6.55
+// hue: 285, saturation: 40%
+$color_285_40: #9f58b7; // Contrast on white & black: 4.61 & 4.55
+$color_light_285_40: #dbc0e4;
+$color_dark_285_40: #763b8a; // Contrast against each other: 4.59
+$color_extra_light_285_40: #f4ebf7; // Contrast against dark color: 6.54
+// hue: 285, saturation: 20%
+$color_285_20: #8d679a; // Contrast on white & black: 4.63 & 4.54
+$color_light_285_20: #d3c4d8;
+$color_dark_285_20: #654a6f; // Contrast against each other: 4.58
+$color_extra_light_285_20: #f1ecf3; // Contrast against dark color: 6.53
+
+// hue: 300, saturation: 100%
+$color_300_100: #cf00cf; // Contrast on white & black: 4.61 & 4.55
+$color_light_300_100: #ffadff;
+$color_dark_300_100: #970097; // Contrast against each other: 4.59
+$color_extra_light_300_100: #ffe6ff; // Contrast against dark color: 6.52
+// hue: 300, saturation: 80%
+$color_300_80: #cc17cc; // Contrast on white & black: 4.6 & 4.56
+$color_light_300_80: #f7b2f7;
+$color_dark_300_80: #941094; // Contrast against each other: 4.59
+$color_extra_light_300_80: #fde8fd; // Contrast against dark color: 6.57
+// hue: 300, saturation: 60%
+$color_300_60: #c331c3; // Contrast on white & black: 4.62 & 4.55
+$color_light_300_60: #eeb8ee;
+$color_dark_300_60: #8d238d; // Contrast against each other: 4.62
+$color_extra_light_300_60: #fae9fa; // Contrast against dark color: 6.56
+// hue: 300, saturation: 40%
+$color_300_40: #b14cb1; // Contrast on white & black: 4.63 & 4.54
+$color_light_300_40: #e3bde3;
+$color_dark_300_40: #803680; // Contrast against each other: 4.59
+$color_extra_light_300_40: #f6eaf6; // Contrast against dark color: 6.54
+// hue: 300, saturation: 20%
+$color_300_20: #966496; // Contrast on white & black: 4.61 & 4.56
+$color_light_300_20: #d7c3d7;
+$color_dark_300_20: #6b476b; // Contrast against each other: 4.63
+$color_extra_light_300_20: #f3ecf3; // Contrast against dark color: 6.61
+
+// hue: 315, saturation: 100%
+$color_315_100: #db00a4; // Contrast on white & black: 4.62 & 4.55
+$color_light_315_100: #ffb0ec;
+$color_dark_315_100: #a00078; // Contrast against each other: 4.58
+$color_extra_light_315_100: #ffe7f9; // Contrast against dark color: 6.53
+// hue: 315, saturation: 80%
+$color_315_80: #d618a7; // Contrast on white & black: 4.62 & 4.55
+$color_light_315_80: #f7b4e6;
+$color_dark_315_80: #9c1179; // Contrast against each other: 4.56
+$color_extra_light_315_80: #fde8f8; // Contrast against dark color: 6.53
+// hue: 315, saturation: 60%
+$color_315_60: #cb33a5; // Contrast on white & black: 4.61 & 4.56
+$color_light_315_60: #eeb9e1;
+$color_dark_315_60: #932477; // Contrast against each other: 4.59
+$color_extra_light_315_60: #fae9f6; // Contrast against dark color: 6.54
+// hue: 315, saturation: 40%
+$color_315_40: #b4509b; // Contrast on white & black: 4.6 & 4.56
+$color_light_315_40: #e3beda;
+$color_dark_315_40: #833870; // Contrast against each other: 4.57
+$color_extra_light_315_40: #f7ebf4; // Contrast against dark color: 6.56
+// hue: 315, saturation: 20%
+$color_315_20: #97658b; // Contrast on white & black: 4.62 & 4.55
+$color_light_315_20: #d7c3d2;
+$color_dark_315_20: #6c4863; // Contrast against each other: 4.6
+$color_extra_light_315_20: #f3ecf1; // Contrast against dark color: 6.59
+
+// hue: 330, saturation: 100%
+$color_330_100: #e40072; // Contrast on white & black: 4.62 & 4.54
+$color_light_330_100: #ffb2d9;
+$color_dark_330_100: #a70053; // Contrast against each other: 4.56
+$color_extra_light_330_100: #ffe8f4; // Contrast against dark color: 6.54
+// hue: 330, saturation: 80%
+$color_330_80: #df197c; // Contrast on white & black: 4.6 & 4.57
+$color_light_330_80: #f7b6d7;
+$color_dark_330_80: #a2125a; // Contrast against each other: 4.56
+$color_extra_light_330_80: #fde9f3; // Contrast against dark color: 6.54
+// hue: 330, saturation: 60%
+$color_330_60: #ce3a84; // Contrast on white & black: 4.6 & 4.56
+$color_light_330_60: #eebad4;
+$color_dark_330_60: #97255e; // Contrast against each other: 4.6
+$color_extra_light_330_60: #faeaf2; // Contrast against dark color: 6.61
+// hue: 330, saturation: 40%
+$color_330_40: #b55384; // Contrast on white & black: 4.63 & 4.54
+$color_light_330_40: #e4bfd1;
+$color_dark_330_40: #85395f; // Contrast against each other: 4.61
+$color_extra_light_330_40: #f7ebf1; // Contrast against dark color: 6.59
+// hue: 330, saturation: 20%
+$color_330_20: #99667f; // Contrast on white & black: 4.6 & 4.56
+$color_light_330_20: #d8c4ce;
+$color_dark_330_20: #6d495b; // Contrast against each other: 4.61
+$color_extra_light_330_20: #f3ecef; // Contrast against dark color: 6.56
+
+// hue: 345, saturation: 100%
+$color_345_100: #ea003a; // Contrast on white & black: 4.61 & 4.56
+$color_light_345_100: #ffb4c7;
+$color_dark_345_100: #ab002a; // Contrast against each other: 4.56
+$color_extra_light_345_100: #ffe8ee; // Contrast against dark color: 6.52
+// hue: 345, saturation: 80%
+$color_345_80: #e4194c; // Contrast on white & black: 4.62 & 4.54
+$color_light_345_80: #f8b8c8;
+$color_dark_345_80: #a61237; // Contrast against each other: 4.59
+$color_extra_light_345_80: #fde9ee; // Contrast against dark color: 6.54
+// hue: 345, saturation: 60%
+$color_345_60: #cf3f63; // Contrast on white & black: 4.62 & 4.54
+$color_light_345_60: #efbcc8;
+$color_dark_345_60: #9b2644; // Contrast against each other: 4.61
+$color_extra_light_345_60: #faeaee; // Contrast against dark color: 6.56
+// hue: 345, saturation: 40%
+$color_345_40: #b6566e; // Contrast on white & black: 4.62 & 4.55
+$color_light_345_40: #e4c0c9;
+$color_dark_345_40: #883a4d; // Contrast against each other: 4.6
+$color_extra_light_345_40: #f7ebee; // Contrast against dark color: 6.55
+// hue: 345, saturation: 20%
+$color_345_20: #9a6774; // Contrast on white & black: 4.6 & 4.57
+$color_light_345_20: #d8c4c9;
+$color_dark_345_20: #6e4953; // Contrast against each other: 4.62
+$color_extra_light_345_20: #f3ecee; // Contrast against dark color: 6.58
