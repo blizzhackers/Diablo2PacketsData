@@ -1050,14 +1050,14 @@
 	},
 	"D2GS_PORTALOWNERSHIP" : {
 		"PacketId" : "0x82",
-		"Description" : "",
+		"Description" : "Seems like nPortalGUID1 and nPortalGUID2 contains portals GUID for both ends of each portal.",
 		"Size" : 29,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "int" : "nOwnerGUID" },
 			{ "char" : "szOwnerName[16]" },
-			{ "int" : "nPortalGUID" },
-			{ "int" : "nDestinationID" }
+			{ "int" : "nPortalGUID1" },
+			{ "int" : "nPortalGUID2" }
 		]
 	},
 	"D2GS_UNIQUEEVENTS" : {
