@@ -682,7 +682,11 @@
 			{ "char" : "szPlayerName[16]" },
 			{ "short" : "nPlayerLevel" },
 			{ "short" : "nPartyId" },
-			{ "BYTE" : "Padding[8]" }
+			{ "short" : "nUnused" },
+			{ "short" : "nUnk1" },
+			{ "short" : "nUnk2" },
+			{ "std::string" : "szUnk1" },
+			{ "std::string" : "szUnk2" }
 		]
 	},
 	"D2GS_PLAYER_LEAVE" : {
