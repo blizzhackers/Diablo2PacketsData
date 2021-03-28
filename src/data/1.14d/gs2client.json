@@ -885,7 +885,7 @@
 	},
 	"D2GS_MISSILEDATA" : {
 		"PacketId" : "0x73",
-		"Description" : "",
+		"Description" : "nCurrentFrame might be wrong",
 		"Size" : 32,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
@@ -895,10 +895,10 @@
 			{ "int" : "nMissileY" },
 			{ "int" : "nTargetX" },
 			{ "int" : "nTargetY" },
-			{ "short" : "UnionData_0x10" },
+			{ "short" : "nCurrentFrame" },
 			{ "BYTE" : "nOwnerType" },
 			{ "int" : "nOwnerGUID" },
-			{ "BYTE" : "UnionData_0x0C" },
+			{ "BYTE" : "nSkillLevel" },
 			{ "BYTE" : "nPierceIdxValue" }
 		]
 	},
