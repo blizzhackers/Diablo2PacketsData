@@ -56,7 +56,16 @@ import Packets_sid2client_1_14d from './data/1.14d/sid2client.json';
 import Packets_client2sid_1_13c from './data/1.13c/client2sid.json';
 import Packets_gs2client_1_13c from './data/1.13c/gs2client.json';
 
+import Packets_client2gs_1_15 from './data/1.15/client2gs.json';
+import Packets_gs2client_1_15 from './data/1.15/gs2client.json';
+
 let packetSources = [
+    ['client', 'd2gs', '1.15', Packets_client2gs_1_15],
+    ['client', 'mcp', '1.15', Packets_client2mcps_1_14d],
+    ['client', 'sid', '1.15', Packets_client2sid_1_14d],
+    ['server', 'd2gs', '1.15', Packets_gs2client_1_15],
+    ['server', 'mcp', '1.15', Packets_mcps2client_1_14d],
+    ['server', 'sid', '1.15', Packets_sid2client_1_14d],
     ['client', 'd2gs', '1.14d', Packets_client2gs_1_14d],
     ['client', 'mcp', '1.14d', Packets_client2mcps_1_14d],
     ['client', 'sid', '1.14d', Packets_client2sid_1_14d],
@@ -92,7 +101,8 @@ export default {
           sid: true,
         },
         version: {
-          '1.14d': true,
+          '1.15': true,
+          '1.14d': false,
           '1.13c': false,
         }
       },
