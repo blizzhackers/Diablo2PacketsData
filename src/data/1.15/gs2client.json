@@ -762,13 +762,22 @@
 	"D2GS_WAYPOINTMENU" : {
 		"PacketId" : "0x63",
 		"Description" : "",
-		"Size" : 21,
+		"Size" : 17,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
-			{ "int" : "nWaypointGUID" },
-			{ "short" : "Unknown" },
+			{ "short" : "Unknown102" },
 			{ "BYTE" : "aWaypointBitStream[8]" },
-			{ "BYTE" : "Padding[6]" }
+			{ "int" : "Padding" }
+		]
+	},
+	"D2GS_WAYPOINTCURRENT" : {
+		"PacketId" : "0x64",
+		"Description" : "",
+		"Size" : 4,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "short" : "Unknown1" },
+			{ "BYTE" : "Unknown2" }
 		]
 	},
 	"D2GS_PLAYERKILLCOUNT" : {
@@ -1476,6 +1485,20 @@
 			{ "BYTE" : "nHPPercent" },
 			{ "BYTE" : "nFullPacketSize" },
 			{ "BYTE" : "BitStream[nFullPacketSize - 13]" }
+		]
+	},
+	"D2GS_MONSTERPACKET2" : {
+		"PacketId" : "0xAD",
+		"Description" : "",
+		"Size" : -1,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "short" : "nUnitClassID" },
+			{ "short" : "Unknown1" },
+			{ "Byte" : "Unknown2" },
+			{ "int" : "nUnitGUID" },
+			{ "short" : "nAnimation" },
+			{ "BYTE" : "nHPPercent" }
 		]
 	},
 	"D2GS_WARDEN" : {

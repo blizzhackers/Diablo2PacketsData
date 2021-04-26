@@ -606,6 +606,15 @@
 			{ "int" : "nEntityState" }
 		]
 	},
+	"D2GS_CONTROLLERMOVE" : {
+		"PacketId" : "0x45",
+		"Description" : "",
+		"Size" : 3,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "short" : "nAngle" }
+		]
+	},
 	"D2GS_MERC_INTERACT" : {
 		"PacketId" : "0x46",
 		"Description" : "",
@@ -636,16 +645,6 @@
 		"Size" : 1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }
-		]
-	},
-	"D2GS_WAYPOINT" : {
-		"PacketId" : "0x49",
-		"Description" : "",
-		"Size" : 9,
-		"Structure" : [ 
-			{ "BYTE" : "PacketId" }, 
-			{ "int" : "nWaypointGUID" },
-			{ "int" : "nDestination" }
 		]
 	},
 	"D2GS_REQUESTENTITYUPDATE" : {
@@ -723,6 +722,23 @@
 		"Size" : 1,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }
+		]
+	},
+	"D2GS_WAYPOINTOPEN" : {
+		"PacketId" : "0x55",
+		"Description" : "",
+		"Size" : 1,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
+	},
+	"D2GS_WAYPOINTINTERACT" : {
+		"PacketId" : "0x57",
+		"Description" : "",
+		"Size" : 5,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }, 
+			{ "int" : "nDestination" }
 		]
 	},
 	"D2GS_QUESTCOMPLETED" : {
@@ -812,6 +828,14 @@
 			{ "int" : "nItemGUID" }
 		]
 	},
+	"D2GS_CONTROLLERSTOP" : {
+		"PacketId" : "0x64",
+		"Description" : "",
+		"Size" : 1,
+		"Structure" : [ 
+			{ "BYTE" : "PacketId" }
+		]
+	},
 	"D2GS_WARDEN" : {
 		"PacketId" : "0x66",
 		"Description" : "",
@@ -844,7 +868,7 @@
 	"D2GS_GAMELOGON_MULTI" : {
 		"PacketId" : "0x68",
 		"Description" : "nMinorGameVersion:\n\t- 1.14\t\t= 0x0000000E\n\t- 1.13\t\t= 0x0000000D\n\t- 1.12\t\t= 0x0000000C\n\t- 1.11\t\t= 0x0000000B\nnVersionConstant:\n\t- Classic \t= 0x2185EDD6\n\t- Expansion \t= 0xED5DCC50\nnConstant:\n\t\t\t= 0x91A519B6",
-		"Size" : 37,
+		"Size" : 45,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "int" : "nGameHash" },
@@ -853,6 +877,8 @@
 			{ "int" : "nMinorGameVersion" },
 			{ "int" : "nVersionConstant" },
 			{ "int" : "nConstant" },
+			{ "int" : "magic1"},
+			{ "int" : "magic2"},
 			{ "BYTE" : "nLanguageCode" },
 			{ "char" : "szCharName[16]" }
 		]
