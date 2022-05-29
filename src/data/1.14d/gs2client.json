@@ -399,7 +399,7 @@
 			{ "BYTE" : "nUnitType" },
 			{ "int" : "nUnitGUID" },
 			{ "BYTE" : "nCount" },
-			{ "BYTE" : "Unknown" },
+			{ "BYTE" : "Unused" },
 			{ "sUnitMessages[8]" : [
 					{ "BYTE" : "bShow" },
 					{ "BYTE" : "NotUsed" },
@@ -683,10 +683,10 @@
 			{ "short" : "nPlayerLevel" },
 			{ "short" : "nPartyId" },
 			{ "short" : "nUnused" },
-			{ "short" : "nUnk1" },
-			{ "short" : "nUnk2" },
-			{ "std::string" : "szUnk1" },
-			{ "std::string" : "szUnk2" }
+			{ "short" : "bInParty" },
+			{ "short" : "nGuildFlags" },
+			{ "std::string" : "szGuildTag" },
+			{ "std::string" : "szGuildName" }
 		]
 	},
 	"D2GS_PLAYER_LEAVE" : {
@@ -719,13 +719,13 @@
 			{ "BYTE" : "aQuestBitStream[37]" }
 		]
 	},
-	"D2GS_UNKNOWN_MEUNIT_5F" : {
+	"D2GS_PORTAL_FLAGS" : {
 		"PacketId" : "0x5F",
 		"Description" : "",
 		"Size" : 5,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
-			{ "int" : "Unknown" }
+			{ "int" : "nPortalFlags" }
 		]
 	},
 	"D2GS_TOWNPORTALSTATE" : {
@@ -1175,7 +1175,7 @@
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "int" : "nPlayerGUID" },
-			{ "BYTE" : "Unknown1" },
+			{ "BYTE" : "nLevelBonus" },
 			{ "BYTE" : "nType" },
 			{ "BYTE" : "nSkillPage" }
 		]

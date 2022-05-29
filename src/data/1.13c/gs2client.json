@@ -715,13 +715,13 @@
 			{ "BYTE" : "aQuestBitStream[37]" }
 		]
 	},
-	"D2GS_UNKNOWN_MEUNIT_5F" : {
+	"D2GS_PORTAL_FLAGS" : {
 		"PacketId" : "0x5F",
 		"Description" : "",
 		"Size" : 5,
 		"Structure" : [ 
-			{ "BYTE" : "PacketId" }, 
-			{ "int" : "Unknown" }
+			{ "BYTE" : "PacketId" },
+			{ "int" : "nPortalFlags" }
 		]
 	},
 	"D2GS_TOWNPORTALSTATE" : {
