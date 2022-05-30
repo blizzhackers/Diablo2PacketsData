@@ -81,34 +81,34 @@ let packetSources = [
 ];
 
 export default {
-  name: 'App',
-  components: {
-    PacketStructure
-  },
-  data() {
-    return {
-      dark: this.getCookie('darkMode'),
-      columns: [],
-      packets: [],
-      filterOptions: {
-        source: {
-          client: true,
-          server: true,
+    name: 'App',
+    components: {
+        PacketStructure
+    },
+    data() {
+        return {
+        dark: this.getCookie('darkMode'),
+        columns: [],
+        packets: [],
+        filterOptions: {
+            source: {
+                client: true,
+                server: true,
+            },
+            type: {
+                d2gs: true,
+                mcp: true,
+                sid: true,
+            },
+            version: {
+                '1.15': true,
+                '1.14d': false,
+                '1.13c': false,
+            }
         },
-        type: {
-          d2gs: true,
-          mcp: true,
-          sid: true,
-        },
-        version: {
-          '1.15': true,
-          '1.14d': false,
-          '1.13c': false,
-        }
-      },
-      filterText: '',
-    };
-  },
+        filterText: '',
+        };
+    },
     methods: {
         setCookie(name, value) {
             document.cookie = name + "=" + JSON.stringify(value) + "; expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/";
@@ -216,7 +216,7 @@ export default {
     created: async function () {
         for (let [source, type, version, data] of packetSources) {
             data = duplicateObject(data);
-    
+
             for (let key in data) {
                 data[key] = Object.assign({
                     Name: key,
@@ -229,7 +229,7 @@ export default {
                     },
                 }, data[key]);
                 this.packets.push(data[key]);
-    
+
                 for (let column in data[key]) {
                     if (!this.columns.includes(column) && ![
                         'searchText',
@@ -240,7 +240,7 @@ export default {
                 }
             }
         }
-    
+
         this.active = true;
     },
 }
