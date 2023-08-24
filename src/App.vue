@@ -223,11 +223,11 @@ export default {
                     Source: source,
                     Type: type,
                     'Game Version': version,
-                    searchText: JSON.stringify(data[key]).match(/[a-z0-9_]+/gi).join(' '),
                     state: {
                         open: false,
                     },
                 }, data[key]);
+                data[key].searchText = JSON.stringify(data[key]).match(/[a-z0-9_]+/gi).join(' ');
                 this.packets.push(data[key]);
 
                 for (let column in data[key]) {
