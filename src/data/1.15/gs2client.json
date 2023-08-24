@@ -1495,7 +1495,7 @@
 			{ "BYTE" : "PacketId" }, 
 			{ "short" : "nUnitClassID" },
 			{ "short" : "Unknown1" },
-			{ "Byte" : "Unknown2" },
+			{ "BYTE" : "Unknown2" },
 			{ "int" : "nUnitGUID" },
 			{ "short" : "nAnimation" },
 			{ "BYTE" : "nHPPercent" }
