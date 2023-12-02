@@ -493,11 +493,13 @@
 	"D2GS_HIREMERC" : {
 		"PacketId" : "0x36",
 		"Description" : "",
-		"Size" : 9,
+		"Size" : 17,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "int" : "nUnitGUID" },
-			{ "int" : "nMercID" }
+			{ "int" : "nMercID" },
+			{ "int" : "nUnk" },
+			{ "int" : "nUnk2" }
 		]
 	},
 	"D2GS_IDENTIFYGAMBLE" : {
