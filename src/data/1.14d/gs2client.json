@@ -460,7 +460,7 @@
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "nFullPacketSize" },
-			{ "BYTE" : "StatBitStream[nFullPacketSize - 2]" }
+			{ "BYTE" : "StatBitStream[nFullPacketSize - 2]" },
 			{ "BYTE" : "Padding[34 - nFullPacketSize]" }
 		]
 	},
