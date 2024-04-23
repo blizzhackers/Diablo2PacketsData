@@ -456,11 +456,12 @@
 	"D2GS_UPDATEITEMSTATS" : {
 		"PacketId" : "0x3E",
 		"Description" : "",
-		"Size" : -1,
+		"Size" : 34,
 		"Structure" : [ 
 			{ "BYTE" : "PacketId" }, 
 			{ "BYTE" : "nFullPacketSize" },
 			{ "BYTE" : "StatBitStream[nFullPacketSize - 2]" }
+			{ "BYTE" : "Padding[34 - nFullPacketSize]" }
 		]
 	},
 	"D2GS_USESTACKABLEITEM" : {
