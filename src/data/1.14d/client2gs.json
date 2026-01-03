@@ -904,7 +904,7 @@
 			{ "int" : "nWardenOrZero" }
 		]
 	},
-	"D2GS_FINDME_6E" : {
+	"D2GS_DISCONNECT_SP" : {
 		"PacketId" : "0x6E",
 		"Description" : "",
 		"Size" : 1,
@@ -912,7 +912,7 @@
 			{ "BYTE" : "PacketId" }
 		]
 	},
-	"D2GS_FINDME_70" : {
+	"D2GS_DISCONNECT" : {
 		"PacketId" : "0x70",
 		"Description" : "",
 		"Size" : 1,
@@ -921,3 +921,4 @@
 		]
 	}
 }
+
