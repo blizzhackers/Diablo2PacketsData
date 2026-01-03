@@ -27,7 +27,7 @@ jobs:
           node-version: 12
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       # Set up a cache for the node modules to speed up builds
       - name: Cache node modules
